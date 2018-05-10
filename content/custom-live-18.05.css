@@ -6589,14 +6589,14 @@ p.left-arrow:before {
 }
 
 .home .baby-cares {
-    padding: 50px 0;
+    padding: 110px 0;
     background-image: url('../images/cares-baby.jpg');
     color: #303030;
     font-weight: 700;
 }
 
 .home .baby-cares .wrap-img {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -6633,6 +6633,15 @@ p.left-arrow:before {
 
     .home .entrepreneur-benefits ul {
         margin-left: 25px;
+    }
+
+    .home .baby-cares {
+        padding: 50px 0;
+    }
+
+    .home .baby-cares .cares-block {
+        width: 50%;
+        margin-left: 50%;
     }
 }
 
@@ -6671,6 +6680,7 @@ p.left-arrow:before {
     }
 
     .home .baby-cares .cares-block {
+        width: 100%;
         max-width: 400px;
         margin: 0 auto;
         padding: 20px;
