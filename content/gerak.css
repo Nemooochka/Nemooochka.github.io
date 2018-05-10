@@ -1,0 +1,1424 @@
+.gerakl-countdown-wrap {
+    text-align: center;
+    font-family: Trebuchet MS;
+}
+.gerakl-countdown-section {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.gerakl-countdown-amount span {
+    display: inline-block;
+    vertical-align: top;
+
+}
+.gerakl-abs {
+    position: absolute;
+    top: 0;
+}
+.gerakl-countdown-label {
+    margin: 10px 0;
+}
+.geraklcountdown {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
+.after-geraklcountdowntext,
+.before-geraklcountdowntext {
+    text-align: center;
+    font-size: 30px;
+}
+
+/*default*/
+
+.default .gerakl-countdown-section {
+
+}
+.default .gerakl-countdown-amount {
+    background: #fff;
+    background: rgba(255,255,255,0.5);
+    margin: 10px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    box-shadow: inset 0 0 5px #000, 0 0 5px #000;
+}
+.default .gerakl-countdown-amount span {
+}
+.default .gerakl-countdown-label {
+}
+.default .gerakl-abs {
+}
+
+
+/*minimal*/
+
+.minimal .gerakl-countdown-section {
+    border: 3px solid #fff;
+    margin: 10px;
+    padding: 0 10px;
+}
+.minimal .gerakl-countdown-amount {
+    margin: 0 10px;
+}
+.minimal .gerakl-countdown-amount span {
+}
+.minimal .gerakl-countdown-amount + .gerakl-countdown-label {
+    border-top: 3px solid #fff;
+    padding-top: 10px;
+    margin-top: 3px;
+
+}
+.minimal .gerakl-countdown-label:first-child {
+    border-bottom: 3px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 3px;
+}
+.minimal .gerakl-abs {
+}
+
+
+/*black*/
+
+.black .gerakl-countdown-section {
+    width: 23%;
+    background: #323232;
+    margin: 0 1%;
+    padding: 5px;
+    box-shadow: inset 0 0 5px #fff;
+    border-radius: 3px;
+}
+.black .gerakl-countdown-amount {
+}
+.black .gerakl-countdown-amount span {
+    background: #000;
+    padding: 0 4px;
+    margin: 0px 1px 0;
+    font-size: 22px !important;
+    line-height: 29px;
+    color: #c5b358 !important;
+}
+.black .gerakl-countdown-label {
+    background: #000;
+    margin: 2px 1px 0px;
+    font-size: 9px !important;
+    padding: 0px;
+    line-height: 12px;
+    color: #c5b358 !important;
+}
+.black .gerakl-abs {
+    background: #000;
+    padding: 0 10px;
+    margin: 0px 1px 0;
+}
+.black .gerakl-countdown-section div:first-child.gerakl-countdown-label {
+    margin: 0px 1px 2px;
+}
+.black .gerakl-countdown-label + .gerakl-countdown-amount {
+}
+.black .gerakl-countdown-label + .gerakl-countdown-amount span {
+    margin: 0px 1px 0;
+}
+.black .gerakl-countdown-label + .gerakl-countdown-amount ~ span.gerakl-abs {
+    margin: 0px 1px 0;
+}
+
+/*blue*/
+
+.blue .gerakl-countdown-section {
+    background: #6da7cc;
+    text-shadow: 0px 1px 0px #5085a5;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.blue .gerakl-countdown-amount {
+    padding: 0 30px;
+}
+.blue .gerakl-countdown-amount span {
+}
+.blue .gerakl-countdown-label {
+    margin-top: 0;
+}
+.blue .gerakl-countdown-section div:first-child.gerakl-countdown-label {
+    margin: 10px 0;
+}
+.blue .gerakl-abs {
+}
+
+/*transparent*/
+
+.transparent .gerakl-countdown-section {
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 11px 9px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 11px 9px 0 rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 11px 9px 0 rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 40px 0;
+    margin: 15px;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.transparent .gerakl-countdown-section:hover {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+.transparent .gerakl-countdown-amount {
+    font-weight: bold;
+    padding: 0 40px;
+}
+.transparent .gerakl-countdown-amount span {
+}
+.transparent .gerakl-countdown-label {
+    letter-spacing: .2em;
+}
+.transparent .gerakl-abs {
+    font-weight: bold;
+}
+
+/*style1*/
+
+.style1 .gerakl-countdown-section {
+    font-family: Trebuchet MS;
+    width: 23%;
+    margin: 0 1%;
+}
+.style1 .gerakl-countdown-amount {
+    margin: 0;
+    line-height: 14px;
+    padding-bottom: 6px;
+}
+.style1 .gerakl-countdown-amount span {
+    background: #44464a;
+    background: -moz-linear-gradient(top, #44464a 0%, #202326 50%, #1c1818 51%, #1c1818 51%, #383c3e 52%, #2d3134 53%, #2d3134 53%, #1e2124 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#44464a), color-stop(50%,#202326), color-stop(51%,#1c1818), color-stop(51%,#1c1818), color-stop(52%,#383c3e), color-stop(53%,#2d3134), color-stop(53%,#2d3134), color-stop(100%,#1e2124));
+    background: -webkit-linear-gradient(top, #44464a 0%,#202326 50%,#1c1818 51%,#1c1818 51%,#383c3e 52%,#2d3134 53%,#2d3134 53%,#1e2124 100%);
+    background: -o-linear-gradient(top, #44464a 0%,#202326 50%,#1c1818 51%,#1c1818 51%,#383c3e 52%,#2d3134 53%,#2d3134 53%,#1e2124 100%);
+    background: -ms-linear-gradient(top, #44464a 0%,#202326 50%,#1c1818 51%,#1c1818 51%,#383c3e 52%,#2d3134 53%,#2d3134 53%,#1e2124 100%);
+    background: linear-gradient(to bottom, #44464a 0%,#202326 50%,#1c1818 51%,#1c1818 51%,#383c3e 52%,#2d3134 53%,#2d3134 53%,#1e2124 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44464a', endColorstr='#1e2124',GradientType=0 );
+    border: 1px solid #000;
+    padding: 0 7px;
+    margin: 2px;
+    border-radius: 3px;
+    box-shadow: inset 0 1px #5e6163, 0 2px #1F1A1A;
+    line-height: 43px;
+}
+.style1 .gerakl-countdown-label {
+    margin: 0;
+}
+.style1 .gerakl-abs {
+    background: #44464a;
+    background: -moz-linear-gradient(top, #44464a 0%, #202326 50%, #1c1818 51%, #1c1818 51%, #383c3e 52%, #2d3134 53%, #2d3134 53%, #1e2124 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#44464a), color-stop(50%,#202326), color-stop(51%,#1c1818), color-stop(51%,#1c1818), color-stop(52%,#383c3e), color-stop(53%,#2d3134), color-stop(53%,#2d3134), color-stop(100%,#1e2124));
+    background: -webkit-linear-gradient(top, #44464a 0%,#202326 50%,#1c1818 51%,#1c1818 51%,#383c3e 52%,#2d3134 53%,#2d3134 53%,#1e2124 100%);
+    background: -o-linear-gradient(top, #44464a 0%,#202326 50%,#1c1818 51%,#1c1818 51%,#383c3e 52%,#2d3134 53%,#2d3134 53%,#1e2124 100%);
+    background: -ms-linear-gradient(top, #44464a 0%,#202326 50%,#1c1818 51%,#1c1818 51%,#383c3e 52%,#2d3134 53%,#2d3134 53%,#1e2124 100%);
+    background: linear-gradient(to bottom, #44464a 0%,#202326 50%,#1c1818 51%,#1c1818 51%,#383c3e 52%,#2d3134 53%,#2d3134 53%,#1e2124 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44464a', endColorstr='#1e2124',GradientType=0 );
+    border: 1px solid #000;
+    padding: 0 7px;
+    margin: 2px;
+    border-radius: 3px;
+    box-shadow: inset 0 1px #5e6163, 0 2px #1F1A1A;
+    line-height: 43px;
+}
+
+/*style2*/
+
+.style2 .gerakl-countdown-section {
+    font-family: Trebuchet MS;
+}
+.style2 .gerakl-countdown-amount {
+    background: #000;
+    border-radius: 5px;
+    margin: 0 10px;
+    box-shadow: 0 1px #5F5C5C;
+    padding: 3px;
+}
+.style2 .gerakl-countdown-amount span:last-child {
+    margin-right: 0px;
+}
+.style2 .gerakl-countdown-amount span {
+    background: #212121;
+    background: -moz-linear-gradient(top, #212121 0%, #2e2e2e 50%, #1c1818 51%, #000000 51%, #000000 52%, #2d3134 53%, #4a4a4a 53%, #333333 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#212121), color-stop(50%,#2e2e2e), color-stop(51%,#1c1818), color-stop(51%,#000000), color-stop(52%,#000000), color-stop(53%,#2d3134), color-stop(53%,#4a4a4a), color-stop(100%,#333333));
+    background: -webkit-linear-gradient(top, #212121 0%,#2e2e2e 50%,#1c1818 51%,#000000 51%,#000000 52%,#2d3134 53%,#4a4a4a 53%,#333333 100%);
+    background: -o-linear-gradient(top, #212121 0%,#2e2e2e 50%,#1c1818 51%,#000000 51%,#000000 52%,#2d3134 53%,#4a4a4a 53%,#333333 100%);
+    background: -ms-linear-gradient(top, #212121 0%,#2e2e2e 50%,#1c1818 51%,#000000 51%,#000000 52%,#2d3134 53%,#4a4a4a 53%,#333333 100%);
+    background: linear-gradient(to bottom, #212121 0%,#2e2e2e 50%,#1c1818 51%,#000000 51%,#000000 52%,#2d3134 53%,#4a4a4a 53%,#333333 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#333333',GradientType=0 );
+    border-radius: 3px;
+    margin-right: 3px;
+    padding: 0 8px;
+    box-shadow: inset 0 1px #5F5C5C;
+    position: relative;
+}
+.style2 .gerakl-countdown-amount span:after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    top: 50%;
+    margin-top: -10px;
+    right: 0;
+    box-shadow: 0 0 0 3px #000, inset 0 1px #777;
+    border-radius: 1px;
+    background: #444444;
+    background: -moz-linear-gradient(top, #444444 0%, #262626 50%, #444444 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#444444), color-stop(50%,#262626), color-stop(100%,#444444));
+    background: -webkit-linear-gradient(top, #444444 0%,#262626 50%,#444444 100%);
+    background: -o-linear-gradient(top, #444444 0%,#262626 50%,#444444 100%);
+    background: -ms-linear-gradient(top, #444444 0%,#262626 50%,#444444 100%);
+    background: linear-gradient(to bottom, #444444 0%,#262626 50%,#444444 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#444444',GradientType=0 );
+}
+.style2 .gerakl-countdown-amount span:before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    top: 50%;
+    margin-top: -10px;
+    left: 0;
+    box-shadow: 0 0 0 3px #000, inset 0 1px #777;
+    border-radius: 1px;
+    background: #444444;
+    background: -moz-linear-gradient(top, #444444 0%, #262626 50%, #444444 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#444444), color-stop(50%,#262626), color-stop(100%,#444444));
+    background: -webkit-linear-gradient(top, #444444 0%,#262626 50%,#444444 100%);
+    background: -o-linear-gradient(top, #444444 0%,#262626 50%,#444444 100%);
+    background: -ms-linear-gradient(top, #444444 0%,#262626 50%,#444444 100%);
+    background: linear-gradient(to bottom, #444444 0%,#262626 50%,#444444 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#444444',GradientType=0 );
+}
+.style2 .gerakl-countdown-label {
+
+}
+.style2 .gerakl-abs {
+    background: #212121;
+    background: -moz-linear-gradient(top, #212121 0%, #2e2e2e 50%, #1c1818 51%, #000000 51%, #000000 52%, #2d3134 53%, #4a4a4a 53%, #333333 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#212121), color-stop(50%,#2e2e2e), color-stop(51%,#1c1818), color-stop(51%,#000000), color-stop(52%,#000000), color-stop(53%,#2d3134), color-stop(53%,#4a4a4a), color-stop(100%,#333333));
+    background: -webkit-linear-gradient(top, #212121 0%,#2e2e2e 50%,#1c1818 51%,#000000 51%,#000000 52%,#2d3134 53%,#4a4a4a 53%,#333333 100%);
+    background: -o-linear-gradient(top, #212121 0%,#2e2e2e 50%,#1c1818 51%,#000000 51%,#000000 52%,#2d3134 53%,#4a4a4a 53%,#333333 100%);
+    background: -ms-linear-gradient(top, #212121 0%,#2e2e2e 50%,#1c1818 51%,#000000 51%,#000000 52%,#2d3134 53%,#4a4a4a 53%,#333333 100%);
+    background: linear-gradient(to bottom, #212121 0%,#2e2e2e 50%,#1c1818 51%,#000000 51%,#000000 52%,#2d3134 53%,#4a4a4a 53%,#333333 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', endColorstr='#333333',GradientType=0 );
+    border-radius: 3px;
+    margin-right: 3px;
+    padding: 0 8px;
+    box-shadow: inset 0 1px #5F5C5C;
+}
+
+.style2 .gerakl-abs:after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    top: 50%;
+    margin-top: -10px;
+    right: 0;
+    box-shadow: 0 0 0 3px #000, inset 0 1px #777;
+    border-radius: 1px;
+    background: #444444;
+    background: -moz-linear-gradient(top, #444444 0%, #262626 50%, #444444 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#444444), color-stop(50%,#262626), color-stop(100%,#444444));
+    background: -webkit-linear-gradient(top, #444444 0%,#262626 50%,#444444 100%);
+    background: -o-linear-gradient(top, #444444 0%,#262626 50%,#444444 100%);
+    background: -ms-linear-gradient(top, #444444 0%,#262626 50%,#444444 100%);
+    background: linear-gradient(to bottom, #444444 0%,#262626 50%,#444444 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#444444',GradientType=0 );
+}
+.style2 .gerakl-abs:before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    top: 50%;
+    margin-top: -10px;
+    left: 0;
+    box-shadow: 0 0 0 3px #000, inset 0 1px #777;
+    border-radius: 1px;
+    background: #444444;
+    background: -moz-linear-gradient(top, #444444 0%, #262626 50%, #444444 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#444444), color-stop(50%,#262626), color-stop(100%,#444444));
+    background: -webkit-linear-gradient(top, #444444 0%,#262626 50%,#444444 100%);
+    background: -o-linear-gradient(top, #444444 0%,#262626 50%,#444444 100%);
+    background: -ms-linear-gradient(top, #444444 0%,#262626 50%,#444444 100%);
+    background: linear-gradient(to bottom, #444444 0%,#262626 50%,#444444 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#444444',GradientType=0 );
+}
+
+/*colored*/
+
+.colored .gerakl-countdown-section {
+    font-family: Trebuchet MS;
+}
+.colored .gerakl-countdown-amount {
+    margin: 0 8px;
+}
+
+
+
+.colored .gerakl-countdown-section-years .gerakl-countdown-years span {
+    background: #6a5b8c;
+    background: -moz-linear-gradient(top, #6a5b8c 0%, #6a5b8c 48%, transparent 49%, transparent 51%, #6a5b8c 52%, #6a5b8c 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6a5b8c), color-stop(48%,#6a5b8c), color-stop(49%,transparent), color-stop(51%,transparent), color-stop(52%,#6a5b8c), color-stop(100%,#6a5b8c));
+    background: -webkit-linear-gradient(top, #6a5b8c 0%,#6a5b8c 48%,transparent 49%,transparent 51%,#6a5b8c 52%,#6a5b8c 100%);
+    background: -o-linear-gradient(top, #6a5b8c 0%,#6a5b8c 48%,transparent 49%,transparent 51%,#6a5b8c 52%,#6a5b8c 100%);
+    background: -ms-linear-gradient(top, #6a5b8c 0%,#6a5b8c 48%,transparent 49%,transparent 51%,#6a5b8c 52%,#6a5b8c 100%);
+    background: linear-gradient(to bottom, #6a5b8c 0%,#6a5b8c 48%,transparent 49%,transparent 51%,#6a5b8c 52%,#6a5b8c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a5b8c', endColorstr='#6a5b8c',GradientType=0 );
+    border-radius: 3px;
+    padding: 0 7px;
+    position: relative;
+    margin: 0 4px;
+}
+.colored .gerakl-countdown-section-years .gerakl-countdown-years span:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    right: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.colored .gerakl-countdown-section-years .gerakl-countdown-years span:before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    left: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.colored .gerakl-countdown-section-years .gerakl-abs {
+    background: #6a5b8c;
+    background: -moz-linear-gradient(top, #6a5b8c 0%, #6a5b8c 48%, transparent 49%, transparent 51%, #6a5b8c 52%, #6a5b8c 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6a5b8c), color-stop(48%,#6a5b8c), color-stop(49%,transparent), color-stop(51%,transparent), color-stop(52%,#6a5b8c), color-stop(100%,#6a5b8c));
+    background: -webkit-linear-gradient(top, #6a5b8c 0%,#6a5b8c 48%,transparent 49%,transparent 51%,#6a5b8c 52%,#6a5b8c 100%);
+    background: -o-linear-gradient(top, #6a5b8c 0%,#6a5b8c 48%,transparent 49%,transparent 51%,#6a5b8c 52%,#6a5b8c 100%);
+    background: -ms-linear-gradient(top, #6a5b8c 0%,#6a5b8c 48%,transparent 49%,transparent 51%,#6a5b8c 52%,#6a5b8c 100%);
+    background: linear-gradient(to bottom, #6a5b8c 0%,#6a5b8c 48%,transparent 49%,transparent 51%,#6a5b8c 52%,#6a5b8c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6a5b8c', endColorstr='#6a5b8c',GradientType=0 );
+    border-radius: 3px;
+    padding: 0 7px;
+    margin: 0 4px;
+}
+.colored .gerakl-countdown-section-years .gerakl-abs:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    right: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.colored .gerakl-countdown-section-years .gerakl-abs:before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    left: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+
+.colored .gerakl-countdown-section-months .gerakl-countdown-months span {
+    background: #29B8B3;
+    background: -moz-linear-gradient(top, #29B8B3 0%, #29B8B3 48%, transparent 49%, transparent 51%, #29B8B3 52%, #29B8B3 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#29B8B3), color-stop(48%,#29B8B3), color-stop(49%,transparent), color-stop(51%,transparent), color-stop(52%,#29B8B3), color-stop(100%,#29B8B3));
+    background: -webkit-linear-gradient(top, #29B8B3 0%,#29B8B3 48%,transparent 49%,transparent 51%,#29B8B3 52%,#29B8B3 100%);
+    background: -o-linear-gradient(top, #29B8B3 0%,#29B8B3 48%,transparent 49%,transparent 51%,#29B8B3 52%,#29B8B3 100%);
+    background: -ms-linear-gradient(top, #29B8B3 0%,#29B8B3 48%,transparent 49%,transparent 51%,#29B8B3 52%,#29B8B3 100%);
+    background: linear-gradient(to bottom, #29B8B3 0%,#29B8B3 48%,transparent 49%,transparent 51%,#29B8B3 52%,#29B8B3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29B8B3', endColorstr='#29B8B3',GradientType=0 );
+    border-radius: 3px;
+    padding: 0 7px;
+    position: relative;
+    margin: 0 4px;
+}
+.colored .gerakl-countdown-section-months .gerakl-countdown-months span:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    right: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.colored .gerakl-countdown-section-months .gerakl-countdown-months span:before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    left: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.colored .gerakl-countdown-section-months .gerakl-abs {
+    background: #29B8B3;
+    background: -moz-linear-gradient(top, #29B8B3 0%, #29B8B3 48%, transparent 49%, transparent 51%, #29B8B3 52%, #29B8B3 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#29B8B3), color-stop(48%,#29B8B3), color-stop(49%,transparent), color-stop(51%,transparent), color-stop(52%,#29B8B3), color-stop(100%,#29B8B3));
+    background: -webkit-linear-gradient(top, #29B8B3 0%,#29B8B3 48%,transparent 49%,transparent 51%,#29B8B3 52%,#29B8B3 100%);
+    background: -o-linear-gradient(top, #29B8B3 0%,#29B8B3 48%,transparent 49%,transparent 51%,#29B8B3 52%,#29B8B3 100%);
+    background: -ms-linear-gradient(top, #29B8B3 0%,#29B8B3 48%,transparent 49%,transparent 51%,#29B8B3 52%,#29B8B3 100%);
+    background: linear-gradient(to bottom, #29B8B3 0%,#29B8B3 48%,transparent 49%,transparent 51%,#29B8B3 52%,#29B8B3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29B8B3', endColorstr='#29B8B3',GradientType=0 );
+    border-radius: 3px;
+    padding: 0 7px;
+    margin: 0 4px;
+}
+.colored .gerakl-countdown-section-months .gerakl-abs:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    right: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.colored .gerakl-countdown-section-months .gerakl-abs:before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    left: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+
+
+
+.colored .gerakl-countdown-section-weeks .gerakl-countdown-weeks span {
+    background: #1f7f5c;
+    background: -moz-linear-gradient(top, #1f7f5c 0%, #1f7f5c 48%, transparent 49%, transparent 51%, #1f7f5c 52%, #1f7f5c 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1f7f5c), color-stop(48%,#1f7f5c), color-stop(49%,transparent), color-stop(51%,transparent), color-stop(52%,#1f7f5c), color-stop(100%,#1f7f5c));
+    background: -webkit-linear-gradient(top, #1f7f5c 0%,#1f7f5c 48%,transparent 49%,transparent 51%,#1f7f5c 52%,#1f7f5c 100%);
+    background: -o-linear-gradient(top, #1f7f5c 0%,#1f7f5c 48%,transparent 49%,transparent 51%,#1f7f5c 52%,#1f7f5c 100%);
+    background: -ms-linear-gradient(top, #1f7f5c 0%,#1f7f5c 48%,transparent 49%,transparent 51%,#1f7f5c 52%,#1f7f5c 100%);
+    background: linear-gradient(to bottom, #1f7f5c 0%,#1f7f5c 48%,transparent 49%,transparent 51%,#1f7f5c 52%,#1f7f5c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f7f5c', endColorstr='#1f7f5c',GradientType=0 );
+    border-radius: 3px;
+    padding: 0 7px;
+    position: relative;
+    margin: 0 4px;
+}
+.colored .gerakl-countdown-section-weeks .gerakl-countdown-weeks span:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    right: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.colored .gerakl-countdown-section-weeks .gerakl-countdown-weeks span:before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    left: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.colored .gerakl-countdown-section-weeks .gerakl-abs {
+    background: #1f7f5c;
+    background: -moz-linear-gradient(top, #1f7f5c 0%, #1f7f5c 48%, transparent 49%, transparent 51%, #1f7f5c 52%, #1f7f5c 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1f7f5c), color-stop(48%,#1f7f5c), color-stop(49%,transparent), color-stop(51%,transparent), color-stop(52%,#1f7f5c), color-stop(100%,#1f7f5c));
+    background: -webkit-linear-gradient(top, #1f7f5c 0%,#1f7f5c 48%,transparent 49%,transparent 51%,#1f7f5c 52%,#1f7f5c 100%);
+    background: -o-linear-gradient(top, #1f7f5c 0%,#1f7f5c 48%,transparent 49%,transparent 51%,#1f7f5c 52%,#1f7f5c 100%);
+    background: -ms-linear-gradient(top, #1f7f5c 0%,#1f7f5c 48%,transparent 49%,transparent 51%,#1f7f5c 52%,#1f7f5c 100%);
+    background: linear-gradient(to bottom, #1f7f5c 0%,#1f7f5c 48%,transparent 49%,transparent 51%,#1f7f5c 52%,#1f7f5c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f7f5c', endColorstr='#1f7f5c',GradientType=0 );
+    border-radius: 3px;
+    padding: 0 7px;
+    margin: 0 4px;
+}
+.colored .gerakl-countdown-section-weeks .gerakl-abs:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    right: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.colored .gerakl-countdown-section-weeks .gerakl-abs:before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    left: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+
+
+
+.colored .gerakl-countdown-section-days .gerakl-countdown-days span {
+    background: #2489c5;
+    background: -moz-linear-gradient(top, #2489c5 0%, #2489c5 48%, transparent 49%, transparent 51%, #2489c5 52%, #2489c5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2489c5), color-stop(48%,#2489c5), color-stop(49%,transparent), color-stop(51%,transparent), color-stop(52%,#2489c5), color-stop(100%,#2489c5));
+    background: -webkit-linear-gradient(top, #2489c5 0%,#2489c5 48%,transparent 49%,transparent 51%,#2489c5 52%,#2489c5 100%);
+    background: -o-linear-gradient(top, #2489c5 0%,#2489c5 48%,transparent 49%,transparent 51%,#2489c5 52%,#2489c5 100%);
+    background: -ms-linear-gradient(top, #2489c5 0%,#2489c5 48%,transparent 49%,transparent 51%,#2489c5 52%,#2489c5 100%);
+    background: linear-gradient(to bottom, #2489c5 0%,#2489c5 48%,transparent 49%,transparent 51%,#2489c5 52%,#2489c5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2489c5', endColorstr='#2489c5',GradientType=0 );
+    border-radius: 3px;
+    padding: 0 7px;
+    position: relative;
+    margin: 0 4px;
+}
+.colored .gerakl-countdown-section-days .gerakl-countdown-days span:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    right: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.colored .gerakl-countdown-section-days .gerakl-countdown-days span:before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    left: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.colored .gerakl-countdown-section-days .gerakl-abs {
+    background: #2489c5;
+    background: -moz-linear-gradient(top, #2489c5 0%, #2489c5 48%, transparent 49%, transparent 51%, #2489c5 52%, #2489c5 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2489c5), color-stop(48%,#2489c5), color-stop(49%,transparent), color-stop(51%,transparent), color-stop(52%,#2489c5), color-stop(100%,#2489c5));
+    background: -webkit-linear-gradient(top, #2489c5 0%,#2489c5 48%,transparent 49%,transparent 51%,#2489c5 52%,#2489c5 100%);
+    background: -o-linear-gradient(top, #2489c5 0%,#2489c5 48%,transparent 49%,transparent 51%,#2489c5 52%,#2489c5 100%);
+    background: -ms-linear-gradient(top, #2489c5 0%,#2489c5 48%,transparent 49%,transparent 51%,#2489c5 52%,#2489c5 100%);
+    background: linear-gradient(to bottom, #2489c5 0%,#2489c5 48%,transparent 49%,transparent 51%,#2489c5 52%,#2489c5 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2489c5', endColorstr='#2489c5',GradientType=0 );
+    border-radius: 3px;
+    padding: 0 7px;
+    margin: 0 4px;
+}
+.colored .gerakl-countdown-section-days .gerakl-abs:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    right: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.colored .gerakl-countdown-section-days .gerakl-abs:before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    left: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+
+
+.colored .gerakl-countdown-section-hours .gerakl-countdown-hours span {
+    background: #F28F29;
+    background: -moz-linear-gradient(top, #F28F29 0%, #F28F29 48%, transparent 49%, transparent 51%, #F28F29 52%, #F28F29 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F28F29), color-stop(48%,#F28F29), color-stop(49%,transparent), color-stop(51%,transparent), color-stop(52%,#F28F29), color-stop(100%,#F28F29));
+    background: -webkit-linear-gradient(top, #F28F29 0%,#F28F29 48%,transparent 49%,transparent 51%,#F28F29 52%,#F28F29 100%);
+    background: -o-linear-gradient(top, #F28F29 0%,#F28F29 48%,transparent 49%,transparent 51%,#F28F29 52%,#F28F29 100%);
+    background: -ms-linear-gradient(top, #F28F29 0%,#F28F29 48%,transparent 49%,transparent 51%,#F28F29 52%,#F28F29 100%);
+    background: linear-gradient(to bottom, #F28F29 0%,#F28F29 48%,transparent 49%,transparent 51%,#F28F29 52%,#F28F29 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F28F29', endColorstr='#F28F29',GradientType=0 );
+    border-radius: 3px;
+    padding: 0 7px;
+    position: relative;
+    margin: 0 4px;
+}
+.colored .gerakl-countdown-section-hours .gerakl-countdown-hours span:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    right: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.colored .gerakl-countdown-section-hours .gerakl-countdown-hours span:before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    left: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.colored .gerakl-countdown-section-hours .gerakl-abs {
+    background: #F28F29;
+    background: -moz-linear-gradient(top, #F28F29 0%, #F28F29 48%, transparent 49%, transparent 51%, #F28F29 52%, #F28F29 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F28F29), color-stop(48%,#F28F29), color-stop(49%,transparent), color-stop(51%,transparent), color-stop(52%,#F28F29), color-stop(100%,#F28F29));
+    background: -webkit-linear-gradient(top, #F28F29 0%,#F28F29 48%,transparent 49%,transparent 51%,#F28F29 52%,#F28F29 100%);
+    background: -o-linear-gradient(top, #F28F29 0%,#F28F29 48%,transparent 49%,transparent 51%,#F28F29 52%,#F28F29 100%);
+    background: -ms-linear-gradient(top, #F28F29 0%,#F28F29 48%,transparent 49%,transparent 51%,#F28F29 52%,#F28F29 100%);
+    background: linear-gradient(to bottom, #F28F29 0%,#F28F29 48%,transparent 49%,transparent 51%,#F28F29 52%,#F28F29 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F28F29', endColorstr='#F28F29',GradientType=0 );
+    border-radius: 3px;
+    padding: 0 7px;
+    margin: 0 4px;
+}
+.colored .gerakl-countdown-section-hours .gerakl-abs:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    right: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.colored .gerakl-countdown-section-hours .gerakl-abs:before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    left: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+
+
+
+.colored .gerakl-countdown-section-minutes .gerakl-countdown-minutes span {
+    background: #77BE56;
+    background: -moz-linear-gradient(top, #77BE56 0%, #77BE56 48%, transparent 49%, transparent 51%, #77BE56 52%, #77BE56 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#77BE56), color-stop(48%,#77BE56), color-stop(49%,transparent), color-stop(51%,transparent), color-stop(52%,#77BE56), color-stop(100%,#77BE56));
+    background: -webkit-linear-gradient(top, #77BE56 0%,#77BE56 48%,transparent 49%,transparent 51%,#77BE56 52%,#77BE56 100%);
+    background: -o-linear-gradient(top, #77BE56 0%,#77BE56 48%,transparent 49%,transparent 51%,#77BE56 52%,#77BE56 100%);
+    background: -ms-linear-gradient(top, #77BE56 0%,#77BE56 48%,transparent 49%,transparent 51%,#77BE56 52%,#77BE56 100%);
+    background: linear-gradient(to bottom, #77BE56 0%,#77BE56 48%,transparent 49%,transparent 51%,#77BE56 52%,#77BE56 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77BE56', endColorstr='#77BE56',GradientType=0 );
+    border-radius: 3px;
+    padding: 0 7px;
+    position: relative;
+    margin: 0 4px;
+}
+.colored .gerakl-countdown-section-minutes .gerakl-countdown-minutes span:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    right: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.colored .gerakl-countdown-section-minutes .gerakl-countdown-minutes span:before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    left: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.colored .gerakl-countdown-section-minutes .gerakl-abs {
+    background: #77BE56;
+    background: -moz-linear-gradient(top, #77BE56 0%, #77BE56 48%, transparent 49%, transparent 51%, #77BE56 52%, #77BE56 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#77BE56), color-stop(48%,#77BE56), color-stop(49%,transparent), color-stop(51%,transparent), color-stop(52%,#77BE56), color-stop(100%,#77BE56));
+    background: -webkit-linear-gradient(top, #77BE56 0%,#77BE56 48%,transparent 49%,transparent 51%,#77BE56 52%,#77BE56 100%);
+    background: -o-linear-gradient(top, #77BE56 0%,#77BE56 48%,transparent 49%,transparent 51%,#77BE56 52%,#77BE56 100%);
+    background: -ms-linear-gradient(top, #77BE56 0%,#77BE56 48%,transparent 49%,transparent 51%,#77BE56 52%,#77BE56 100%);
+    background: linear-gradient(to bottom, #77BE56 0%,#77BE56 48%,transparent 49%,transparent 51%,#77BE56 52%,#77BE56 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77BE56', endColorstr='#77BE56',GradientType=0 );
+    border-radius: 3px;
+    padding: 0 7px;
+    margin: 0 4px;
+}
+.colored .gerakl-countdown-section-minutes .gerakl-abs:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    right: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.colored .gerakl-countdown-section-minutes .gerakl-abs:before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    left: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+
+
+
+
+.colored .gerakl-countdown-section-seconds .gerakl-countdown-seconds span {
+    background: #be555f;
+    background: -moz-linear-gradient(top, #be555f 0%, #be555f 48%, transparent 49%, transparent 51%, #be555f 52%, #be555f 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#be555f), color-stop(48%,#be555f), color-stop(49%,transparent), color-stop(51%,transparent), color-stop(52%,#be555f), color-stop(100%,#be555f));
+    background: -webkit-linear-gradient(top, #be555f 0%,#be555f 48%,transparent 49%,transparent 51%,#be555f 52%,#be555f 100%);
+    background: -o-linear-gradient(top, #be555f 0%,#be555f 48%,transparent 49%,transparent 51%,#be555f 52%,#be555f 100%);
+    background: -ms-linear-gradient(top, #be555f 0%,#be555f 48%,transparent 49%,transparent 51%,#be555f 52%,#be555f 100%);
+    background: linear-gradient(to bottom, #be555f 0%,#be555f 48%,transparent 49%,transparent 51%,#be555f 52%,#be555f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#be555f', endColorstr='#be555f',GradientType=0 );
+    border-radius: 3px;
+    padding: 0 7px;
+    position: relative;
+    margin: 0 4px;
+}
+.colored .gerakl-countdown-section-seconds .gerakl-countdown-seconds span:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    right: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.colored .gerakl-countdown-section-seconds .gerakl-countdown-seconds span:before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    left: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.colored .gerakl-countdown-section-seconds .gerakl-abs {
+    background: #be555f;
+    background: -moz-linear-gradient(top, #be555f 0%, #be555f 48%, transparent 49%, transparent 51%, #be555f 52%, #be555f 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#be555f), color-stop(48%,#be555f), color-stop(49%,transparent), color-stop(51%,transparent), color-stop(52%,#be555f), color-stop(100%,#be555f));
+    background: -webkit-linear-gradient(top, #be555f 0%,#be555f 48%,transparent 49%,transparent 51%,#be555f 52%,#be555f 100%);
+    background: -o-linear-gradient(top, #be555f 0%,#be555f 48%,transparent 49%,transparent 51%,#be555f 52%,#be555f 100%);
+    background: -ms-linear-gradient(top, #be555f 0%,#be555f 48%,transparent 49%,transparent 51%,#be555f 52%,#be555f 100%);
+    background: linear-gradient(to bottom, #be555f 0%,#be555f 48%,transparent 49%,transparent 51%,#be555f 52%,#be555f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#be555f', endColorstr='#be555f',GradientType=0 );
+    border-radius: 3px;
+    padding: 0 7px;
+    margin: 0 4px;
+}
+.colored .gerakl-countdown-section-seconds .gerakl-abs:after {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    right: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+.colored .gerakl-countdown-section-seconds .gerakl-abs:before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    left: -3px;
+    top: 50%;
+    margin-top: -5px;
+    border-radius: 5px;
+}
+
+
+.gerakl-animated {
+    -webkit-animation-duration: 0.7s;
+    animation-duration: 0.7s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+
+@-webkit-keyframes gerakl-bounceOut {
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9);
+        transform: scale3d(.9, .9, .9);
+    }
+
+    50%, 55% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+@keyframes gerakl-bounceOut {
+    20% {
+        -webkit-transform: scale3d(.9, .9, .9);
+        transform: scale3d(.9, .9, .9);
+    }
+
+    50%, 55% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.gerakl-bounceOut {
+    -webkit-animation-name: gerakl-bounceOut;
+    animation-name: gerakl-bounceOut;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+}
+
+
+@-webkit-keyframes gerakl-fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes gerakl-fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.gerakl-fadeOut {
+    -webkit-animation-name: gerakl-fadeOut;
+    animation-name: gerakl-fadeOut;
+}
+
+
+@-webkit-keyframes gerakl-fadeOutDown {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+@keyframes gerakl-fadeOutDown {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+.gerakl-fadeOutDown {
+    -webkit-animation-name: gerakl-fadeOutDown;
+    animation-name: gerakl-fadeOutDown;
+}
+
+
+
+@-webkit-keyframes gerakl-fadeOutUp {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+@keyframes gerakl-fadeOutUp {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+.gerakl-fadeOutUp {
+    -webkit-animation-name: gerakl-fadeOutUp;
+    animation-name: gerakl-fadeOutUp;
+}
+
+
+@-webkit-keyframes gerakl-flipInX {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes gerakl-flipInX {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.gerakl-flipInX {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: gerakl-flipInX;
+    animation-name: gerakl-flipInX;
+}
+
+
+@-webkit-keyframes gerakl-flipInY {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+@keyframes gerakl-flipInY {
+    0% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
+    }
+
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+}
+
+.gerakl-flipInY {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: gerakl-flipInY;
+    animation-name: gerakl-flipInY;
+}
+
+
+@-webkit-keyframes gerakl-zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes gerakl-zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.gerakl-zoomIn {
+    -webkit-animation-name: gerakl-zoomIn;
+    animation-name: gerakl-zoomIn;
+}
+
+
+@-webkit-keyframes gerakl-zoomOut {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes gerakl-zoomOut {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.gerakl-zoomOut {
+    -webkit-animation-name: gerakl-zoomOut;
+    animation-name: gerakl-zoomOut;
+}
+
+
+
+
+
+
+
+/*style3*/
+
+.style3 .gerakl-countdown-section {
+    font-family: Trebuchet MS;
+}
+.style3 .gerakl-countdown-amount {
+    margin: 0 9px;
+}
+.style3 .gerakl-countdown-amount span {
+    background: #f9f9f9;
+    background: -moz-linear-gradient(top,  #f9f9f9 0%, #A0A0A0 49%, #ffffff 50%, #ffffff 50%, #A0A0A0 51%, #ececec 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(49%,#A0A0A0), color-stop(49%,#ffffff), color-stop(50%,#ffffff), color-stop(51%,#A0A0A0), color-stop(100%,#ececec));
+    background: -webkit-linear-gradient(top,  #f9f9f9 0%, #A0A0A0 49%,#ffffff 50%,#ffffff 50%,#A0A0A0 51%,#ececec 100%);
+    background: -o-linear-gradient(top,  #f9f9f9 0%,#A0A0A0 49%,#ffffff 50%,#ffffff 50%,#A0A0A0 51%,#ececec 100%);
+    background: -ms-linear-gradient(top,  #f9f9f9 0%,#A0A0A0 49%,#ffffff 50%,#ffffff 50%,#A0A0A0 51%,#ececec 100%);
+    background: linear-gradient(to bottom,  #f9f9f9 0%,#A0A0A0 49%,#ffffff 50%,#ffffff 50%,#A0A0A0 51%,#ececec 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#ececec',GradientType=0 );
+    border: 1px solid #000;
+    padding: 0 8px;
+    margin: 1px;
+    border-radius: 3px;
+    box-shadow: inset 0 1px #5e6163;
+}
+.style3 .gerakl-countdown-label {
+
+}
+.style3 .gerakl-abs {
+    background: #f9f9f9;
+    background: -moz-linear-gradient(top,  #f9f9f9 0%, #A0A0A0 49%, #ffffff 50%, #ffffff 50%, #A0A0A0 51%, #ececec 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(49%,#A0A0A0), color-stop(49%,#ffffff), color-stop(50%,#ffffff), color-stop(51%,#A0A0A0), color-stop(100%,#ececec));
+    background: -webkit-linear-gradient(top,  #f9f9f9 0%, #A0A0A0 49%,#ffffff 50%,#ffffff 50%,#A0A0A0 51%,#ececec 100%);
+    background: -o-linear-gradient(top,  #f9f9f9 0%,#A0A0A0 49%,#ffffff 50%,#ffffff 50%,#A0A0A0 51%,#ececec 100%);
+    background: -ms-linear-gradient(top,  #f9f9f9 0%,#A0A0A0 49%,#ffffff 50%,#ffffff 50%,#A0A0A0 51%,#ececec 100%);
+    background: linear-gradient(to bottom,  #f9f9f9 0%,#A0A0A0 49%,#ffffff 50%,#ffffff 50%,#A0A0A0 51%,#ececec 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#ececec',GradientType=0 );
+    border: 1px solid #000;
+    padding: 0 8px;
+    margin: 1px;
+    border-radius: 3px;
+    box-shadow: inset 0 1px #5e6163;
+}
+
+
+
+/*style4*/
+
+.style4 .gerakl-countdown-section {
+    font-family: Trebuchet MS;
+}
+.style4 .gerakl-countdown-amount {
+    background: #000;
+    border-radius: 5px;
+    margin: 0 10px;
+    box-shadow: 0 1px #5F5C5C;
+    padding: 2px;
+}
+.style4 .gerakl-countdown-amount span:last-child {
+    margin-right: 0px;
+}
+.style4 .gerakl-countdown-amount span {
+    background: #ededed;
+    background: -moz-linear-gradient(top,  #ededed 0%, #ededed 49%, #ffffff 49%, #ffffff 50%, #ededed 50%, #ededed 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(49%,#ededed), color-stop(49%,#ffffff), color-stop(50%,#ffffff), color-stop(50%,#ededed), color-stop(100%,#ededed));
+    background: -webkit-linear-gradient(top,  #ededed 0%,#ededed 49%,#ffffff 49%,#ffffff 50%,#ededed 50%,#ededed 100%);
+    background: -o-linear-gradient(top,  #ededed 0%,#ededed 49%,#ffffff 49%,#ffffff 50%,#ededed 50%,#ededed 100%);
+    background: -ms-linear-gradient(top,  #ededed 0%,#ededed 49%,#ffffff 49%,#ffffff 50%,#ededed 50%,#ededed 100%);
+    background: linear-gradient(to bottom,  #ededed 0%,#ededed 49%,#ffffff 49%,#ffffff 50%,#ededed 50%,#ededed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ededed',GradientType=0 );
+    border-radius: 3px;
+    margin-right: 2px;
+    padding: 0 8px;
+    box-shadow: inset 0 1px #fff;
+    position: relative;
+}
+.style4 .gerakl-countdown-amount span:after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    top: 50%;
+    margin-top: -10px;
+    right: 0;
+    box-shadow: 0 0 0 2px #000;
+    border-radius: 0px;
+    background: #ffffff;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #ededed 49%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(49%,#ededed), color-stop(100%,#ffffff));
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#ededed 49%,#ffffff 100%);
+    background: -o-linear-gradient(top,  #ffffff 0%,#ededed 49%,#ffffff 100%);
+    background: -ms-linear-gradient(top,  #ffffff 0%,#ededed 49%,#ffffff 100%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#ededed 49%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+.style4 .gerakl-countdown-amount span:before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    top: 50%;
+    margin-top: -10px;
+    left: 0;
+    box-shadow: 0 0 0 2px #000;
+    border-radius: 0px;
+    background: #ffffff;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #ededed 49%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(49%,#ededed), color-stop(100%,#ffffff));
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#ededed 49%,#ffffff 100%);
+    background: -o-linear-gradient(top,  #ffffff 0%,#ededed 49%,#ffffff 100%);
+    background: -ms-linear-gradient(top,  #ffffff 0%,#ededed 49%,#ffffff 100%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#ededed 49%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+.style4 .gerakl-countdown-label {
+
+}
+.style4 .gerakl-abs {
+    background: #ededed;
+    background: -moz-linear-gradient(top,  #ededed 0%, #ededed 49%, #ffffff 49%, #ffffff 50%, #ededed 50%, #ededed 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ededed), color-stop(49%,#ededed), color-stop(49%,#ffffff), color-stop(50%,#ffffff), color-stop(50%,#ededed), color-stop(100%,#ededed));
+    background: -webkit-linear-gradient(top,  #ededed 0%,#ededed 49%,#ffffff 49%,#ffffff 50%,#ededed 50%,#ededed 100%);
+    background: -o-linear-gradient(top,  #ededed 0%,#ededed 49%,#ffffff 49%,#ffffff 50%,#ededed 50%,#ededed 100%);
+    background: -ms-linear-gradient(top,  #ededed 0%,#ededed 49%,#ffffff 49%,#ffffff 50%,#ededed 50%,#ededed 100%);
+    background: linear-gradient(to bottom,  #ededed 0%,#ededed 49%,#ffffff 49%,#ffffff 50%,#ededed 50%,#ededed 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ededed',GradientType=0 );
+    border-radius: 3px;
+    margin-right: 2px;
+    padding: 0 8px;
+    box-shadow: inset 0 1px #fff;
+}
+
+.style4 .gerakl-abs:after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    top: 50%;
+    margin-top: -10px;
+    right: 0;
+    box-shadow: 0 0 0 2px #000;
+    border-radius: 0px;
+    background: #ffffff;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #ededed 49%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(49%,#ededed), color-stop(100%,#ffffff));
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#ededed 49%,#ffffff 100%);
+    background: -o-linear-gradient(top,  #ffffff 0%,#ededed 49%,#ffffff 100%);
+    background: -ms-linear-gradient(top,  #ffffff 0%,#ededed 49%,#ffffff 100%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#ededed 49%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+.style4 .gerakl-abs:before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 4px;
+    top: 50%;
+    margin-top: -10px;
+    left: 0;
+    box-shadow: 0 0 0 2px #000;
+    border-radius: 0px;
+    background: #ffffff;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #ededed 49%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(49%,#ededed), color-stop(100%,#ffffff));
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#ededed 49%,#ffffff 100%);
+    background: -o-linear-gradient(top,  #ffffff 0%,#ededed 49%,#ffffff 100%);
+    background: -ms-linear-gradient(top,  #ffffff 0%,#ededed 49%,#ffffff 100%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#ededed 49%,#ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+}
+
+
+/*style5-white*/
+
+.style5-white .gerakl-countdown-amount {
+    margin: 0 9px;
+    border: 3px solid #fff;
+    padding: 17px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #000, 0 0 0 5px #fff;
+}
+/*style5-black*/
+
+.style5-black .gerakl-countdown-amount {
+    margin: 0 9px;
+    border: 3px solid #000;
+    padding: 17px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #000;
+}

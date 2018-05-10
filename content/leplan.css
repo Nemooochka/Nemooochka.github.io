@@ -1,0 +1,63 @@
+.leplan h3 {
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(204, 153, 51);
+  font-weight: bold;
+  line-height: 1.2;
+  padding-bottom: 15px;
+}
+
+.leplan p {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(133, 134, 134);
+  line-height: 2.143;
+  text-align: left;
+}
+    
+.leplan li {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(12, 82, 93);
+  font-weight: bold;
+  font-style: italic;
+  line-height: 2.143;
+  text-align: left;
+}
+
+.leplan p.special-note {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(12, 82, 93);
+}
+
+.leplan p.pointer-text {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgb(12, 82, 93);
+  font-weight: bold;    
+}
+
+.leplan .row-fluid:nth-child(1), .row-fluid:nth-child(2), .row-fluid:nth-child(3) {
+  padding-bottom: 1px;
+  padding-top: 2px;
+}
+
+.hover-image {
+  opacity: 1; 
+  filter: alpha(opacity=100);
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.hover-image:hover {
+  opacity: 0.5; 
+  filter: alpha(opacity=50);
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.sidebar-menu ul li {
+    font-weight: 500;
+}
+  
