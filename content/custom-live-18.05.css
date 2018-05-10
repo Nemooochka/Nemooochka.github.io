@@ -6382,7 +6382,7 @@ p.left-arrow:before {
 
 .home .ceo-quote {
     position: relative;
-    padding: 160px 0;
+    padding: 200px 0;
     background-image: url("../images/home-freedom.jpg");
 }
 
@@ -6537,7 +6537,7 @@ p.left-arrow:before {
 }
 
 .home .become-entrepreneur {
-    padding: 95px 0;
+    padding: 150px 0;
     background-image: url(../images/home-house.jpg);
 }
 
@@ -6624,6 +6624,20 @@ p.left-arrow:before {
     z-index: 3;
 }
 
+@media all and (max-width: 1300px) {
+    .home .ceo-quote {
+        padding: 160px 0;
+    }
+
+    .home .become-entrepreneur {
+        padding: 95px 0;
+    }
+
+    .home .baby-cares {
+        padding: 50px 0;
+    }
+}
+
 @media all and (max-width: 996px) {
     .home .entrepreneur-benefits.span6 {
         width: 55%;
@@ -6633,10 +6647,6 @@ p.left-arrow:before {
 
     .home .entrepreneur-benefits ul {
         margin-left: 25px;
-    }
-
-    .home .baby-cares {
-        padding: 50px 0;
     }
 
     .home .baby-cares .cares-block {
