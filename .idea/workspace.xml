@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f867fb6d-7864-463c-ad4c-d9d275d69a27" name="Default" comment="12">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/home-top-banner.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/custom-live-18.05.css" afterPath="$PROJECT_DIR$/content/custom-live-18.05.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.htm" afterPath="$PROJECT_DIR$/index.htm" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +14,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.htm" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.htm" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="303" column="37" lean-forward="true" selection-start-line="303" selection-start-column="37" selection-end-line="303" selection-end-column="37" />
+            <state relative-caret-position="351">
+              <caret line="2476" column="58" lean-forward="true" selection-start-line="2476" selection-start-column="58" selection-end-line="2476" selection-end-column="58" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -29,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom-live-18.05.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="custom-live-18.05.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/content/custom-live-18.05.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="7342" column="0" lean-forward="true" selection-start-line="7342" selection-start-column="0" selection-end-line="7342" selection-end-column="0" />
+            <state relative-caret-position="130">
+              <caret line="7327" column="21" lean-forward="true" selection-start-line="7327" selection-start-column="21" selection-end-line="7327" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -48,6 +45,8 @@
       <find>top-banner</find>
       <find>#slider</find>
       <find>white</find>
+      <find>.grey-block.top</find>
+      <find>grey-block</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -56,8 +55,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.htm" />
         <option value="$PROJECT_DIR$/content/custom-live-18.05.css" />
+        <option value="$PROJECT_DIR$/index.htm" />
       </list>
     </option>
   </component>
@@ -223,12 +222,12 @@
       <workItem from="1526045968697" duration="14000" />
       <workItem from="1526643822072" duration="275000" />
       <workItem from="1526712946585" duration="17000" />
-      <workItem from="1526985316845" duration="1704000" />
+      <workItem from="1526985316845" duration="1887000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5399000" />
+    <option name="totallyTimeSpent" value="5582000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="713" extended-state="6" />
@@ -328,21 +327,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.htm">
+    <entry file="file://$PROJECT_DIR$/content/custom-live-18.05.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="303" column="37" lean-forward="true" selection-start-line="303" selection-start-column="37" selection-end-line="303" selection-end-column="37" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="130">
+          <caret line="7327" column="21" lean-forward="true" selection-start-line="7327" selection-start-column="21" selection-end-line="7327" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/content/custom-live-18.05.css">
+    <entry file="file://$PROJECT_DIR$/index.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="7342" column="0" lean-forward="true" selection-start-line="7342" selection-start-column="0" selection-end-line="7342" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="351">
+          <caret line="2476" column="58" lean-forward="true" selection-start-line="2476" selection-start-column="58" selection-end-line="2476" selection-end-column="58" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
