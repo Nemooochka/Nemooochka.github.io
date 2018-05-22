@@ -7,36 +7,6 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
-@font-face {
-    font-family: 'Montserrat-ExtraBold';
-    src: url('fonts/montserrat-extrabold-webfont.woff2') format('woff2'),
-    url('fonts/montserrat-extrabold-webfont.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Montserrat-Light';
-    src: url('fonts/montserrat-light-webfont.woff2') format('woff2'),
-    url('fonts/montserrat-light-webfont.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Montserrat-Black';
-    src: url('fonts/montserrat-black-webfont.woff2') format('woff2'),
-    url('fonts/montserrat-black-webfont.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Montserrat-SemiBold';
-    src: url('fonts/montserrat-semibold-webfont.woff2') format('woff2'),
-    url('fonts/montserrat-semibold-webfont.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Marguerite';
-    src: url('../content/fonts/marguerite-webfont.woff2') format('woff2'),
-    url('../content/fonts/marguerite-webfont.woff') format('woff');
-}
-
 /*------------------------------- Generl Styles -------------------------------*/
 .header_banner {
     padding: 8px 15px;
@@ -3436,16 +3406,14 @@ footer .rewards h6 {
     font-size: 18px;
 }
 
-.home .white-block h2 {
-    font-size: 20px;
+.home .grey-block h2 {
+    font-size: 23px;
     font-weight: 400;
+    letter-spacing: 0;
 }
 
-.home .white-block h2 b {
-    display: inline-block;
-    padding-top: 5px;
+.home .grey-block h2 b {
     color: #03869b;
-    font-size: 28px;
 }
 
 .home .video-wrap {
@@ -6315,7 +6283,8 @@ p.left-arrow:before {
     font-family: 'Montserrat', sans-serif;
 }
 
-#slider {
+#slider,
+.top-banner {
     position: relative;
     top: -54px;
 }
@@ -6333,8 +6302,42 @@ p.left-arrow:before {
     text-align: center;
 }
 
+.about-mwr .orange-line {
+    margin: 15px auto;
+}
+
 .about-mwr .orange-line + p {
-    font-size: 15px;
+    color: #777;
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 300;
+}
+
+.events {
+    padding: 120px 0 100px;
+    background: url(../images/events.jpg) no-repeat center top;
+    background-size: cover;
+    text-align: center;
+}
+
+.events h3 {
+    color: #165660;
+    font-size: 43px;
+    font-weight: 400;
+    line-height: 47px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.events h3 b {
+    color: #fff;
+    font-size: 65px;
+    letter-spacing: 2px;
+}
+
+.events .blue-line {
+    width: 100px;
+    margin: 40px auto;
 }
 
 .info-block {
@@ -6349,7 +6352,7 @@ p.left-arrow:before {
 .ess-app h2 {
     margin-top: 0;
     font-size: 24px;
-    line-height: 1.2;
+    line-height: 1;
     font-weight: 300;
     text-align: center;
     text-transform: uppercase;
@@ -6753,7 +6756,8 @@ p.left-arrow:before {
     font-weight: 300;
 }
 
-.orange-line {
+.orange-line,
+.blue-line {
     width: 50%;
     height: 3px;
     margin: 20px auto;
@@ -6763,6 +6767,10 @@ p.left-arrow:before {
 .orange-line + p {
     font-weight: 300;
     text-align: justify;
+}
+
+.blue-line {
+    background: #165660;
 }
 
 .management_block {
@@ -6880,7 +6888,8 @@ p.left-arrow:before {
 .home .btn_main,
 .membership .btn_main,
 .opportunity .btn_main,
-.ess-app .btn_main {
+.ess-app .btn_main,
+.management .btn_main {
     padding: 8px 25px;
     background: #ffc600;
     color: #fff;
@@ -6936,7 +6945,8 @@ p.left-arrow:before {
 .helping-kids .btn_main:hover,
 .home .btn_main:hover,
 .membership .btn_main:hover,
-.opportunity .btn_main:hover {
+.opportunity .btn_main:hover,
+.management .btn_main:hover {
     color: #fff;
     opacity: 0.7;
 }
@@ -6954,10 +6964,15 @@ p.left-arrow:before {
     opacity: 1;
 }
 
-#slider .slick-slide {
+#slider .slick-slide,
+.top-banner {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
+}
+
+.home .top-banner {
+    background-image: url("../images/home-top-banner.jpg");
 }
 
 .company-slider .slick-slide:first-of-type {
@@ -7313,7 +7328,7 @@ p.left-arrow:before {
     background: #fff;
 }
 
-div:not(.home) .grey-block.top {
+.grey-block.top {
     margin-top: -54px;
 }
 
@@ -7322,7 +7337,7 @@ div:not(.home) .grey-block.top {
 }
 
 .grey-block h2,
-.white-block h2{
+.white-block h2 {
     margin-bottom: 0;
 }
 

@@ -282,45 +282,26 @@
 <div class="home">
     <input type="hidden" value="False" id="hideOpportunityVal">
 
-    <div class="clearfix">
-        <div class="video-wrap" style="height: 840px;">
-            <video preload="auto" class="videot" id="videot" height="100%" playsinline="" autoplay="" muted="" loop="">
-                <source src="video/video01.mp4" type="video/mp4">
-                <source src="content/video01.webm" type="video/webm">
-                <source src="content/video01.ogg" type="video/ogg">
-                <object type="application/x-shockwave-flash" data="flash-player.swf?videoUrl=video/video01.mp4"
-                        height="1080">
-                    <param name="movie" value="flash-player.swf?videoUrl=video/video01.mp4">
-                    <param name="wmode" value="transparent">
-                    <param name="allowfullscreen" value="true">
-                    <param name="autoplay" value="false">
-                    <param name="loop" value="false">
-                    <param name="flashvars"
-                           value="controlbar=false&amp;file=flash-player.swf?videoUrl=video/video01.mp4">
-                </object>
-            </video>
-            <div class="wrap_slide_text">
-                <div class="inner">
-                    <h1>Experience
-                        <br>
-                        <span>Life</span>
-                    </h1>
-                </div>
+    <div class="top-banner">
+        <img class="banner_img" src="../images/company-slider3.jpg" alt="" style="height: 608px;">
+        <div class="wrap_slide_text">
+            <div class="inner">
+                <h1>Experience
+                    <br>
+                    <span>Life</span>
+                </h1>
             </div>
         </div>
     </div>
-    <div class="white-block top">
+    <div class="grey-block top">
         <div class="inner">
             <h2>
                 MWR Life Provides a global platform for individuals tocreate the lifestyle of their dreams, travel the
-                world and <br>
-                <b>
-                    Make Wishes Real
-                </b>
+                world and <b>Make Wishes Real</b>
             </h2>
         </div>
     </div>
-    <div class="life-exp info-block dark-top">
+    <div class="life-exp info-block">
         <div class="inner">
             <h2>
                 Start Living Your Dream Lifestyle<br>
@@ -2492,7 +2473,7 @@
 
         if ($(window).width() > 1024) {
             var lifestyleConsulant = $('.lifestyle-consultant');
-            var video_height = Math.min(window.innerHeight, document.body.clientHeight) - top_header_height - $('.white-block').outerHeight();
+            var video_height = Math.min(window.innerHeight, document.body.clientHeight) - top_header_height - $('.grey-block').outerHeight();
             $('.video-wrap').css('height', video_height);
         }
 
