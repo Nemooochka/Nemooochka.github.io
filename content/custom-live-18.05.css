@@ -6975,6 +6975,18 @@ p.left-arrow:before {
     background-image: url("../images/home-top-banner.jpg");
 }
 
+.management .top-banner {
+    background-image: url("../images/company-top-banner.jpg");
+}
+
+.membership .top-banner {
+    background-image: url("../images/membership-top-banner.jpg");
+}
+
+.opportunity .top-banner {
+    background-image: url("../images/opportunity-top-banner.jpg");
+}
+
 .company-slider .slick-slide:first-of-type {
     background-image: url("../images/company-slider1.jpg");
 }
@@ -7064,9 +7076,10 @@ p.left-arrow:before {
     color: #fff;
     font-size: 43px;
     line-height: 1;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     text-align: right;
+    letter-spacing: 2px;
 }
 
 .wrap_slide_text h1:before {
@@ -7080,7 +7093,7 @@ p.left-arrow:before {
     background-image: -moz-linear-gradient( 180deg, rgb(177,224,87) 0%, rgba(177,224,87,0) 100%);
     background-image: -webkit-linear-gradient( 180deg, rgb(177,224,87) 0%, rgba(177,224,87,0) 100%);
     background-image: -ms-linear-gradient( 180deg, rgb(177,224,87) 0%, rgba(177,224,87,0) 100%);
-    opacity: 0.5;
+    opacity: 0.6;
     z-index: 0;
 }
 
@@ -7093,7 +7106,7 @@ p.left-arrow:before {
     right: 0;
     width: 100%;
     background: #10A0B5;
-    opacity: 0.6;
+    opacity: 0.7;
     z-index: -1;
 }
 
@@ -7104,10 +7117,14 @@ p.left-arrow:before {
 
 .wrap_slide_text h1 span {
     color: #094b51;
-    font-size: 150px;
+    font-size: 3.5em;
     font-weight: 200;
-    line-height: 130px;
-    letter-spacing: 5px;
+    line-height: 0.9;
+    letter-spacing: 2px;
+}
+
+.wrap_slide_text h1 span.small {
+    font-size: 2.1em;
 }
 
 .we-care {
@@ -8152,6 +8169,10 @@ p.left-arrow:before {
 
 @media (max-width: 979px) {
 
+    #slider, .top-banner {
+        top: 0;
+    }
+
     #navLayout.navbar {
         background-color: #000;
     }
@@ -8242,10 +8263,6 @@ p.left-arrow:before {
     .do-3-things .row-fluid .span6:last-of-type img,
     .how-it-works .block .span6 img {
         width: 100%;
-    }
-
-    #slider {
-        top: 0;
     }
 
     div:not(.home) .grey-block.top  {
@@ -8537,6 +8554,7 @@ p.left-arrow:before {
     }
 
     .wrap_slide_text h1 {
+        padding: 30px;
         font-size: 23px;
     }
 
@@ -8800,6 +8818,7 @@ p.left-arrow:before {
     }
 
     .wrap_slide_text h1 {
+        padding: 20px;
         font-size: 15px;
     }
 
@@ -8847,6 +8866,10 @@ p.left-arrow:before {
 }
 
 @media all and (max-width: 375px) {
+
+    .wrap_slide_text h1 {
+        font-size: 13px;
+    }
 
     .start_now {
         right: 70px;
