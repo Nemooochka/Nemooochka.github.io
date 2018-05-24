@@ -6352,7 +6352,7 @@ p.left-arrow:before {
 .ess-app h2 {
     margin-top: 0;
     font-size: 24px;
-    line-height: 1;
+    line-height: 1.2;
     font-weight: 300;
     text-align: center;
     text-transform: uppercase;
@@ -7011,28 +7011,20 @@ p.left-arrow:before {
     background-image: url("../images/cares-slider3.jpg");
 }
 
-.home-slider .slick-slide:first-of-type {
-    background-image: url("../images/home-slider1.jpg");
-}
-
-.home-slider .slick-slide:nth-of-type(2) {
-    background-image: url("../images/home-slider3.jpg");
-}
-
-.home-slider .slick-slide:nth-of-type(3) {
-    background-image: url("../images/home-slider5.jpg");
-}
-
 .membership-slider .slick-slide:first-of-type {
     background-image: url("../images/membership-slider1.jpg");
 }
 
 .membership-slider .slick-slide:nth-of-type(2) {
-    background-image: url("../images/membership-slider4.jpg");
+    background-image: url("../images/membership-slider2.jpg");
 }
 
 .membership-slider .slick-slide:nth-of-type(3) {
-    background-image: url("../images/membership-slider5.jpg");
+    background-image: url("../images/membership-slider3.jpg");
+}
+
+.membership-slider .slick-slide:nth-of-type(4) {
+    background-image: url("../images/membership-slider4.jpg");
 }
 
 .opportunity-slider .slick-slide:first-of-type {
@@ -7045,6 +7037,10 @@ p.left-arrow:before {
 
 .opportunity-slider .slick-slide:nth-of-type(3) {
     background-image: url("../images/opportunity-slider3.jpg");
+}
+
+.opportunity-slider .slick-slide:nth-of-type(4) {
+    background-image: url("../images/opportunity-slider4.jpg");
 }
 
 .ess-slider .slick-slide:first-of-type {
@@ -8265,7 +8261,7 @@ p.left-arrow:before {
         width: 100%;
     }
 
-    div:not(.home) .grey-block.top  {
+    .grey-block.top  {
         margin-top: 0;
     }
 
@@ -8285,8 +8281,7 @@ p.left-arrow:before {
         display: none;
     }
 
-    .opportunity .grey-title,
-    .grey-block.top {
+    .opportunity .grey-title {
         margin-top: 0;
     }
 

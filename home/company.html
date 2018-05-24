@@ -272,17 +272,88 @@
 
 <div class="management">
     <input type="hidden" value="False" id="hideOpportunityVal">
-    <div class="top-banner">
-        <img class="banner_img" src="../images/company-top-banner.jpg" alt="">
-        <div class="wrap_slide_text">
-            <div class="inner">
-                <h1>Experience
-                    <br>
-                    <span class="small">Excellence</span>
-                </h1>
+    <div id="slider" class="company-slider">
+        <div>
+            <img class="banner_img" src="../images/company-slider1.jpg" alt="" style="height: 627px;">
+            <div class="wrap_slide_text">
+                <div class="inner">
+                    <h1>Experience
+                        <br>
+                        <span class="small">Excellence</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img class="banner_img" src="../images/company-slider2.jpg" alt="" style="height: 627px;">
+            <div class="wrap_slide_text">
+                <div class="inner">
+                    <h1>Experience
+                        <br>
+                        <span class="small">Excellence</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img class="banner_img" src="../images/company-slider3.jpg" alt="" style="height: 627px;">
+            <div class="wrap_slide_text">
+                <div class="inner">
+                    <h1>Experience
+                        <br>
+                        <span class="small">Excellence</span>
+                    </h1>
+                </div>
             </div>
         </div>
     </div>
+    <!--<div id="slider" class="company-slider slick-initialized slick-slider">-->
+        <!--<div aria-live="polite" class="slick-list draggable">-->
+            <!--<div class="slick-track" role="listbox" style="opacity: 1; width: 5715px;">-->
+                <!--<div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false"-->
+                     <!--tabindex="-1" role="option" aria-describedby="slick-slide00"-->
+                     <!--style="width: 1905px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">-->
+                    <!--<img class="banner_img" src="../images/company-slider1.jpg" alt="" style="height: 627px;">-->
+                    <!--<div class="wrap_slide_text">-->
+                        <!--<div class="inner">-->
+                            <!--<h1>Experience-->
+                                <!--<br>-->
+                                <!--<span class="small">Excellence</span>-->
+                            <!--</h1>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="option"-->
+                     <!--aria-describedby="slick-slide01"-->
+                     <!--style="width: 1905px; position: relative; left: -1905px; top: 0px; z-index: 998; opacity: 0; transition: opacity 600ms linear;">-->
+                    <!--<img class="banner_img" src="../images/company-slider2.jpg" alt="" style="height: 627px;">-->
+                    <!--<div class="wrap_slide_text">-->
+                        <!--<div class="inner">-->
+                            <!--<h1>Experience-->
+                                <!--<br>-->
+                                <!--<span class="small">Excellence</span>-->
+                            <!--</h1>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1" role="option"-->
+                     <!--aria-describedby="slick-slide02"-->
+                     <!--style="width: 1905px; position: relative; left: -3810px; top: 0px; z-index: 998; opacity: 0; transition: opacity 600ms linear;">-->
+                    <!--<img class="banner_img" src="../images/company-slider3.jpg" alt="" style="height: 627px;">-->
+                    <!--<div class="wrap_slide_text">-->
+                        <!--<div class="inner">-->
+                            <!--<h1>Experience-->
+                                <!--<br>-->
+                                <!--<span class="small">Excellence</span>-->
+                            <!--</h1>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+
+    <!--</div>-->
     <div class="about-mwr inner">
         <div class="row-fluid">
             <div class="w50_inl">
@@ -1319,17 +1390,17 @@
 
     $(document).ready(function () {
 
-//        $('#slider').slick({
-//            dots: false,
-//            arrows: false,
-//            infinite: true,
-//            speed: 600,
-//            fade: true,
-//            pauseOnHover: false,
-//            cssEase: 'linear',
-//            autoplay: true,
-//            autoplaySpeed: 7000
-//        });
+        $('#slider').slick({
+            dots: false,
+            arrows: false,
+            infinite: true,
+            speed: 600,
+            fade: true,
+            pauseOnHover: false,
+            cssEase: 'linear',
+            autoplay: true,
+            autoplaySpeed: 7000
+        });
 //        $('#testimonials-slider').slick({
 //            dots: true,
 //            arrows: false,
