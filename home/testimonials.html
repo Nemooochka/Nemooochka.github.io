@@ -300,10 +300,12 @@
     <!--</div>-->
     <div class="testimonials-block">
         <div class="inner">
-            <h2>
-                Lorem ipsum dolor sit amet
-            </h2>
-            <div class="orange-line"></div>
+            <div class="top-part">
+                <h2>
+                    Lorem ipsum dolor sit amet
+                </h2>
+                <div class="orange-line"></div>
+            </div>
             <div class="testimonial-tile clearfix">
                 <div class="testimonial-image">
                     <img src="../images/testimonial1.jpg" alt="">
@@ -1294,7 +1296,8 @@
         });
 
         if ($(window).width() > 1400) {
-            var banner_height = Math.min(window.innerHeight, document.body.clientHeight) - top_header_height;
+            var topPart = $('.top-part');
+            var banner_height = Math.min(window.innerHeight, document.body.clientHeight) - top_header_height - topPart.height() - 60;
             $('.banner_img').css('height', banner_height);
         }
 
