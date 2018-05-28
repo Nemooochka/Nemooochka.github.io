@@ -270,38 +270,27 @@
 <!-- end responsive navigation bar -->
 
 
-<div class="management">
+<div class="testimonials-page">
     <input type="hidden" value="False" id="hideOpportunityVal">
-    <div id="slider" class="company-slider">
+    <div id="slider" class="testimonial-slider">
         <div>
-            <img class="banner_img" src="../images/company-slider1.jpg" alt="" style="height: 627px;">
+            <img class="banner_img" src="../images/company-slider1.jpg" alt="">
             <div class="wrap_slide_text">
                 <div class="inner">
-                    <h1>Experience
+                    <h1>Success
                         <br>
-                        <span class="small">Excellence</span>
+                        <span class="small">Stories</span>
                     </h1>
                 </div>
             </div>
         </div>
         <div>
-            <img class="banner_img" src="../images/company-slider2.jpg" alt="" style="height: 627px;">
+            <img class="banner_img" src="../images/company-slider2.jpg" alt="">
             <div class="wrap_slide_text">
                 <div class="inner">
-                    <h1>Experience
+                    <h1>Success
                         <br>
-                        <span class="small">Excellence</span>
-                    </h1>
-                </div>
-            </div>
-        </div>
-        <div>
-            <img class="banner_img" src="../images/company-slider3.jpg" alt="" style="height: 627px;">
-            <div class="wrap_slide_text">
-                <div class="inner">
-                    <h1>Experience
-                        <br>
-                        <span class="small">Excellence</span>
+                        <span class="small">Stories</span>
                     </h1>
                 </div>
             </div>
@@ -1305,9 +1294,7 @@
         });
 
         if ($(window).width() > 1400) {
-            var aboutMWR = $('.about-mwr').height();
-            console.log(aboutMWR)
-            var banner_height = Math.min(window.innerHeight, document.body.clientHeight) - top_header_height - aboutMWR - 60;
+            var banner_height = Math.min(window.innerHeight, document.body.clientHeight) - top_header_height;
             $('.banner_img').css('height', banner_height);
         }
 

@@ -6349,7 +6349,8 @@ p.left-arrow:before {
 .home h2,
 .membership h2,
 .opportunity h2,
-.ess-app h2 {
+.ess-app h2,
+.testimonials-page h2 {
     margin-top: 0;
     font-size: 24px;
     line-height: 1.2;
@@ -7055,6 +7056,14 @@ p.left-arrow:before {
 
 .company-slider .slick-slide:nth-of-type(3) {
     background-image: url("../images/company-slider3.jpg");
+}
+
+.testimonial-slider .slick-slide:nth-of-type(1) {
+    background-image: url("../images/testimonials-slider1.jpg");
+}
+
+.testimonial-slider .slick-slide:nth-of-type(2) {
+    background-image: url("../images/testimonials-slider1.jpg");
 }
 
 .cares-slider .slick-slide:first-of-type {
