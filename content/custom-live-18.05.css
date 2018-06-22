@@ -5,7 +5,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900);
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400italic,400,500,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
-@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 /*------------------------------- Generl Styles -------------------------------*/
 .header_banner {
@@ -7046,6 +7046,14 @@ p.left-arrow:before {
     background-image: url("../images/opportunity-top-banner.jpg");
 }
 
+.testimonials-page .top-banner {
+    background-image: url("../images/testimonials-top-banner.jpg");
+}
+
+.testimonial-slider .slick-slide:first-of-type {
+    background-image: url("../images/testimonials-top-banner.jpg");
+}
+
 .company-slider .slick-slide:first-of-type {
     background-image: url("../images/company-slider1.jpg");
 }
@@ -7056,14 +7064,6 @@ p.left-arrow:before {
 
 .company-slider .slick-slide:nth-of-type(3) {
     background-image: url("../images/company-slider3.jpg");
-}
-
-.testimonial-slider .slick-slide:nth-of-type(1) {
-    background-image: url("../images/testimonials-slider1.jpg");
-}
-
-.testimonial-slider .slick-slide:nth-of-type(2) {
-    background-image: url("../images/testimonials-slider1.jpg");
 }
 
 .cares-slider .slick-slide:first-of-type {
@@ -11891,4 +11891,261 @@ p.left-arrow:before {
 #videot::-webkit-media-controls {
     display: none !important;
     -webkit-appearance: none;
+}
+
+/* follow mwr */
+
+.follow-mwr span {
+    font-size: 14px;
+    color: #fff;
+    text-transform: none;
+    padding: 0;
+}
+
+.follow-mwr ul {
+    margin-top: 10px;
+}
+
+.follow-mwr ul li {
+    float: left;
+    padding:0 10px 0 0;
+}
+
+.follow-mwr ul li a {
+    display: inline-block;
+    vertical-align: top;
+    height: 20px;
+    width: 20px;
+    padding-top: 3px;
+    color: #155660;
+    background: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.follow-mwr ul li a:hover {
+    background: #ffc600;
+}
+
+.follow-mwr ul li a .fa {
+    padding-left: 1px;
+    vertical-align: top;
+}
+
+.follow-mwr ul li a .fa-google-plus {
+    padding-top: 1px;
+    font-size: 13px;
+}
+
+.follow-mwr ul li a .fa-pinterest-p {
+    font-size: 16px;
+}
+
+.follow-mwr ul li a .fa-facebook {
+    position: relative;
+    left: 2px;
+    top: 1px;
+    font-size: 18px;
+}
+
+/* promo */
+
+.promo-modal.fade.in {
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.promo-modal {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#promo-usa {
+    background-image: url("../images/promo-usa.jpg");
+}
+
+#promo-eu {
+    background-image: url("../images/promo-eu.jpg");
+}
+
+.promo-modal .modal-header .close {
+    width: 22px;
+    height: 22px;
+    padding: 0;
+    background: #fff;
+    text-shadow: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.promo-modal .modal-header .close span {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    font-size: 24px;
+}
+
+.promo-modal .stripe {
+    text-align: center;
+}
+
+.promo-modal .stripe h3 {
+    display: inline-block;
+    padding: 2px 20px;
+    background-color: #ffa500;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.promo-modal .modal-body {
+    max-height: none;
+    margin-top: 150px;
+}
+
+.promo-modal .promo-text {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.promo-modal .promo-text h1 {
+    margin-top: 0;
+    font-size: 65px;
+    line-height: 1;
+}
+
+.promo-modal .promo-text h2 {
+    margin: 5px 0;
+    font-size: 27px;
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+.promo-modal .promo-text h2 b {
+    font-size: 1.3em;
+}
+
+.promo-modal .action {
+    text-align: center;
+}
+
+.promo-modal .action .btn {
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+.promo-modal .action .close-modal {
+    margin-top: 10px;
+}
+
+.promo-modal .action .close-modal a {
+    color: #a4a4a4;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+#promo-eu.promo-modal .promo-text h1 {
+    margin-bottom: 5px;
+    font-size: 50px;
+}
+
+.btn-green {
+    padding: 12px 18px;
+    background: #00c26b;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: none;
+    border: none;
+    text-transform: uppercase;
+}
+
+.btn-green:hover,
+.btn-green:focus {
+    background: #00c26b;
+    color: #fff;
+    opacity: 0.8;
+}
+
+@media (max-height: 450px) and (max-width: 850px) and (orientation: landscape) {
+    .promo-modal.fade.in {
+        height: calc(100% - 20px);
+        overflow-y: auto;
+    }
+
+    .promo-modal .modal-body {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 5px 15px;
+    }
+
+    .promo-modal .stripe h3 {
+        padding: 0 15px;
+        font-size: 20px;
+    }
+
+    .promo-modal .promo-text h1 {
+        font-size: 60px;
+    }
+
+    .promo-modal .promo-text h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .modal {
+        height: auto;
+    }
+
+    #promo-eu.promo-modal .promo-text h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 450px) {
+    .promo-modal .modal-body {
+        margin-top: 130px;
+    }
+
+    .promo-modal .stripe h3 {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    .promo-modal .promo-text h1 {
+        font-size: 52px;
+    }
+
+    #promo-eu.promo-modal .promo-text h1 {
+        font-size: 28px;
+    }
+
+    .promo-modal .promo-text h2 {
+        font-size: 17px;
+    }
+
+    .promo-modal .action .btn {
+        padding: 10px 15px;
+        font-size: 18px;
+    }
+
+    .promo-modal .action .close-modal a {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 340px) {
+    #promo-eu.promo-modal .promo-text h1 {
+        font-size: 26px;
+    }
+    .promo-modal .promo-text h2 {
+        font-size: 14px;
+    }
 }

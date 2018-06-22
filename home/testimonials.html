@@ -270,22 +270,11 @@
 <!-- end responsive navigation bar -->
 
 
-<div class="testimonials-page">
+<div class="testimonials-page" style="visibility: hidden;">
     <input type="hidden" value="False" id="hideOpportunityVal">
-    <div id="slider" class="testimonial-slider">
+    <div class="top-banner">
         <div>
-            <img class="banner_img" src="../images/company-slider1.jpg" alt="">
-            <div class="wrap_slide_text">
-                <div class="inner">
-                    <h1>Success
-                        <br>
-                        <span class="small">Stories</span>
-                    </h1>
-                </div>
-            </div>
-        </div>
-        <div>
-            <img class="banner_img" src="../images/company-slider2.jpg" alt="">
+            <img class="banner_img" src="../images/testimonials-top-banner.jpg" alt="">
             <div class="wrap_slide_text">
                 <div class="inner">
                     <h1>Success
@@ -1299,6 +1288,7 @@
             var topPart = $('.top-part');
             var banner_height = Math.min(window.innerHeight, document.body.clientHeight) - top_header_height - topPart.height() - 60;
             $('.banner_img').css('height', banner_height);
+            $('.testimonials-page').css('visibility', 'visible');
         }
 
         var offset = 220;
