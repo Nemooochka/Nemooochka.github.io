@@ -7,6 +7,36 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
+@font-face {
+    font-family: 'Montserrat-ExtraBold';
+    src: url('fonts/montserrat-extrabold-webfont.woff2') format('woff2'),
+    url('fonts/montserrat-extrabold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('fonts/montserrat-light-webfont.woff2') format('woff2'),
+    url('fonts/montserrat-light-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('fonts/montserrat-black-webfont.woff2') format('woff2'),
+    url('fonts/montserrat-black-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('fonts/montserrat-semibold-webfont.woff2') format('woff2'),
+    url('fonts/montserrat-semibold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Marguerite';
+    src: url('../content/fonts/marguerite-webfont.woff2') format('woff2'),
+    url('../content/fonts/marguerite-webfont.woff') format('woff');
+}
+
 /*------------------------------- Generl Styles -------------------------------*/
 .header_banner {
     padding: 8px 15px;
@@ -3402,18 +3432,23 @@ footer .rewards h6 {
 
 /* main content */
 
+.home {
+    font-family: 'Raleway', sans-serif;
+}
+
 .home p {
     font-size: 18px;
 }
 
-.home .grey-block h2 {
-    font-size: 23px;
+.home .white-block h2 {
+    font-size: 18px;
     font-weight: 400;
     letter-spacing: 0;
 }
 
-.home .grey-block h2 b {
+.home .white-block h2 b {
     color: #03869b;
+    font-size: 1.7em;
 }
 
 .home .video-wrap {
@@ -5775,6 +5810,19 @@ p.left-arrow:before {
 .full_orange_title,
 .full_orange_title h4 {
     margin: 0;
+    padding: 16px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 300;
+    background: #e4ac32;
+    text-transform: uppercase;
+}
+
+.home .full_orange_title,
+.home .full_orange_title h4 {
+    margin: 0;
     padding: 25px 10px;
     text-align: center;
     color: #0b4873;
@@ -5783,7 +5831,7 @@ p.left-arrow:before {
     text-transform: uppercase;
 }
 
-.full_orange_title h2 {
+.home .full_orange_title h2 {
     margin-bottom: 0;
 }
 
@@ -6283,8 +6331,7 @@ p.left-arrow:before {
     font-family: 'Montserrat', sans-serif;
 }
 
-#slider,
-.top-banner {
+#slider {
     position: relative;
     top: -54px;
 }
@@ -6386,7 +6433,7 @@ p.left-arrow:before {
 
 .home .ceo-quote {
     position: relative;
-    padding: 200px 0;
+    padding: 250px 0;
     background-image: url("../images/home-freedom.jpg");
 }
 
@@ -6396,7 +6443,7 @@ p.left-arrow:before {
     top: 50%;
     margin-top: -100px;
     height: 200px;
-    width: 45%;
+    width: 47%;
     background-image: -moz-linear-gradient( 30deg, rgb(10,73,189) 0%, rgb(4,188,151) 100%);
     background-image: -webkit-linear-gradient( 30deg, rgb(10,73,189) 0%, rgb(4,188,151) 100%);
     background-image: -ms-linear-gradient( 30deg, rgb(10,73,189) 0%, rgb(4,188,151) 100%);
@@ -6418,13 +6465,13 @@ p.left-arrow:before {
 }
 
 .home .ceo-quote .quote .text p {
-    margin-bottom: 0;
-    font-size: 16px;
+    margin-bottom: 2px;
+    font-size: 17px;
     font-weight: 600;
 }
 
 .home .ceo-quote .quote .text .author {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .home .ceo-quote .quote .text .author b {
@@ -6592,30 +6639,31 @@ p.left-arrow:before {
     background: url("../images/double-arrow-right.png");
 }
 
-.home .baby-cares {
+.home .mwr-cares-block {
     padding: 90px 0;
-    background-image: url('../images/cares-baby.jpg');
+    background-image: url('../images/cares-dandelion.jpg');
+    background-position: center;
     color: #303030;
     font-weight: 700;
 }
 
-.home .baby-cares .wrap-img {
+.home .mwr-cares-block .wrap-img {
     margin-bottom: 30px;
     text-align: center;
 }
 
-.home .baby-cares p {
+.home .mwr-cares-block p {
     margin-bottom: 30px;
 }
 
-.home .baby-cares p:first-of-type {
+.home .mwr-cares-block p:first-of-type {
     color: #0b4873;
 }
 
-.home .baby-cares p:last-of-type {
-    color: #ffc600;
+.home .mwr-cares-block p:last-of-type {
     font-size: 24px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .bottom-outside-button {
@@ -6633,11 +6681,15 @@ p.left-arrow:before {
         padding: 160px 0;
     }
 
+    .home .ceo-quote:after {
+        width: 45%;
+    }
+
     .home .become-entrepreneur {
         padding: 95px 0;
     }
 
-    .home .baby-cares {
+    .home .mwr-cares-block {
         padding: 50px 0;
     }
 }
@@ -6653,7 +6705,7 @@ p.left-arrow:before {
         margin-left: 25px;
     }
 
-    .home .baby-cares .cares-block {
+    .home .mwr-cares-block .cares-block {
         width: 50%;
         margin-left: 50%;
     }
@@ -6693,7 +6745,7 @@ p.left-arrow:before {
         margin: 0 auto;
     }
 
-    .home .baby-cares .cares-block {
+    .home .mwr-cares-block .cares-block {
         width: 100%;
         max-width: 400px;
         margin: 0 auto;
@@ -6761,7 +6813,7 @@ p.left-arrow:before {
 .blue-line {
     height: 3px;
     width: 50%;
-    margin: 20px auto;
+    margin: 15px auto;
     background: #ffc600;
 }
 
@@ -7030,8 +7082,46 @@ p.left-arrow:before {
     background-size: cover;
 }
 
+.top-banner {
+    position: relative;
+    margin-top: -54px;
+}
+
 .home .top-banner {
     background-image: url("../images/home-top-banner.jpg");
+}
+
+.home .top-banner .inner:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background-image: -moz-linear-gradient( 200deg, rgb(10,73,189) 15%, rgb(4,188,151) 100%);
+    background-image: -webkit-linear-gradient( 200deg, rgb(10,73,189) 15%, rgb(4,188,151) 100%);
+    background-image: -ms-linear-gradient( 200deg, rgb(10,73,189) 15%, rgb(4,188,151) 100%);
+    opacity: 0.6;
+}
+
+.home .top-banner h1 {
+    position: relative;
+    z-index: 3;
+    margin: 50px 0 35px;
+    padding: 10px;
+    color: #ffc600;
+    font-family: 'Marguerite', sans-serif;
+    font-size: 53px;
+    font-weight: 400;
+    line-height: 1.3;
+    text-transform: none;
+    letter-spacing: .1em;
+    text-align: center;
+}
+
+.home .top-banner h1:before,
+.home .top-banner h1:after {
+    display: none;
 }
 
 .management .top-banner {
@@ -7104,6 +7194,18 @@ p.left-arrow:before {
 
 .membership-slider .slick-slide:nth-of-type(3) {
     background-image: url("../images/membership-slider4.jpg");
+}
+
+.social-slider .slick-slide:first-of-type {
+    background-image: url("../images/social-slider1.jpg");
+}
+
+.social-slider .slick-slide:nth-of-type(2) {
+    background-image: url("../images/social-slider2.jpg");
+}
+
+.social-slider .slick-slide:nth-of-type(3) {
+    background-image: url("../images/social-slider3.jpg");
 }
 
 .opportunity-slider .slick-slide:first-of-type {
@@ -8248,9 +8350,40 @@ p.left-arrow:before {
 
 @media (max-width: 979px) {
 
-    #slider, .top-banner {
+    #slider {
         top: 0;
     }
+
+    .top-banner {
+        margin-top: 0;
+    }
+
+    .home .top-banner .inner:after {
+        display: none;
+    }
+
+    .home .top-banner h1 {
+        position: relative;
+        margin: 0;
+        padding: 20px 50px;
+        font-size: 45px;
+    }
+
+    .home .top-banner h1:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-image: -moz-linear-gradient( 200deg, rgb(10,73,189) 15%, rgb(4,188,151) 100%);
+        background-image: -webkit-linear-gradient( 200deg, rgb(10,73,189) 15%, rgb(4,188,151) 100%);
+        background-image: -ms-linear-gradient( 200deg, rgb(10,73,189) 15%, rgb(4,188,151) 100%);
+        opacity: 0.6;
+    }
+
 
     #navLayout.navbar {
         background-color: #000;
@@ -8493,6 +8626,14 @@ p.left-arrow:before {
 }
 
 @media all and (max-width: 767px) {
+
+    .home .top-banner h1 {
+        font-size: 30px;
+    }
+
+    .home .white-block h2 {
+        font-size: 16px;
+    }
 
     .services .full_rectangles {
         text-align: center;
@@ -8756,6 +8897,11 @@ p.left-arrow:before {
 }
 
 @media all and (max-width: 600px) {
+
+    .home .top-banner h1 {
+        font-size: 30px;
+    }
+
     .services .full_rectangles .rectangle:first-of-type {
         padding: 30px 20px 70px 20px;
     }
@@ -8958,6 +9104,11 @@ p.left-arrow:before {
 }
 
 @media all and (max-width: 375px) {
+
+    .home .top-banner h1 {
+        width: 100%;
+        padding: 20px 10px;
+    }
 
     .wrap_slide_text h1 {
         font-size: 13px;
