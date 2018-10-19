@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f867fb6d-7864-463c-ad4c-d9d275d69a27" name="Default" comment="12">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home/social.html" afterPath="$PROJECT_DIR$/home/social.html" />
-    </list>
+    <list default="true" id="f867fb6d-7864-463c-ad4c-d9d275d69a27" name="Default" comment="12" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +27,8 @@
       <file leaf-file-name="social.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home/social.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -278,12 +276,12 @@
       <workItem from="1527154011785" duration="1556000" />
       <workItem from="1529602366432" duration="39000" />
       <workItem from="1539929889431" duration="3984000" />
-      <workItem from="1539940233424" duration="1070000" />
+      <workItem from="1539940233424" duration="1104000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20157000" />
+    <option name="totallyTimeSpent" value="20191000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="719" extended-state="6" />
@@ -655,8 +653,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/home/social.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
           <folding />
         </state>
       </provider>
