@@ -7267,6 +7267,10 @@ p.left-arrow:before {
     letter-spacing: 2px;
 }
 
+.social .wrap_slide_text h1 {
+    text-transform: none;
+}
+
 .wrap_slide_text h1:before {
     content: '';
     position: absolute;

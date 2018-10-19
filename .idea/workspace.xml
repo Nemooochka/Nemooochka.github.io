@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f867fb6d-7864-463c-ad4c-d9d275d69a27" name="Default" comment="12" />
+    <list default="true" id="f867fb6d-7864-463c-ad4c-d9d275d69a27" name="Default" comment="12">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/content/custom-live-18.05.css" afterPath="$PROJECT_DIR$/content/custom-live-18.05.css" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +27,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="social.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="social.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home/social.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -64,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom-live-18.05.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="custom-live-18.05.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/content/custom-live-18.05.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108420">
-              <caret line="7228" column="1" lean-forward="false" selection-start-line="7228" selection-start-column="1" selection-end-line="7228" selection-end-column="1" />
+            <state relative-caret-position="286">
+              <caret line="7271" column="1" lean-forward="true" selection-start-line="7271" selection-start-column="1" selection-end-line="7271" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -91,6 +94,7 @@
       <find>Belgium</find>
       <find>belgium</find>
       <find>#countrysele</find>
+      <find>social</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -101,10 +105,10 @@
       <list>
         <option value="$PROJECT_DIR$/home/company.html" />
         <option value="$PROJECT_DIR$/home/membership.html" />
-        <option value="$PROJECT_DIR$/content/custom-live-18.05.css" />
         <option value="$PROJECT_DIR$/home/opportunity.htm" />
         <option value="$PROJECT_DIR$/index.htm" />
         <option value="$PROJECT_DIR$/home/social.html" />
+        <option value="$PROJECT_DIR$/content/custom-live-18.05.css" />
       </list>
     </option>
   </component>
@@ -276,12 +280,12 @@
       <workItem from="1527154011785" duration="1556000" />
       <workItem from="1529602366432" duration="39000" />
       <workItem from="1539929889431" duration="3984000" />
-      <workItem from="1539940233424" duration="1104000" />
+      <workItem from="1539940233424" duration="1404000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20191000" />
+    <option name="totallyTimeSpent" value="20491000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="719" extended-state="6" />
@@ -609,14 +613,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/company.html" />
-    <entry file="file://$PROJECT_DIR$/content/custom-live-18.05.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108420">
-          <caret line="7228" column="1" lean-forward="false" selection-start-line="7228" selection-start-column="1" selection-end-line="7228" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/company.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2550">
@@ -655,6 +651,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/content/custom-live-18.05.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="7271" column="1" lean-forward="true" selection-start-line="7271" selection-start-column="1" selection-end-line="7271" selection-end-column="1" />
           <folding />
         </state>
       </provider>
