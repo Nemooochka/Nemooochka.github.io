@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f867fb6d-7864-463c-ad4c-d9d275d69a27" name="Default" comment="12" />
+    <list default="true" id="f867fb6d-7864-463c-ad4c-d9d275d69a27" name="Default" comment="12">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.htm" afterPath="$PROJECT_DIR$/index.htm" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +17,8 @@
       <file leaf-file-name="index.htm" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38251">
-              <caret line="2711" column="11" lean-forward="true" selection-start-line="2711" selection-start-column="11" selection-end-line="2711" selection-end-column="11" />
+            <state relative-caret-position="301">
+              <caret line="181" column="57" lean-forward="true" selection-start-line="181" selection-start-column="57" selection-end-line="181" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -276,12 +278,12 @@
       <workItem from="1527148140376" duration="194000" />
       <workItem from="1527154011785" duration="1556000" />
       <workItem from="1529602366432" duration="39000" />
-      <workItem from="1539929889431" duration="3411000" />
+      <workItem from="1539929889431" duration="3575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18514000" />
+    <option name="totallyTimeSpent" value="18678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="719" extended-state="6" />
@@ -581,8 +583,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38251">
-          <caret line="2711" column="11" lean-forward="true" selection-start-line="2711" selection-start-column="11" selection-end-line="2711" selection-end-column="11" />
+        <state relative-caret-position="301">
+          <caret line="181" column="57" lean-forward="true" selection-start-line="181" selection-start-column="57" selection-end-line="181" selection-end-column="57" />
           <folding />
         </state>
       </provider>
