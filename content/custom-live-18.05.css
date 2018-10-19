@@ -6327,7 +6327,8 @@ p.left-arrow:before {
 .home,
 .membership,
 .opportunity,
-.ess-app {
+.ess-app,
+.social {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -6397,7 +6398,8 @@ p.left-arrow:before {
 .membership h2,
 .opportunity h2,
 .ess-app h2,
-.testimonials-page h2 {
+.testimonials-page h2,
+.social h2 {
     margin-top: 0;
     font-size: 24px;
     line-height: 1.2;
@@ -6793,7 +6795,8 @@ p.left-arrow:before {
 .mwr_cares h2 b,
 .membership h2 b,
 .opportunity h2 b,
-.ess-app h2 b {
+.ess-app h2 b,
+.social h2 b{
     font-weight: 600;
 }
 
@@ -6803,7 +6806,8 @@ p.left-arrow:before {
     font-weight: 300;
 }
 
-.opportunity .short-description {
+.opportunity .short-description,
+.social .short-description {
     font-size: 22px;
     line-height: 24px;
     font-weight: 300;
@@ -7275,7 +7279,7 @@ p.left-arrow:before {
     background-image: -webkit-linear-gradient( 180deg, rgb(177,224,87) 0%, rgba(177,224,87,0) 100%);
     background-image: -ms-linear-gradient( 180deg, rgb(177,224,87) 0%, rgba(177,224,87,0) 100%);
     opacity: 0.6;
-    z-index: 0;
+    z-index: -1;
 }
 
 .wrap_slide_text h1:after {
@@ -7288,7 +7292,7 @@ p.left-arrow:before {
     width: 100%;
     background: #10A0B5;
     opacity: 0.7;
-    z-index: -1;
+    z-index: -2;
 }
 
 .wrap_slide_text h1 > * {
