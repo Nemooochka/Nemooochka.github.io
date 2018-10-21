@@ -6419,7 +6419,7 @@ p.left-arrow:before {
 }
 
 .home .life-exp .images {
-    margin: 25px 0;
+    margin: 25px 0 0;
 }
 
 .home .life-exp .images img {
@@ -7091,11 +7091,7 @@ p.left-arrow:before {
     margin-top: -54px;
 }
 
-.home .top-banner {
-    background-image: url("../images/home-top-banner.jpg");
-}
-
-.home .top-banner .inner:after {
+.home .wrap_slide_text .inner:after {
     content: '';
     position: absolute;
     top: 0;
@@ -7108,7 +7104,7 @@ p.left-arrow:before {
     opacity: 0.6;
 }
 
-.home .top-banner h1 {
+.home .wrap_slide_text h1 {
     position: relative;
     z-index: 3;
     margin: 50px 0 35px;
@@ -7123,8 +7119,8 @@ p.left-arrow:before {
     text-align: center;
 }
 
-.home .top-banner h1:before,
-.home .top-banner h1:after {
+.home .wrap_slide_text h1:before,
+.home .wrap_slide_text h1:after {
     display: none;
 }
 
@@ -7269,6 +7265,18 @@ p.left-arrow:before {
 
 .social .wrap_slide_text h1 {
     text-transform: none;
+}
+
+.social .blog {
+    padding: 25px 0 0;
+}
+
+.social .blog h2 {
+    text-transform: none;
+}
+
+.social .blog .orange-line {
+    margin: 20px auto;
 }
 
 .wrap_slide_text h1:before {
@@ -8366,18 +8374,18 @@ p.left-arrow:before {
         margin-top: 0;
     }
 
-    .home .top-banner .inner:after {
+    .home .wrap_slide_text .inner:after {
         display: none;
     }
 
-    .home .top-banner h1 {
+    .home .wrap_slide_text h1 {
         position: relative;
         margin: 0;
         padding: 20px 50px;
         font-size: 45px;
     }
 
-    .home .top-banner h1:after {
+    .home .wrap_slide_text h1:after {
         content: '';
         display: block;
         position: absolute;
@@ -8635,7 +8643,7 @@ p.left-arrow:before {
 
 @media all and (max-width: 767px) {
 
-    .home .top-banner h1 {
+    .home .wrap_slide_text h1 {
         font-size: 30px;
     }
 
@@ -8906,10 +8914,6 @@ p.left-arrow:before {
 
 @media all and (max-width: 600px) {
 
-    .home .top-banner h1 {
-        font-size: 30px;
-    }
-
     .services .full_rectangles .rectangle:first-of-type {
         padding: 30px 20px 70px 20px;
     }
@@ -9113,7 +9117,7 @@ p.left-arrow:before {
 
 @media all and (max-width: 375px) {
 
-    .home .top-banner h1 {
+    .home .wrap_slide_text h1 {
         width: 100%;
         padding: 20px 10px;
     }
