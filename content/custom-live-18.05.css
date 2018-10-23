@@ -7091,39 +7091,6 @@ p.left-arrow:before {
     margin-top: -54px;
 }
 
-.home .wrap_slide_text .inner:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 50%;
-    background-image: -moz-linear-gradient( 200deg, rgb(10,73,189) 15%, rgb(4,188,151) 100%);
-    background-image: -webkit-linear-gradient( 200deg, rgb(10,73,189) 15%, rgb(4,188,151) 100%);
-    background-image: -ms-linear-gradient( 200deg, rgb(10,73,189) 15%, rgb(4,188,151) 100%);
-    opacity: 0.6;
-}
-
-.home .wrap_slide_text h1 {
-    position: relative;
-    z-index: 3;
-    margin: 50px 0 35px;
-    padding: 10px;
-    color: #ffc600;
-    font-family: 'Marguerite', sans-serif;
-    font-size: 53px;
-    font-weight: 400;
-    line-height: 1.3;
-    text-transform: none;
-    letter-spacing: .1em;
-    text-align: center;
-}
-
-.home .wrap_slide_text h1:before,
-.home .wrap_slide_text h1:after {
-    display: none;
-}
-
 .management .top-banner {
     background-image: url("../images/company-top-banner.jpg");
 }

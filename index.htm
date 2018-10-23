@@ -284,33 +284,6 @@
 <div class="home">
     <input type="hidden" value="False" id="hideOpportunityVal">
 
-    <!--<div class="clearfix">-->
-    <!--<div class="video-wrap">-->
-    <!--<video preload="auto" class="videot" id="videot" height="100%" playsinline="" autoplay="" muted="" loop="">-->
-    <!--<source src="video/video01.mp4" type="video/mp4">-->
-    <!--<source src="/Content/video01.webm" type="video/webm">-->
-    <!--<source src="/Content/video01.ogg" type="video/ogg">-->
-    <!--<object type="application/x-shockwave-flash" data="flash-player.swf?videoUrl=video/video01.mp4"-->
-    <!--height="1080">-->
-    <!--<param name="movie" value="flash-player.swf?videoUrl=video/video01.mp4">-->
-    <!--<param name="wmode" value="transparent">-->
-    <!--<param name="allowfullscreen" value="true">-->
-    <!--<param name="autoplay" value="false">-->
-    <!--<param name="loop" value="false">-->
-    <!--<param name="flashvars"-->
-    <!--value="controlbar=false&amp;file=flash-player.swf?videoUrl=video/video01.mp4">-->
-    <!--</object>-->
-    <!--</video>-->
-    <!--<div class="wrap_slide_text">-->
-    <!--<div class="inner">-->
-    <!--<h1>Experience-->
-    <!--<br>-->
-    <!--<span>Life</span>-->
-    <!--</h1>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
-    <!--</div>-->
     <div class="clearfix">
         <div class="video-wrap">
             <video preload="auto" class="videot" id="videot" height="100%" playsinline="" autoplay="" muted="" loop="">
@@ -331,7 +304,7 @@
             <div class="wrap_slide_text">
                 <div class="inner">
                     <h1>Make Wishes<br>
-                        <b>Real</b>
+                        <span class="small">Real</span>
                     </h1>
                 </div>
             </div>
@@ -2515,7 +2488,7 @@
 
         if ($(window).width() > 1024) {
             var video_height = Math.min(window.innerHeight, document.body.clientHeight) - top_header_height - $('.white-block').outerHeight();
-            $('.top-banner').css('height', video_height);
+            $('.video-wrap').css('height', video_height);
         }
 
         var offset = 220;
