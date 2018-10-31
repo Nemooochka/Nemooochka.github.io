@@ -91,6 +91,11 @@ img {
     font-weight: 300;
 }
 
+.header-social_links a {
+    color: white;
+    text-decoration:none;
+}
+
 .testimonials-icon i {
     font-size: 13px;
     color: lightgray;
