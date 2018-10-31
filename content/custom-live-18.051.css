@@ -7220,9 +7220,9 @@ p.left-arrow:before {
 .wrap_slide_text h1 {
     position: relative;
     float: right;
-    padding: 30px 40px;
+    padding: 40px;
     color: #fff;
-    font-size: 40px;
+    font-size: 43px;
     line-height: 1;
     font-weight: 600;
     text-transform: uppercase;
@@ -8341,10 +8341,6 @@ p.left-arrow:before {
         margin-top: 0;
     }
 
-    .home .wrap_slide_text .inner:after {
-        display: none;
-    }
-
     #navLayout.navbar {
         background-color: #000;
     }
@@ -8729,7 +8725,7 @@ p.left-arrow:before {
 
     .wrap_slide_text h1 {
         padding: 30px;
-        font-size: 25px;
+        font-size: 23px;
     }
 
     #testimonials-slider .user-info {
@@ -9009,7 +9005,7 @@ p.left-arrow:before {
 
     .wrap_slide_text h1 {
         padding: 20px;
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .learn-more .inner .row-fluid > div {
@@ -9058,7 +9054,7 @@ p.left-arrow:before {
 @media all and (max-width: 375px) {
 
     .wrap_slide_text h1 {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .start_now {
