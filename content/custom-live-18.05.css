@@ -3460,6 +3460,21 @@ footer .rewards h6 {
     overflow: hidden;
 }
 
+.home .video-wrap video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+    -webkit-appearance: none;
+}
+
+.home .video-wrap video::-webkit-media-controls-panel {
+    display: none!important;
+    -webkit-appearance: none;
+}
+
+.home .video-wrap video::--webkit-media-controls-play-button {
+    display: none!important;
+    -webkit-appearance: none;
+}
+
 @media (min-width: 1025px) {
     .home .video-wrap video {
         position: absolute;
