@@ -589,18 +589,23 @@ main {
     padding: 75px 0;
 }
 
-.main-benefits > div:before {
+.main-benefits > div:after {
     content: '';
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 90px;
-    background: linear-gradient(to bottom, #ddd 5%, rgba(236, 236, 236, 0.7), rgba(248, 248, 248, 0.05));
+    background: linear-gradient(to top, #E6E6E6 5%, rgba(236, 236, 236, 0.7) 40%, rgba(248, 248, 248, 0.05));
 }
 
-.main-benefits .inline-blocks > div {
-    width: 50%;
+.main-benefits .inline-blocks .first-block {
+    width: 60%;
+    padding-right: 20px;
+}
+
+.main-benefits .inline-blocks .second-block {
+    width: 40%;
 }
 
 h2 {
@@ -614,10 +619,10 @@ h2 {
 .main-benefits h3:after {
     content: '';
     display: block;
-    width: 95%;
-    height: 2px;
+    width: 90%;
+    height: 3px;
     margin: 20px 0;
-    background: #3570b6;
+    background: #3498DB;
 }
 
 .blue-line {
@@ -627,19 +632,20 @@ h2 {
     background: #3570b6;
 }
 
-.main-benefits h2 {
-    width: inherit;
+.main-benefits .header-part h2 {
+    color: #0B3B5B;
     font-size: 43px;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
 .main-benefits h3 {
     position: relative;
     color: #0b294e;
-    font-size: 22px;
 }
 
 .main-benefits h3:after {
-    width: 120px;
+    width: 160px;
 }
 
 .main-benefits img {
@@ -647,24 +653,25 @@ h2 {
 }
 
 .main-benefits .header-part p {
-    color: #2d2d2d;
+    color: #0B3B5B;
     font-size: 22px;
+    line-height: 1.3;
 }
 
 .main-benefits h5 {
-    color: #0b294e;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 600;
-}
-
-.main-benefits p {
-    font-weight: 300;
+    margin-bottom: 2px;
+    color: #1E74AD;
+    line-height: 19px;
+    font-weight: 700;
 }
 
 .main-benefits .description {
     margin: 20px 0;
-    line-height: 18px;
+    line-height: 19px;
+}
+
+.main-benefits .description p {
+    color: #656565;
 }
 
 .description-visual > div {
@@ -716,17 +723,50 @@ h2 {
 
 .main-benefits .with-sidebar > div {
     float: left;
-    width: 210px;
+    width: 280px;
 }
 
 .main-benefits .with-sidebar > div:first-of-type {
-    width: calc(100% - 210px);
-    padding-right: 35px;
+    width: calc(100% - 280px);
+    padding-right: 20px;
 }
 
 .main-benefits .with-sidebar .sidebar {
-    padding: 5px 15px 10px;
-    background: #f2f2f2;
+    padding: 15px 30px;
+    background: #F6F7F8;
+}
+
+.main-benefits .blue-dots-list {
+    margin: 12px 0;
+}
+
+.main-benefits .blue-dots-list li {
+    padding-left: 22px;
+}
+
+.main-benefits .blue-dots-list li:before {
+    left: 0;
+    font-size: 14px;
+}
+
+.main-benefits .content {
+    color: #0B3B5B;
+}
+
+.main-benefits .content h3 {
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.main-benefits .content .blue-dots-list {
+    margin-top: 40px;
+}
+
+.main-benefits .content .blue-dots-list li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    font-weight: 700;
+    line-height: 1.4;
 }
 
 .sidebar {
@@ -2536,16 +2576,27 @@ footer.bottom div a {
     }
 
     .main-benefits > div {
-        padding: 30px 0;
+        padding: 30px 0 50px;
+    }
+
+    .main-benefits > div:after {
+        height: 50px;
     }
 
     .main-benefits .inline-blocks {
         text-align: center;
     }
 
-    .main-benefits .inline-blocks > div {
+    .main-benefits .inline-blocks .first-block,
+    .main-benefits .inline-blocks .second-block {
         width: 100%;
         margin-bottom: 15px;
+        padding: 0;
+    }
+
+    *.bottom-line:after {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     h2 {
@@ -2586,6 +2637,7 @@ footer.bottom div a {
 
     #creditmax .content > div {
         width: 100%;
+        padding-right: 0;
     }
 
     .main-benefits .tabs .nav-tabs li {
@@ -2594,6 +2646,7 @@ footer.bottom div a {
 
     .main-benefits .double-list > ul {
         width: 100%;
+        padding-right: 0;
     }
 
     .main-benefits .double-list > ul:first-of-type {
@@ -2931,7 +2984,7 @@ footer.bottom div a {
 }
 
 
-/* new index page */
+/* New index page */
 
 .inner {
     padding: 0 15px;
@@ -3173,6 +3226,8 @@ footer.bottom div a {
 
 .intr-membership h2 {
     margin: 5px 0 20px;
+    color: #fff;
+    font-weight: 400;
     text-transform: none;
 }
 
@@ -3424,28 +3479,36 @@ footer.bottom div a {
     text-align: center;
 }
 
-.benefits .wrap-border {
-    display: flex;
-    flex-direction: row;
+.wrap-border {
     padding: 15px 10px;
     border: 4px solid #3498DB;
 }
 
-.benefits .wrap-border ul {
+.wrap-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.blue-dots-list {
     flex: 0 0 50%;
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.benefits .wrap-border ul li {
+.blue-dots-list li {
     position: relative;
     margin-bottom: 5px;
     padding-left: 40px;
     line-height: 1.3;
+    text-align: left;
 }
 
-.benefits .wrap-border ul li:before {
+.blue-dots-list li:last-of-type {
+    margin-bottom: 0;
+}
+
+.blue-dots-list li:before {
     content: "●";
     position: absolute;
     left: 12px;
@@ -3453,10 +3516,15 @@ footer.bottom div a {
     color: #64BDF8;
     font-size: 18px;
     font-weight: 700;
-    line-height: 1;
+    line-height: .9;
 }
 
-.benefits .wrap-border ul li b {
+.blue-dots-list.square-icon li:before {
+    content: '■';
+    top: 2px;
+}
+
+.blue-dots-list li b {
     font-weight: 900;
 }
 
@@ -3572,6 +3640,78 @@ footer.bottom div a {
     padding-left: 40px;
 }
 
+/* Membership */
+
+.membership .intr-membership {
+    padding-top: 220px;
+}
+
+.membership-includes {
+    padding: 40px 0;
+    background: url("../images/office-table.jpg") no-repeat center;
+    background-size: cover;
+    color: #fff;
+}
+
+.membership-includes h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-transform: none;
+}
+
+.membership-includes h3 {
+    margin-top: 0;
+}
+
+.membership-includes p {
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.membership-includes .wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.membership-includes .first-block {
+    flex: 0 0 60%;
+    padding-right: 30px;
+}
+
+.membership-includes .second-block {
+    flex: 1 1;
+}
+
+.membership-includes .wrap-list {
+    margin-bottom: 15px;
+}
+
+.membership-includes .wrap_video {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+}
+
+.promotion {
+    padding: 50px 0;
+    background: url("../images/shaking-hands.jpg") no-repeat center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+
+.promotion h3 {
+    margin-top: 0;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.promotion p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
 @media (max-width: 991px) {
     .new .navbar-nav > li {
         padding: 20px 5px;
@@ -3639,7 +3779,7 @@ footer.bottom div a {
     }
 
     .our-mission .goals,
-    .benefits .wrap-border,
+    .wrap-list,
     .feedback {
         max-width: 80%;
         margin-left: auto;
@@ -3663,11 +3803,11 @@ footer.bottom div a {
         background-size: cover;
     }
 
-    .benefits .wrap-border {
+    .wrap-list {
         flex-direction: column;
     }
 
-    .benefits .wrap-border ul {
+    .blue-dots-list {
         flex: 0 0;
     }
 
@@ -3688,6 +3828,34 @@ footer.bottom div a {
 
     .new footer.two-blocks-background .details ul {
         padding-left: 10px;
+    }
+
+    /* Membership */
+
+    .membership .intr-membership {
+        padding-top: 180px;
+        text-align: left;
+    }
+
+    .membership-includes {
+        text-align: center;
+    }
+
+    .membership-includes h2 {
+        margin-bottom: 20px;
+    }
+
+    .membership-includes .wrap {
+        flex-direction: column;
+    }
+
+    .membership-includes .first-block {
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    .membership-includes .wrap-list {
+        max-width: 300px;
     }
 }
 
@@ -3710,7 +3878,7 @@ footer.bottom div a {
     }
 
     .our-mission .goals,
-    .benefits .wrap-border,
+    .wrap-list,
     .feedback {
         max-width: none;
     }
@@ -3747,6 +3915,10 @@ footer.bottom div a {
         font-size: 35px;
     }
 
+    .intr-membership p {
+        font-size: 16px;
+    }
+
     .membership-widget {
         width: 100%;
     }
@@ -3780,6 +3952,24 @@ footer.bottom div a {
 
     .new footer.bottom div {
         text-align: center;
+    }
+
+    /* Membership */
+
+    .membership .intr-membership {
+        padding-top: 160px;
+    }
+
+    .membership-includes p {
+        font-size: 18px;
+    }
+
+    .promotion h3 {
+        font-size: 26px;
+    }
+
+    .promotion p {
+        font-size: 18px;
     }
 }
 
@@ -3834,6 +4024,10 @@ footer.bottom div a {
 
     .intr-membership h3 {
         font-size: 24px;
+    }
+
+    .intr-membership p {
+        font-size: 14px;
     }
 
     .membership-widget p {
@@ -3931,5 +4125,19 @@ footer.bottom div a {
 
     .new footer.two-blocks-background .details ul {
         padding-left: 0;
+    }
+
+    /* Membership */
+
+    .membership .intr-membership {
+        padding-top: 140px;
+    }
+
+    .promotion h3 {
+        font-size: 24px;
+    }
+
+    .promotion p {
+        font-size: 16px;
     }
 }
