@@ -189,8 +189,9 @@
     $(document).ready(function () {
         if ($(window).width() > 1400) {
             var banner_height = Math.min(window.innerHeight, document.body.clientHeight);
-            var titleHeight = ($('.blog h4').outerHeight()) / 2;
-            $('.banner_img').css('height', banner_height - titleHeight);
+            var titleHeight = Math.floor(($('.blog h4').outerHeight()) / 2);
+            console.log(titleHeight);
+            $('.banner_img').css('height', banner_height - titleHeight + 1);
             $('.wrap_banner_text').show();
         } else {
             $('.wrap_banner_text').show();
