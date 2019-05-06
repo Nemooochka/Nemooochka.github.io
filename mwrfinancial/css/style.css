@@ -3099,11 +3099,17 @@ footer.bottom div a {
 
 .top-banner {
     position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .top-banner-home {
-    background: url("../images/home-banner-top.jpg") no-repeat center;
-    background-size: cover;
+    background-image: url("../images/home-banner-top.jpg");
+}
+
+.top-banner-social {
+    background-image: url("../images/social-banner-top.jpg");
 }
 
 .top-banner h1 {
@@ -3602,6 +3608,7 @@ footer.bottom div a {
 }
 
 .new footer.two-blocks-background {
+    margin: 0;
     padding: 0;
     background-color: transparent;
 }
@@ -3710,6 +3717,20 @@ footer.bottom div a {
 .promotion p {
     margin-bottom: 20px;
     font-size: 20px;
+}
+
+/* Social */
+
+.blog h4 {
+    margin: 0;
+    padding: 15px;
+    background-color: #145077;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    transform: translateY(-50%);
 }
 
 @media (max-width: 991px) {
@@ -3883,7 +3904,7 @@ footer.bottom div a {
         max-width: none;
     }
 
-    .top-banner-home {
+    .top-banner {
         margin-top: 80px;
     }
 
@@ -4139,5 +4160,11 @@ footer.bottom div a {
 
     .promotion p {
         font-size: 16px;
+    }
+
+    /* Social */
+
+    .blog h4 {
+        font-size: 18px;
     }
 }
