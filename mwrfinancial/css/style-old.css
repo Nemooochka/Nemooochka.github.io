@@ -30,10 +30,6 @@ img {
     padding-left: 15px;
 }
 
-.w-100 {
-    width: 100%;
-}
-
 .m-t-30 {
     margin-top: 30px;
 }
@@ -1263,6 +1259,17 @@ h2 {
 .management h2:after {
     width: 50%;
     margin: 15px 0;
+}
+
+.about-mwr {
+    padding: 10px 0;
+}
+
+.about-mwr p {
+    font-size: 15px;
+    font-weight: 300;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .management_block {
@@ -2696,6 +2703,15 @@ footer.bottom div a {
         font-size: 28px;
     }
 
+    .about-mwr {
+        padding-bottom: 30px;
+    }
+
+    .about-mwr .w-50 {
+        padding: 5px 0;
+        text-align: center;
+    }
+
     .management h2:after {
         width: 70%;
         margin: 20px 15%;
@@ -3026,12 +3042,6 @@ footer.bottom div a {
     padding-left: 40px;
     padding-right: 40px;
 }
-
-.btn-height-extra {
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
-
 .new header {
     position: fixed;
     top: 0;
@@ -3089,21 +3099,11 @@ footer.bottom div a {
 
 .top-banner {
     position: relative;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .top-banner-home {
-    background-image: url("../images/home-banner-top.jpg")
-}
-
-.top-banner-tax {
-    background-image: url("../images/tax-banner.jpg");
-}
-
-.top-banner-company {
-    background-image: url("../images/company-banner.jpg");
+    background: url("../images/home-banner-top.jpg") no-repeat center;
+    background-size: cover;
 }
 
 .top-banner h1 {
@@ -3124,7 +3124,7 @@ footer.bottom div a {
 }
 
 .top-banner p {
-    margin: 20px 0 35px;
+    margin: 15px 0 35px;
 }
 
 .steps {
@@ -3606,10 +3606,6 @@ footer.bottom div a {
     background-color: transparent;
 }
 
-.new footer.two-blocks-background.no-margin-top {
-    margin-top: 0;
-}
-
 .new footer.two-blocks-background:before {
     width: 35%;
     background-color: #0B3B5B;
@@ -3714,409 +3710,6 @@ footer.bottom div a {
 .promotion p {
     margin-bottom: 20px;
     font-size: 20px;
-}
-
-.full-width {
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-}
-
-.full-width_background {
-    padding-left: calc(50vw - 50%);
-    padding-right: calc(50vw - 50%);
-}
-
-.tax {
-
-}
-
-.top-banner-tax h3 {
-    margin-bottom: 5px;
-}
-
-.top-banner-tax h3:first-of-type {
-    color: #C9C9C9;
-    font-weight: 900;
-}
-
-.half-top {
-    margin-top: -30px;
-}
-
-.tax input {
-    width: 100%;
-    padding: 5px 10px;
-    border: 1px solid #D1D1D1;
-    border-radius: 6px;
-    text-align: center;
-}
-
-.tax .half-top {
-    margin-bottom: 40px;
-    color: #fff;
-    text-align: center;
-}
-
-.tax .half-top .first {
-    padding: 15px;
-    background: linear-gradient(to left, #126FAD, #0E188B);
-    font-size: 19px;
-    line-height: 1.1;
-}
-
-.tax .half-top .first b {
-    font-size: 22px;
-}
-
-.tax .half-top .second {
-    padding: 6px 15px;
-    background: linear-gradient(to left, #64BDF8, #3498DB);
-}
-
-.tax-expenses {
-    margin-bottom: 40px;
-}
-
-.tax-expenses .title {
-    position: relative;
-    color: #0B3B5B;
-    font-size: 27px;
-    text-align: center;
-    text-transform: none;
-}
-
-.tax-expenses .title:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    height: 3px;
-    width: 100%;
-    margin-top: -2px;
-    background-color: #3498DB;
-    z-index: -1;
-}
-
-.tax-expenses .title span {
-    padding: 0 25px;
-    background-color: #fff;
-}
-
-.tax-expenses .tax-table_row {
-    display: flex;
-    flex-direction: row;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.tax-expenses .tax-table_row div {
-    padding: 0 20px;
-    color: #1E74AD;
-}
-
-.tax-expenses .tax-table_row .name {
-    flex: 1 1;
-    min-height: 40px;
-    padding-right: 30px;
-    padding-left: 0;
-}
-
-.tax-expenses .tax-table_row .expenses {
-    width: 160px;
-    text-align: center;
-}
-
-.tax-expenses .tax-table_row .deductions {
-    padding-right: 0;
-    width: 160px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.tax-expenses .tax-table_row h6 {
-    margin: 0;
-    font-size: 21px;
-    font-weight: bold;
-}
-
-.tax-expenses .tax-table_row h6 small {
-    color: #1E74AD;
-    font-weight: bold;
-    line-height: 1.2;
-}
-
-.tax-expenses .tax-table_row p {
-    margin-top: 10px;
-    margin-bottom: 0;
-    color: #9B9B9B;
-    font-size: 11px;
-}
-
-.tax-expenses .tax-table_row input {
-    height: 38px;
-    color: #145077;
-    font-size: 16px;
-    box-shadow: 0 0 15px 1px rgba(0,0,0,0.16);
-}
-
-.tax-expenses .tax-table_row.tax-table_header div {
-    color: #9B9B9B;
-    font-size: 13px;
-    font-weight: 400;
-}
-
-.tax-expenses .tax-table_row.tax-table_header .name {
-    min-height: auto;
-}
-
-.tax-expenses .tax-table_row.total {
-    margin-top: 7px;
-    margin-bottom: 7px;
-    background-color: #F6F7F8;
-}
-
-.tax-expenses .tax-table_row.total .name {
-    min-height: auto;
-}
-
-.tax-expenses .tax-table_row.total .name h6 {
-    color: #0B3B5B;
-    font-size: 18px;
-    font-weight: 900;
-}
-
-.tax-expenses .tax-table_row.total .deductions {
-    color: #0B3B5B;
-    font-weight: 900;
-}
-
-.tax .wrap-action {
-    margin-top: 30px;
-}
-
-.tax .btn-green-dark {
-    padding-top: 7px;
-    padding-bottom: 7px;
-}
-
-.tax input[type=number]::-webkit-inner-spin-button,
-.tax input[type=number]::-webkit-outer-spin-button {
-    opacity: 1;
-}
-
-#taxBracket {
-    width: 90px;
-    font-weight: bold;
-}
-
-.tax .next-step {
-    padding: 50px 0 40px;
-    background: linear-gradient(to left, #126FAD, #0E188B);
-    text-align: center;
-}
-
-.tax .user-form {
-    font-size: 16px;
-}
-
-.tax .user-form .wrap {
-    max-width: 430px;
-    margin: 0 auto;
-}
-
-.tax .user-form-title {
-    color: #64BDF8;
-}
-
-.tax .user-form-title span {
-    color: #fff;
-}
-
-.tax .user-form-title h3 {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.tax .user-form form {
-    margin-top: 30px;
-}
-
-.tax .user-form form input {
-    width: 100%;
-    margin-bottom: 22px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    color: #0B3B5B;
-    font-size: 12px;
-    border: 1px solid #D1D1D1;
-}
-
-.tax .user-form form input::placeholder,
-.tax .user-form form input:-ms-input-placeholder,
-.tax .user-form form input::-ms-input-placeholder {
-    color: #9B9B9B;
-}
-
-.tax .estimated-tax-savings {
-    color: #fff;
-}
-
-.tax .estimated-tax-savings h3 {
-    font-size: 30px;
-    font-weight: 900;
-    line-height: 1.3;
-}
-
-.tax .estimated-tax-savings .two-blocks {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 40px 0;
-}
-
-.tax .estimated-tax-savings .two-blocks > div {
-    width: 270px;
-    padding: 30px 10px;
-    border-radius: 6px;
-}
-
-.tax .estimated-tax-savings .two-blocks b {
-    font-size: 21px;
-}
-
-.tax .estimated-tax-savings .two-blocks .price {
-    font-size: 34px;
-    font-weight: 900;
-}
-
-.tax .estimated-tax-savings .two-blocks .first {
-    margin-right: 25px;
-    background-color: #fff;
-    color: #0B3B5B;
-}
-
-.tax .estimated-tax-savings .two-blocks .first b {
-    color: #1E74AD;
-}
-
-.tax .estimated-tax-savings .two-blocks .second {
-    margin-left: 25px;
-    background-color: #64BDF8;
-}
-
-.tax .estimated-tax-savings p {
-    margin-bottom: 0;
-    font-size: 9px;
-    line-height: 1.3;
-}
-
-.company .top-banner h3:first-of-type {
-    font-weight: 300;
-}
-
-.company .top-banner h3:last-of-type {
-    font-weight: 900;
-}
-
-.company .about-company {
-    padding: 30px 0;
-    background: url("../images/shaking-hands.jpg") no-repeat center;
-    background-size: cover;
-    color: #fff;
-}
-
-.company .about-company .wrap {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.company .about-company .first {
-    margin-right: 35px;
-    padding: 35px 30px;
-    border: 4px solid #3498DB;
-}
-
-.company .about-company h3 {
-    margin: 0;
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 1;
-}
-
-.company .about-company h3 span {
-    font-weight: 300;
-}
-
-.company .management {
-    padding: 60px 0;
-}
-
-.company .management h4 {
-    margin: 0;
-    color: #0B3B5B;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.company .management h4.bottom-line:after {
-    width: 120px;
-    margin: 12px auto;
-}
-
-.company .management-blocks-wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.company .management-block {
-    width: 45%;
-    padding: 30px;
-    background-color: #F7F7F7;
-}
-
-.company .management-block:first-of-type {
-    margin-right: 15px;
-}
-
-.company .management-info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-.company .management-info img {
-    width: 120px;
-}
-
-.company .management-info .second {
-    margin-left: 25px;
-}
-
-.company .management-info .second span {
-    color: #3498DB;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.company .management-info .second .name {
-    color: #0B3B5B;
-}
-
-.company .management-info .second .bottom-line:after {
-    width: 50%;
-    margin: 6px 0;
-}
-
-.company .management p {
-    color: #656565;
-    font-size: 13px;
 }
 
 @media (max-width: 991px) {
