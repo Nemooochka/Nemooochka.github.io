@@ -3117,6 +3117,14 @@ footer.bottom div a {
     background-image: url("../images/company-banner.jpg");
 }
 
+.top-banner-opportunity {
+    background-image: url("../images/opportunity-banner.jpg");
+}
+
+.top-banner-social {
+    background-image: url("../images/social-banner-top.jpg");
+}
+
 .top-banner h1 {
     margin: 10px 0;
     font-size: 65px;
@@ -4047,12 +4055,20 @@ footer.bottom div a {
     line-height: 1.3;
 }
 
-.company .top-banner h3:first-of-type {
+.top-banner-full h3 {
+    line-height: 1;
+}
+
+.top-banner-full h3:first-of-type {
     font-weight: 300;
 }
 
-.company .top-banner h3:last-of-type {
+.top-banner-full h3:last-of-type {
     font-weight: 900;
+}
+
+.top-banner-full p {
+    font-size: 15px;
 }
 
 .company .about-company {
@@ -4153,6 +4169,274 @@ footer.bottom div a {
 .company .management p {
     color: #656565;
     font-size: 13px;
+}
+
+.opportunity .welcome-title {
+    padding: 35px 0;
+    color: #656565;
+    text-align: center;
+}
+
+.opportunity .welcome-title h3 {
+    margin: 0 0 10px;
+    color: #0B3B5B;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.opportunity .welcome-title span {
+    font-size: 16px;
+}
+
+.opportunity .three-things {
+    padding: 35px 0;
+    background: url("../images/opportunity-bg-1.jpg") no-repeat center;
+    background-size: cover;
+    font-size: 16px;
+}
+
+.opportunity .three-things .wrap {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 80px;
+    color: #fff;
+    border: 4px solid #3498DB;
+}
+
+.opportunity .three-things h4 {
+    margin-top: 0;
+    font-size: 21px;
+}
+
+.opportunity .three-things .blue-dots-list li {
+    padding-left: 25px;
+}
+
+.opportunity .three-things .blue-dots-list li:before {
+    left: 0;
+}
+
+.opportunity .three-things .second {
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    margin-top: -97px;
+    border: 2px solid #fff;
+}
+
+.opportunity .three-things .second img {
+    height: 190px;
+}
+
+.compare-systems {
+    margin: 15px 0;
+}
+
+.compare-systems .title {
+    color: #fff;
+    text-align: center;
+}
+
+.compare-systems .title .top {
+    padding: 15px 5px;
+    background: linear-gradient(to left, #126FAD, #0E188B);
+    font-size: 21px;
+}
+
+.compare-systems .title .top h4 {
+    margin-bottom: 0;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.compare-systems .title .bottom {
+    padding: 8px 0;
+    background: linear-gradient(to left, #64BDF8, #3498DB);
+}
+
+.compare-systems .compare-blocks {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0 50px;
+}
+
+.compare-systems .compare-blocks .block {
+    width: 50%;
+    color: #656565;
+}
+
+.compare-systems .compare-blocks .top {
+    margin-bottom: 20px;
+    padding: 0 50px;
+}
+
+.compare-systems .compare-blocks .top h4 {
+    color: #145077;
+    font-size: 23px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+}
+
+.compare-systems .compare-blocks .top .bottom-line:after {
+    width: 40%;
+    margin: 10px 0;
+}
+
+.compare-systems .compare-blocks .top b {
+    color: #1E74AD;
+    font-size: 16px;
+}
+
+.compare-systems .compare-blocks .middle div {
+    margin-bottom: 7px;
+    padding: 12px 50px;
+    background-color: #fff;
+    box-shadow: 0 0 18px 3px rgba(0,0,0,.16)
+}
+
+.compare-systems .block-mwr-system .middle div {
+    background-color: #3498DB;
+    color: #fff;
+}
+
+.compare-systems .compare-blocks .bottom {
+    padding: 15px 50px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.compare-systems .block-mwr-system .bottom {
+    color: #1E74AD;
+}
+
+.promise {
+    position: relative;
+    background: url("../images/opportunity-bg-2.jpg") no-repeat center;
+    color: #fff;
+}
+
+.promise .mid-title {
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px 20px;
+    transform: translateY(-50%);
+    background-color: #64BDF8;
+    font-size: 21px;
+    text-align: center;
+}
+
+.promise .promise-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.promise .promise-block .first {
+    width: 270px;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.promise .description {
+    margin-top: 5px;
+    padding: 0 30px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: .01em;
+}
+
+.promise .benefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transform: translateY(50%);
+    margin-top: -85px;
+}
+
+.promise .benefits div {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 19%;
+    height: 230px;
+    padding: 15px 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border-radius: 9px;
+}
+
+.promise .benefits div span {
+    display: inline-flex;
+    align-items: center;
+    height: 75px;
+    font-size: 17px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.promise .benefits .car {
+    background-image: url("../images/luxury-car.png");
+}
+
+.promise .benefits .presidential-club {
+    background-image: url("../images/presidential-club.png");
+}
+
+.promise .benefits .awards {
+    background-image: url("../images/awards.png");
+}
+
+.promise .benefits .trips {
+    background-image: url("../images/exclusive-trips.png");
+}
+
+.promise .benefits .recognition {
+    background-image: url("../images/recongition.png");
+}
+
+.join {
+    padding: 190px 0 80px;
+    background: url("../images/join.jpg") no-repeat center;
+    text-align: center;
+}
+
+.join h3 {
+    margin-bottom: 45px;
+    color: #0E5A8D;
+    font-weight: bold;
+}
+
+.join h3 span {
+    font-weight: 400;
+}
+
+.join .wrap-btn {
+    margin-bottom: 45px;
+}
+
+.join .wrap-link a {
+    color: #0E5A8D;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.social .blog h4 {
+    margin: 0;
+    padding: 15px;
+    background-color: #145077;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    transform: translateY(-50%);
 }
 
 @media (max-width: 991px) {
