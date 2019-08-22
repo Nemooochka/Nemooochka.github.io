@@ -677,6 +677,10 @@ h2 {
     line-height: 19px;
 }
 
+.main-benefits .description.with-sidebar {
+    align-items: flex-start;
+}
+
 .main-benefits .description p {
     color: #656565;
 }
@@ -2594,8 +2598,12 @@ footer.bottom div a {
     .main-benefits .inline-blocks .first-block,
     .main-benefits .inline-blocks .second-block {
         width: 100%;
-        margin-bottom: 15px;
+        margin: 0 0 15px;
         padding: 0;
+    }
+
+    .main-benefits .inline-blocks .second-block img {
+        max-width: 80%;
     }
 
     *.bottom-line:after {
@@ -2612,7 +2620,24 @@ footer.bottom div a {
     }
 
     .main-benefits .description {
-        text-align: center;
+        flex-direction: column;
+        margin: 15px 0;
+    }
+
+    .main-benefits .description.with-sidebar {
+        align-items: center;
+    }
+
+    .main-benefits .with-sidebar .sidebar {
+        margin-top: 15px;
+    }
+
+    .main-benefits .with-sidebar > div:first-of-type {
+        width: 100%;
+    }
+
+    .main-benefits .content .blue-dots-list {
+        margin-top: 25px;
     }
 
     .description h5,
@@ -2959,7 +2984,10 @@ footer.bottom div a {
         margin-left: 0;
     }
 
-    .description-visual .wrap-visual,
+    .description-visual .wrap-visual {
+        width: 80%;
+    }
+
     .description-visual.description-video .wrap-visual {
         width: 100%;
         margin: 0;
@@ -3732,7 +3760,11 @@ footer.bottom div a {
 }
 
 .membership-includes .wrap-list {
-    margin: 15px 0;
+    margin: 15px auto;
+}
+
+.membership-includes .wrap-list .blue-dots-list:first-of-type {
+    padding-right: 15px;
 }
 
 .membership-includes .wrap_video {
@@ -4291,6 +4323,9 @@ footer.bottom div a {
 }
 
 .compare-systems .compare-blocks .middle div {
+    display: flex;
+    align-items: center;
+    min-height: 64px;
     margin-bottom: 7px;
     padding: 12px 50px;
     background-color: #fff;
@@ -4582,7 +4617,12 @@ footer.bottom div a {
     }
 
     .membership-includes .wrap-list {
-        max-width: 300px;
+        max-width: 70%;
+        flex-direction: row;
+    }
+
+    .membership-includes .wrap-list .blue-dots-list {
+        flex: 0 0 50%;
     }
 }
 
@@ -4697,6 +4737,21 @@ footer.bottom div a {
 
     .promotion p {
         font-size: 18px;
+    }
+
+    .membership-includes .wrap-list {
+        max-width: 82%;
+    }
+}
+
+@media (max-width: 600px) {
+    .membership-includes .wrap-list {
+        max-width: 250px;
+        flex-direction: column;
+    }
+
+    .membership-includes .wrap-list .blue-dots-list:first-of-type {
+        padding-right: 0;
     }
 }
 
