@@ -3982,7 +3982,7 @@ footer.bottom div a {
 }
 
 #taxBracket {
-    width: 90px;
+    max-width: 90px;
     font-weight: bold;
 }
 
@@ -4490,7 +4490,30 @@ footer.bottom div a {
     .new footer.two-blocks-background .details ul {
         padding-left: 20px;
     }
+
+    .opportunity .three-things .second {
+        position: static;
+        margin-top: 0;
+    }
+
+    .opportunity .three-things .second img {
+        max-height: 170px;
+        height: auto;
+    }
+
+    .opportunity .three-things .wrap {
+        justify-content: space-around;
+        padding: 15px 70px;
+    }
 }
+
+@media (max-width: 940px) {
+    .tax-expenses .title.full-width {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media (max-width: 800px) {
 
     .new h2 {
@@ -4624,6 +4647,18 @@ footer.bottom div a {
     .membership-includes .wrap-list .blue-dots-list {
         flex: 0 0 50%;
     }
+
+    /* Tax */
+
+    .opportunity .three-things .wrap {
+        flex-direction: column;
+        padding: 25px 15px;
+    }
+
+    .opportunity .three-things .second {
+        margin-top: 20px;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -4658,7 +4693,7 @@ footer.bottom div a {
         height: 400px;
     }
 
-    .new .wrap_banner_text {
+    .new .top-banner-home .wrap_banner_text {
         margin-top: 0;
     }
 
@@ -4752,6 +4787,34 @@ footer.bottom div a {
 
     .membership-includes .wrap-list .blue-dots-list:first-of-type {
         padding-right: 0;
+    }
+
+    .tax-expenses .title:before {
+        display: none;
+    }
+
+    .tax-expenses .tax-table_row div {
+        padding: 0 15px;
+    }
+
+    .tax-expenses .tax-table_row .name {
+        padding-right: 15px;
+    }
+
+    .tax-expenses .tax-table_row .expenses {
+        width: 130px;
+    }
+
+    .tax-expenses .tax-table_row .deductions {
+        width: 140px;
+    }
+
+    .tax .next-step {
+        padding: 40px 0 30px;
+    }
+
+    .tax .user-form-title h3 {
+        font-size: 35px;
     }
 }
 
@@ -4921,5 +4984,91 @@ footer.bottom div a {
 
     .promotion p {
         font-size: 16px;
+    }
+
+    /* Tax */
+
+    .tax-expenses .title span {
+        padding: 0;
+    }
+
+    .tax-expenses .tax-table_row {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .tax-expenses .tax-table_row.tax-table_header div {
+        font-size: 12px;
+    }
+
+    .tax-expenses .tax-table_row h6 {
+        font-size: 17px;
+    }
+
+    .tax-expenses .tax-table_row p {
+        margin-top: 5px;
+        font-size: 10px;
+        line-height: 1.3;
+    }
+
+    .tax-expenses .tax-table_row .name {
+        word-break: break-word;
+    }
+
+    .tax-expenses .tax-table_row .expenses {
+        width: 120px;
+    }
+
+    .tax-expenses .tax-table_row .deductions {
+        width: 120px;
+        font-size: 17px;
+    }
+
+    .tax-expenses .tax-table_row.total .expenses {
+        display: none;
+    }
+
+    .tax .estimated-tax-savings h3 {
+        margin-top: 10px;
+        font-size: 26px;
+    }
+
+    .tax .estimated-tax-savings .two-blocks {
+        flex-direction: column;
+        margin: 30px 0;
+    }
+
+    .tax .estimated-tax-savings .two-blocks > div {
+        width: 300px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .tax .estimated-tax-savings .two-blocks .first {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .tax-expenses .tax-table_row {
+        line-height: 1.3;
+    }
+
+    .tax-expenses .tax-table_row h6 {
+        font-size: 16px;
+    }
+
+    .tax-expenses .tax-table_row p {
+        font-size: 9px;
+    }
+
+    .tax-expenses .tax-table_row .expenses,
+    .tax-expenses .tax-table_row .deductions {
+        width: 100px;
+    }
+
+    .tax-expenses .tax-table_row .deductions {
+        padding-top: 6px;
     }
 }
