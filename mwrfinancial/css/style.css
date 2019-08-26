@@ -4272,7 +4272,7 @@ footer.bottom div a {
 }
 
 .compare-systems .title .top {
-    padding: 15px 5px;
+    padding: 15px 8px;
     background: linear-gradient(to left, #126FAD, #0E188B);
     font-size: 21px;
 }
@@ -4284,27 +4284,38 @@ footer.bottom div a {
 }
 
 .compare-systems .title .bottom {
-    padding: 8px 0;
+    padding: 8px;
     background: linear-gradient(to left, #64BDF8, #3498DB);
 }
 
 .compare-systems .compare-blocks {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 30px 0 50px;
 }
 
-.compare-systems .compare-blocks .block {
-    width: 50%;
-    color: #656565;
+.compare-systems .block-row {
+    display: flex;
+    flex-direction: row;
 }
 
-.compare-systems .compare-blocks .top {
-    margin-bottom: 20px;
+.compare-systems .block-row > div {
+    width: 50%;
+}
+
+.compare-systems .top .block-row > div {
     padding: 0 50px;
 }
 
-.compare-systems .compare-blocks .top h4 {
+.compare-systems .top .block-row:first-of-type {
+    align-items: flex-end;
+}
+
+.compare-systems .top .block-row:last-of-type {
+    margin-bottom: 20px;
+}
+
+.compare-systems .top .block-row h4 {
     color: #145077;
     font-size: 23px;
     font-weight: 900;
@@ -4312,44 +4323,44 @@ footer.bottom div a {
     letter-spacing: .03em;
 }
 
-.compare-systems .compare-blocks .top .bottom-line:after {
+.compare-systems .top .bottom-line:after {
     width: 40%;
     margin: 10px 0;
 }
 
-.compare-systems .compare-blocks .top b {
+.compare-systems .top b {
     color: #1E74AD;
     font-size: 16px;
 }
 
-.compare-systems .compare-blocks .middle div {
+.compare-systems .middle .block-row > div {
     display: flex;
     align-items: center;
-    min-height: 64px;
     margin-bottom: 7px;
     padding: 12px 50px;
     background-color: #fff;
     box-shadow: 0 0 18px 3px rgba(0,0,0,.16)
 }
 
-.compare-systems .block-mwr-system .middle div {
+.compare-systems .middle .block-row .second {
     background-color: #3498DB;
     color: #fff;
 }
 
-.compare-systems .compare-blocks .bottom {
+.compare-systems .bottom .block-row > div {
     padding: 15px 50px;
     font-size: 12px;
     font-weight: bold;
     line-height: 1.4;
 }
 
-.compare-systems .block-mwr-system .bottom {
+.compare-systems .bottom .second {
     color: #1E74AD;
 }
 
 .promise {
     position: relative;
+    padding-bottom: 140px;
     background: url("../images/opportunity-bg-2.jpg") no-repeat center;
     color: #fff;
 }
@@ -4386,15 +4397,19 @@ footer.bottom div a {
     letter-spacing: .01em;
 }
 
-.promise .benefits {
+.opportunity .benefits .wrap {
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    transform: translateY(50%);
-    margin-top: -85px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 15px;
+    transform: translateY(-50%);
 }
 
-.promise .benefits div {
+.opportunity .benefits .wrap div {
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -4408,7 +4423,7 @@ footer.bottom div a {
     border-radius: 9px;
 }
 
-.promise .benefits div span {
+.opportunity .benefits .wrap span {
     display: inline-flex;
     align-items: center;
     height: 75px;
@@ -4417,28 +4432,28 @@ footer.bottom div a {
     text-transform: uppercase;
 }
 
-.promise .benefits .car {
+.opportunity .benefits .car {
     background-image: url("../images/luxury-car.png");
 }
 
-.promise .benefits .presidential-club {
+.opportunity .benefits .presidential-club {
     background-image: url("../images/presidential-club.png");
 }
 
-.promise .benefits .awards {
+.opportunity .benefits .awards {
     background-image: url("../images/awards.png");
 }
 
-.promise .benefits .trips {
+.opportunity .benefits .trips {
     background-image: url("../images/exclusive-trips.png");
 }
 
-.promise .benefits .recognition {
+.opportunity .benefits .recognition {
     background-image: url("../images/recongition.png");
 }
 
 .join {
-    padding: 190px 0 80px;
+    padding: 210px 0 90px;
     background: url("../images/join.jpg") no-repeat center;
     text-align: center;
 }
@@ -4511,6 +4526,10 @@ footer.bottom div a {
     .tax-expenses .title.full-width {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .opportunity .benefits .wrap div {
+        height: 220px;
     }
 }
 
@@ -4648,7 +4667,7 @@ footer.bottom div a {
         flex: 0 0 50%;
     }
 
-    /* Tax */
+    /* Opportunity */
 
     .opportunity .three-things .wrap {
         flex-direction: column;
@@ -4657,6 +4676,20 @@ footer.bottom div a {
 
     .opportunity .three-things .second {
         margin-top: 20px;
+    }
+
+    .promise {
+        padding-bottom: 40px;
+    }
+
+    .opportunity .benefits .wrap {
+        position: static;
+        padding: 25px 0;
+        transform: none;
+    }
+
+    .join {
+        padding: 70px 0;
     }
 
 }
@@ -4778,6 +4811,8 @@ footer.bottom div a {
         max-width: 82%;
     }
 
+    /* Company */
+
     .company .management {
         padding: 40px 0;
     }
@@ -4795,9 +4830,51 @@ footer.bottom div a {
     .company .management-info {
         margin-bottom: 25px;
     }
+
+    /* Opportunity */
+
+    .promise .promise-block {
+        flex-direction: column;
+        padding-top: 5px;
+    }
+
+    .promise .promise-block .first {
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .promise .description {
+        padding: 0;
+    }
+
+    .opportunity .benefits .wrap {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .opportunity .benefits .wrap div {
+        height: 210px;
+        width: 30%;
+        margin: 0 2% 25px;
+    }
+
+    .compare-systems .top .block-row > div,
+    .compare-systems .middle .block-row > div,
+    .compare-systems .bottom .block-row > div {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .join {
+        padding: 50px 0;
+    }
 }
 
 @media (max-width: 600px) {
+
+    /* Membership */
+
     .membership-includes .wrap-list {
         max-width: 250px;
         flex-direction: column;
@@ -4835,6 +4912,8 @@ footer.bottom div a {
         font-size: 35px;
     }
 
+    /* Company */
+
     .company .about-company .wrap {
         flex-direction: column;
         text-align: center;
@@ -4842,6 +4921,15 @@ footer.bottom div a {
 
     .company .about-company .first {
         margin: 0 0 20px;
+    }
+
+    /* Opportunity */
+
+    .compare-systems .top .block-row > div,
+    .compare-systems .middle .block-row > div,
+    .compare-systems .bottom .block-row > div {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -5074,6 +5162,28 @@ footer.bottom div a {
     .tax .estimated-tax-savings .two-blocks .first {
         margin-bottom: 20px;
     }
+
+    /* Opportunity */
+
+    .opportunity .benefits .wrap div {
+        height: 190px;
+        width: 46%;
+        margin-bottom: 15px;
+        max-width: 170px;
+    }
+
+    .join {
+        padding: 35px 0;
+    }
+
+    .join h3 {
+        font-size: 23px;
+    }
+
+    .join h3,
+    .join .wrap-btn {
+        margin-bottom: 35px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -5097,5 +5207,19 @@ footer.bottom div a {
 
     .tax-expenses .tax-table_row .deductions {
         padding-top: 6px;
+    }
+
+    /* Opportunity */
+
+    .compare-systems .top .block-row h4 {
+        font-size: 21px;
+    }
+
+    .compare-systems .top b {
+        font-size: 15px;
+    }
+
+    .compare-systems .middle .block-row > div {
+        line-height: 1.3;
     }
 }
