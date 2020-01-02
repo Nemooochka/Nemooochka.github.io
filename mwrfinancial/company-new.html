@@ -203,7 +203,7 @@
     </div>
 </main>
 
-<footer class="two-blocks-background no-margin-top">
+<footer class="two-blocks-background">
     <div class="inner">
         <div class="wrap">
             <div class="logo">
@@ -246,13 +246,14 @@
 <script>
 
     $(document).ready(function () {
+        var windowHeight = Math.min(window.innerHeight, document.body.clientHeight);
+        var bannerImage = $('.banner_img');
         if ($(window).width() > 1000) {
-            var banner_height = Math.min(window.innerHeight, document.body.clientHeight) + 1;
-            $('.banner_img').css('height', banner_height);
-            $('.wrap_banner_text').show();
-        } else {
-            $('.wrap_banner_text').show();
+            var bannerHeight = windowHeight - $('.about-company').outerHeight() + 1;
+            bannerImage.css('height', bannerHeight);
         }
+
+        $('.wrap_banner_text').show();
     });
 
 </script>

@@ -190,31 +190,15 @@
 <script>
 
     $(document).ready(function () {
-        if ($(window).width() > 1400) {
-            var banner_height = Math.min(window.innerHeight, document.body.clientHeight);
-            var titleHeight = Math.floor(($('.blog h4').outerHeight()) / 2);
-            console.log(titleHeight);
-            $('.banner_img').css('height', banner_height - titleHeight + 1);
-            $('.wrap_banner_text').show();
-        } else {
-            $('.wrap_banner_text').show();
+        var windowHeight = Math.min(window.innerHeight, document.body.clientHeight);
+        var bannerImage = $('.banner_img');
+        if ($(window).width() > 1000) {
+            var titleHeight = $('.blog h4').outerHeight();
+            var titleMargin = Math.floor(titleHeight / 4);
+            bannerImage.css('height', windowHeight - titleHeight + titleMargin);
         }
 
-        var tab = $('.widget-tabs').find('li a');
-        tab.click(function (e) {
-            e.preventDefault();
-
-            var widgetBlock = $(this).attr('href');
-            widgetBlock = '.' + widgetBlock;
-            $(widgetBlock).addClass('active').siblings().removeClass('active');
-            $(this).parent().addClass('active').siblings().removeClass('active');
-
-            if ($(window).width() < 500) {
-                $('html, body').animate({
-                    scrollTop: $(this).offset().top - 90
-                }, 500);
-            }
-        })
+        $('.wrap_banner_text').show();
     });
 
 </script>

@@ -436,7 +436,7 @@
     </div>
 </main>
 
-<footer class="two-blocks-background no-margin-top">
+<footer class="two-blocks-background">
     <div class="inner">
         <div class="wrap">
             <div class="logo">
@@ -479,13 +479,18 @@
 <script>
 
     $(document).ready(function () {
-        if ($(window).width() > 1000) {
-            var banner_height = Math.min(window.innerHeight, document.body.clientHeight) + 1;
-            $('.banner_img').css('height', banner_height);
-            $('.wrap_banner_text').show();
-        } else {
-            $('.wrap_banner_text').show();
+        var windowHeight = Math.min(window.innerHeight, document.body.clientHeight);
+        var bannerHeight;
+        var bannerImage = $('.banner_img');
+        if ($(window).width() > 1400) {
+            bannerHeight = windowHeight - $('.welcome-title').outerHeight() - $('.three-things').outerHeight() + 1;
+            bannerImage.css('height', bannerHeight);
+        } else if($(window).width() > 1000 && $(window).width() < 1400) {
+            bannerHeight = windowHeight - $('.welcome-title').outerHeight() + 1;
+            bannerImage.css('height', bannerHeight);
         }
+
+        $('.wrap_banner_text').show();
     });
 
 </script>

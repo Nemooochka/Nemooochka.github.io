@@ -1,0 +1,9 @@
+.content .ticket-selector-tbl-qty-slct {
+    min-width: 60px;
+    margin-bottom: 0;
+    background-position: calc(100% - 10px) center;
+}
+
+.content .tckt-slctr-tbl-td-price {
+    padding-top: 8px;
+}

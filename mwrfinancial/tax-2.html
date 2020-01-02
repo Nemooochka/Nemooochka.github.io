@@ -303,7 +303,7 @@
     </div>
 </main>
 
-<footer class="two-blocks-background no-margin-top">
+<footer class="two-blocks-background">
     <div class="inner">
         <div class="wrap">
             <div class="logo">
@@ -346,13 +346,25 @@
 <script>
 
     $(document).ready(function () {
-        if ($(window).width() > 1000) {
-            var banner_height = Math.min(window.innerHeight, document.body.clientHeight) - $('.half-top').height() + 31;
-            $('.banner_img').css('height', banner_height);
-            $('.wrap_banner_text').show();
-        } else {
-            $('.wrap_banner_text').show();
+        var windowHeight = Math.min(window.innerHeight, document.body.clientHeight);
+        var bannerImage = $('.banner_img');
+        var bannerHeight;
+        if ($(window).width() > 1400) {
+            bannerHeight = Math.min(window.innerHeight, document.body.clientHeight)
+                - $('.half-top').height()
+                - $('.tax-expenses .title').outerHeight()
+                - $('.tax-table .tax-table_header').outerHeight()
+                - (2 * ($('.tax-table .tax-table_row').outerHeight()))
+                - 90;
+            bannerImage.css('height', bannerHeight);
+        } else if ($(window).width() > 1000) {
+            bannerHeight = Math.min(window.innerHeight, document.body.clientHeight)
+                - $('.half-top').height() - $('.tax-expenses .title').outerHeight()
+                - 30;
+            bannerImage.css('height', bannerHeight);
         }
+
+        $('.wrap_banner_text').show();
     });
 
 </script>

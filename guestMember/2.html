@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Title</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://marksheet.io/css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="background">
+    <header class="container">
+        <a class="logo" href="#">
+            <img src="img/logo.png" alt="">
+        </a>
+        <div class="secure-enrollment">
+            <img src="img/lock.svg" alt="">
+            <span>
+            Secure enrollment
+        </span>
+        </div>
+    </header>
+    <main class="container">
+        <div class="membership">
+            <div class="video-block">
+                <div class="title-top">
+                    <h1>
+                        FREE Lifetime Membership
+                    </h1>
+                    <p>
+                        Enter your Guest Pass code now to access exclusive members-only travel discount!
+                    </p>
+                </div>
+                <div class="video">
+                    <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async=""></script>
+                    <div class="wistia_responsive_padding" style="padding: 56.25% 0 28px 0; position: relative;">
+                        <div class="wistia_responsive_wrapper"
+                             style="height: 100%; left: 0; position: absolute; top: 0; width: 100%;">
+                        <span class="wistia_embed wistia_async_zg578lzc50 popover=true popoverAnimateThumbnail=true videoFoam=true wistia_embed_initialized"
+                              style="display: inline-block; height: 100%; width: 100%" id="wistia-zg578lzc50-1"><div
+                                id="wistia_15.thumb_container" class="wistia_click_to_play"
+                                style="position: relative; height: 183.25px; width: 276px;"><div
+                                id="wistia_33.thumbnail" tabindex="0"
+                                style="cursor: pointer; display: block; height: 183.25px; overflow: hidden; outline: none; position: relative; width: 276px;"><img
+                                id="wistia_33.thumbnail_img" alt="Wistia video thumbnail"
+                                src="https://embedwistia-a.akamaihd.net/deliveries/2b4c55fe6ca61c46a2b7cde11a3dfc3af93edfb0.jpg?image_crop_resized=640x360"
+                                style="border: 0px; display: block; float: none; height: 183.25px; margin: 0px; max-height: none; max-width: none; padding: 0px; position: absolute; width: 326px; left: -25px; top: 0px;"></div></div></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-block">
+                <div class="top-part">
+                    <div class="wrap-img">
+                        <img src="img/guestPasses.png" alt="">
+                    </div>
+                    <div class="wrap-action wrap-answer">
+                        <h3>
+                            Congratulations, your code was validated!
+                        </h3>
+                        <p>
+                            Complete the form to claim your FREE Guest Membership!
+                        </p>
+                    </div>
+                </div>
+                <form action="" class="form-part">
+                    <div class="formElement">
+                        <label for="firstName">
+                            First Name
+                        </label>
+                        <input id="firstName" type="text" placeholder="Enter your first name">
+                    </div>
+                    <div class="formElement">
+                        <label for="lastName">
+                            Last Name
+                        </label>
+                        <input id="lastName" type="text" placeholder="Enter your last name">
+                    </div>
+                    <div class="formElement">
+                        <label for="email">
+                            Email
+                        </label>
+                        <input id="email" type="email" placeholder="Enter your email">
+                    </div>
+                    <div class="formElement">
+                        <label for="password">
+                            Password
+                        </label>
+                        <input id="password" type="password" placeholder="********">
+                    </div>
+                    <div class="formElement">
+                        <label for="passwordConfirm">
+                            Confirm Password
+                        </label>
+                        <input id="passwordConfirm" type="password" placeholder="********">
+                    </div>
+                    <div class="formElement action">
+                        <div class="first">
+                            <div>
+                                <input class="styled-checkbox" id="styled-checkbox" type="checkbox">
+                                <label for="styled-checkbox">
+                                    I have read and accepted <a href="#">the Terms and Conditions</a>
+                                </label>
+                            </div>
+                            <a class="btn btn-green btn-narrow" href="#">
+                                Start Saving
+                            </a>
+                        </div>
+                        <div class="second">
+                            <a class='modalShow' href="modalText">
+                                Already a member? Sign in
+                            </a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <span>
+                © 2019 Travel Advantage™
+            </span>
+            <span class="divider">|</span>
+            <a href="#">
+                Privacy Police
+            </a>
+            <span class="divider">|</span>
+            <a href="#">
+                Price Guarantee
+            </a>
+            <span class="divider">|</span>
+            <a href="#">
+                Seller of Travel
+            </a>
+        </div>
+    </footer>
+</div>
+
+<div id="modalText" class="modal is-hidden">
+    <div class="container">
+        <p>
+            Login to Travel Advantage Membership
+        </p>
+        <p>
+            The Guest Member setup process and SSO should start from the initial submission from screen #2 so there is
+            minimal delay.
+        </p>
+    </div>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+</script>
+<script>
+    $(document).ready(function () {
+
+        /* modal */
+
+        var background = $('.background');
+        $('.modalShow').on('click', function (e) {
+            e.preventDefault();
+
+            var topPosition = $(document).scrollTop();
+            var modalId = $(this).attr('href');
+            var modal = '#' + modalId;
+            modal = $(modal);
+
+            // Open the modal
+            modal.removeClass('is-hidden');
+            background.addClass('modalOpenExtra');
+            $(modal).scrollTop(0);
+
+            // When the user clicks anywhere outside of the modal, close it
+            $(window).on('click', function (event) {
+                if (event.target.id === modalId) {
+                    modal.addClass('is-hidden');
+                    background.removeClass('modalOpenExtra');
+                    $('html, body').scrollTop(topPosition);
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
