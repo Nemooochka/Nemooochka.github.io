@@ -58,10 +58,10 @@
     <!-- New freshchat widget code -->
     <script src="https://wchat.freshchat.com/js/widget.js"></script>
 
-    <link href="/content/custom-live-20.02.css" rel="stylesheet" type="text/css">
+    <link href="content/custom-live-20.02.css" rel="stylesheet" type="text/css">
 
 
-    <link rel="stylesheet" href="/content/prettyPhoto.css" type="text/css" media="screen"
+    <link rel="stylesheet" href="content/prettyPhoto.css" type="text/css" media="screen"
           title="prettyPhoto main stylesheet" charset="utf-8">
 
 
@@ -112,9 +112,9 @@
             right: 20px;
         }
     </style>
-    <link href="https://wchat.freshchat.com/css/widget.css?t=1577936044926" rel="stylesheet">
+    <link href="https://wchat.freshchat.com/css/widget.css?t=1584515775180" rel="stylesheet">
 </head>
-<body data-gr-c-s-loaded="true" style="visibility: visible;">
+<body style="visibility: visible;" data-gr-c-s-loaded="true">
 <!-- Some java script code has been taken to the head section "inner body tag script" -->
 <!-- Top Social Bar and Login Panel - Start -->
 
@@ -147,8 +147,8 @@
                 <li>
                     <a href="#countryselect" id="HdrEUCountryA" role="button" data-toggle="modal">
                         <img src"="" images="" countryflags="" united-states-flag.png"=""
-                        style="height:28px;width:28px;" src="/images/CountryFlags/United-States-Flag.png">
-                        <span id="HdrEUCountryName">United States</span>
+                        style="height:28px;width:28px;" src="/images/CountryFlags/Indonesia-Flag.png">
+                        <span id="HdrEUCountryName">Indonesia</span>
                     </a>
                 </li>
                 <li></li>
@@ -296,11 +296,11 @@
     </div>
 
     <div class="clearfix">
-        <div class="video-wrap" style="height: 432px;">
+        <div class="video-wrap" style="height: 206px;">
             <video preload="auto" class="videot" id="videot" playsinline="" autoplay="" muted="" loop="">
-                <source src="/Content/video/HomepageLoop.mp4" type="video/mp4">
-                <source src="/Content/video01.webm" type="video/webm">
-                <source src="/Content/video01.ogg" type="video/ogg">
+                <source src="content/video/HomepageLoop.mp4" type="video/mp4">
+                <source src="content/video01.webm" type="video/webm">
+                <source src="content/video01.ogg" type="video/ogg">
                 <object type="application/x-shockwave-flash" data="flash-player.swf?videoUrl=video/video01.mp4"
                         height="1080">
                     <param name="movie" value="flash-player.swf?videoUrl=video/video01.mp4">
@@ -591,11 +591,11 @@
 
 <!-- Footer Section -->
 
-<footer style="line-height:20px;font-family: 'Open Sans', sans-serif;">
+<footer>
     <div class="top">
         <section class="inner clearfix">
 
-            <article class="follow-mwr" style="height: 200px;">
+            <article class="follow-mwr">
 
                 <div class="wrap-img">
                     <img src="/images/logo-dark-footer.png" width="140px" alt="">
@@ -689,10 +689,10 @@
 
     <div class="bottom">
         <div id="copyright">©2013-2020 MWR Life. All rights reserved.</div>
-        <div><a id="link1KR" href="/content/TermsofUse.pdf" target="_blank">Terms of Use</a> | <a id="link2KR"
-                                                                                                  href="/content/PrivacyPolicy.pdf "
-                                                                                                  target="_blank">Privacy
-            Policy</a> | <a id="link3KR" href="/content/IncomeDisclosure.pdf" target="_blank">Income Disclosure</a>
+        <div><a id="link1KR" href="content/TermsofUse.pdf" target="_blank">Terms of Use</a> | <a id="link2KR"
+                                                                                                 href="content/PrivacyPolicy.pdf "
+                                                                                                 target="_blank">Privacy
+            Policy</a> | <a id="link3KR" href="content/IncomeDisclosure.pdf" target="_blank">Income Disclosure</a>
         </div>
     </div>
 
@@ -724,7 +724,11 @@
 
         <div class="countryModalClass">
             <ul>
-
+                <li><a onclick="return SetCountryForEuropeToHdr('AL','Albania','Albania-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                    <img src="/images/CountryFlags/Albania-Flag.png">
+                    <span>Albania</span></a>
+                </li>
                 <li><a onclick="return SetCountryForEuropeToHdr('DZ','Algeria','Algeria-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
                     <img src="/images/CountryFlags/Algeria-Flag.png">
@@ -760,7 +764,11 @@
                     <img src="/images/CountryFlags/Azerbaijan-Flag.png">
                     <span>Azerbaijan</span></a>
                 </li>
-
+                <li><a onclick="return SetCountryForEuropeToHdr('BD','Bangladesh','Bangladesh-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                    <img src="/images/CountryFlags/Bangladesh-Flag.png">
+                    <span>Bangladesh</span></a>
+                </li>
                 <li><a onclick="return SetCountryForEuropeToHdr('BY','Belarus','Belarus-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
                     <img src="/images/CountryFlags/Belarus-Flag.png">
@@ -925,6 +933,10 @@
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
                     <img src="/images/CountryFlags/Guatemala-Flag.png">
                     <span>Guatemala</span></a></li>
+                <li><a onclick="return SetCountryForEuropeToHdr('GW','Guinea-Bissau','Guinea-Bissau-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                    <img src="/images/CountryFlags/Guinea-Bissau-Flag.png">
+                    <span>Guinea-Bissau</span></a></li>
                 <li><a onclick="return SetCountryForEuropeToHdr('HT','Haiti','Haiti-Flag.png')" href="www.mwrlife.com/"
                        role="button" data-toggle="modal">
                     <img src="/images/CountryFlags/Haiti-Flag.png">
@@ -949,6 +961,10 @@
                        role="button" data-toggle="modal">
                     <img src="/images/CountryFlags/India-Flag.png">
                     <span>India</span></a></li>
+                <li><a onclick="return SetCountryForEuropeToHdr('ID','Indonesia','Indonesia-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                    <img src="/images/CountryFlags/Indonesia-Flag.png">
+                    <span>Indonesia</span></a></li>
                 <li><a onclick="return SetCountryForEuropeToHdr('IE','Ireland','Ireland-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
                     <img src="/images/CountryFlags/Ireland-Flag.png">
@@ -1080,6 +1096,11 @@
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
                     <img src="/images/CountryFlags/Norway-Flag.png">
                     <span>Norway</span></a>
+                </li>
+                <li><a onclick="return SetCountryForEuropeToHdr('PK','Pakistan','Pakistan-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                    <img src="/images/CountryFlags/Pakistan-Flag.png">
+                    <span>Pakistan</span></a>
                 </li>
                 <li><a onclick="return SetCountryForEuropeToHdr('PA','Panama','Panama-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
@@ -1235,7 +1256,6 @@
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
                     <img src="/images/CountryFlags/Uzbekistan-Flag.png">
                     <span>Uzbekistan</span></a></li>
-                Vanuatu
                 <li><a onclick="return SetCountryForEuropeToHdr('VU','Vanuatu','Vanuatu-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
                     <img src="/images/CountryFlags/Vanuatu-Flag.png">
@@ -1257,8 +1277,8 @@
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"
         integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
-<script src="/scripts/app.js"></script>
-<script src="/scripts/jSignature.min.js?v=2"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/jSignature.min.js?v=2"></script>
 
 <script type="text/javascript">
     var isPromoter = "true";
@@ -1271,14 +1291,14 @@
     $(document).ready(function () {
 
         if ('System.Web.HttpSessionStateWrapper' != null) {
-            if ('' != "1") {
+            if ('1' != "1") {
                 //localStorage['SelectedEuropeCountryName'] = "";
-                if ('United States' != "OutOfCountryList") {
-                    localStorage['SelectedEuropeCountryName'] = 'United States';
-                    if ('USA' != null) {
-                        localStorage['SelectedCountryShortName'] = 'USA';
+                if ('Indonesia' != "OutOfCountryList") {
+                    localStorage['SelectedEuropeCountryName'] = 'Indonesia';
+                    if ('ID' != null) {
+                        localStorage['SelectedCountryShortName'] = 'ID';
                     }
-                } else if ('United States' == "OutOfCountryList") {
+                } else if ('Indonesia' == "OutOfCountryList") {
                     localStorage['SelectedEuropeCountryName'] = "";
                     localStorage['SelectedEuropeCountryFlag'] = "";
                     localStorage['SelectedCountryShortName'] = "";
@@ -1291,8 +1311,8 @@
 
 
                 var LanguageName = 'English';
-                var CountryName = 'United States';
-                var Country_ShortName = 'USA';
+                var CountryName = 'Indonesia';
+                var Country_ShortName = 'ID';
                 if (LanguageName != null && CountryName != null && CountryName != "OutOfCountryList") {
                     var countryNameForFlag = CountryName.replace(/\s/g, "-");
                     //CountryName = CountryName.replace(/\s/g, "-");
@@ -1490,7 +1510,7 @@
     var _user_id = ""
 
     // Set to the user's ID, username, or email address, or '' if not yet known.
-    var _session_id = 'zv5p3xm10hcyhwxj2xvpyuyl'; // Set to a unique session ID for the visitor's current browsing session.
+    var _session_id = 'l5sxcvbfsec55juhrwi4vs5f'; // Set to a unique session ID for the visitor's current browsing session.
     //alert(_session_id);
     var _sift = window._sift = window._sift || [];
     _sift.push(['_setAccount', '16989f1d45']);
@@ -1888,7 +1908,7 @@
         } else if (Country_Name == "Spain" || Country_Name == "Colombia" || Country_Name == "Bolivia" || Country_Name == "Mexico" || Country_Name == "Panama" || Country_Name == "Dominican Republic" || Country_Name == "Brazil" || Country_Name == "Puerto Rico" || Country_Name == "Ecuador" || Country_Name == "Peru" || Country_Name == "Guatemala" || Country_Name == "Costa Rica" || Country_Name == "Argentina" || Country_Name == "Chile" || Country_Name == "El Salvador" || Country_Name == "Honduras") {
             // spanish
             setlanguageByCountry("Spanish", Country_Name, Country_ShortName, true);
-        } else if (Country_Name == "Portugal") {
+        } else if (Country_Name == "Portugal" || Country_Name == "Guinea-Bissau") {
             // portuguese
             setlanguageByCountry("Portuguese", Country_Name, Country_ShortName, true);
         } else if (Country_Name == "Italy") {
@@ -2013,5 +2033,4 @@
 </div>
 <script src="https://cdn.siftscience.com/s.js"></script>
 </body>
-<span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span
-        class="gr__triangle"></span></span></html>
+</html>
