@@ -14741,9 +14741,44 @@ p.left-arrow:before {
 }
 
 .step-time div {
-    margin-left: 10px;
     font-size: 32px;
     line-height: 1;
+}
+
+.step-time .gerakl-countdown-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.step-time .geraklcountdown,
+.step-time .style1 .gerakl-countdown-section {
+    width: auto;
+}
+
+.step-time .geraklcountdown {
+    margin-left: 10px;
+}
+
+.step-time .style1 .gerakl-countdown-section {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.step-time .style1 .gerakl-countdown-amount span,
+.step-time .style1 .gerakl-abs {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: #4F5858;
+    font-size: 32px;
+    line-height: 1;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.step-time .style1 .gerakl-countdown-label {
+    display: none;
 }
 
 .step-time div small {
@@ -14923,3 +14958,9 @@ p.left-arrow:before {
 }
 
 /* -fast start bonus */
+
+/* membership payments */
+
+
+
+/* -membership payments */
