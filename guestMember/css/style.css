@@ -1284,6 +1284,10 @@ input::-ms-input-placeholder {
     text-decoration: none;
 }
 
+.payment-info .middle-part .card-list a:hover {
+    opacity: .8;
+}
+
 /* Custom radio */
 
 .wrap-custom-radio-checkbox {
