@@ -31,8 +31,8 @@ body {
 .background.modalOpen {
     position: fixed;
     width: 100%;
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
 }
 
 .background.modalOpenExtra {
@@ -89,6 +89,10 @@ h3 {
 h5 {
     font-size: 19px;
     font-weight: 700;
+}
+
+b {
+    font-weight: bold;
 }
 
 .btn {
@@ -249,6 +253,7 @@ input::-ms-input-placeholder {
     display: inline-block;
     cursor: pointer;
     padding: 0 0 0 30px;
+    font-size: 14px;
 }
 
 .styled-checkbox + label:before {
@@ -256,7 +261,7 @@ input::-ms-input-placeholder {
     position: absolute;
     top: 50%;
     left: 0;
-    margin-top: -9px;
+    margin-top: -10px;
     width: 18px;
     height: 18px;
     background: white;
@@ -505,7 +510,7 @@ input::-ms-input-placeholder {
 .form-part .formElement {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .form-part .formElement input:not([type='checkbox']),
@@ -582,6 +587,16 @@ input::-ms-input-placeholder {
 
 /* Upgrade */
 
+.upgrade .upgrade-block .title-part .icon-info,
+.membership-info .membership-package .block-title .icon-info {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
 .upgrade .title-top {
     display: flex;
     flex-direction: row;
@@ -624,14 +639,6 @@ input::-ms-input-placeholder {
     font-size: 32px;
     font-weight: 800;
     text-transform: uppercase;
-}
-
-.upgrade .upgrade-block .title-part .icon-info {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
 }
 
 .upgrade .upgrade-block .main-part .top {
@@ -870,8 +877,8 @@ input::-ms-input-placeholder {
 
 /* Billing */
 
-.billing-info {
-    padding: 35px 30px 25px;
+.modal-body {
+    padding: 30px 30px;
     background-color: #fff;
     border-radius: 10px;
 }
@@ -909,7 +916,7 @@ input::-ms-input-placeholder {
 }
 
 .billing-info .top-part .block-price .grey-block {
-    padding: 30px 35px;
+    padding: 22px 30px;
     background-color: #F5F5F5;
     border-bottom: 1px solid rgba(112,112,112,.4);
 }
@@ -918,13 +925,21 @@ input::-ms-input-placeholder {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
     margin-bottom: 10px;
     font-size: 20px;
-    font-weight: 700;
 }
 
 .billing-info .top-part .block-price .grey-block .row:last-of-type {
     margin-bottom: 0;
+}
+
+.billing-info .top-part .block-price .grey-block .row-total {
+    margin-top: 40px;
+}
+
+.billing-info .top-part .block-price .grey-block .row-total div {
+    font-weight: 700;
 }
 
 .billing-info .top-part .block-price .address-radio {
@@ -957,7 +972,11 @@ input::-ms-input-placeholder {
 
 .billing-info .middle-part .first,
 .billing-info .middle-part .second {
-    width: 48%;
+    width: 49%;
+}
+
+.billing-info .middle-part .full-width {
+    flex: 1 1;
 }
 
 .billing-info .middle-part .form-part {
@@ -966,7 +985,7 @@ input::-ms-input-placeholder {
 }
 
 .billing-info .middle-part .formElement {
-    width: 48%;
+    width: 47%;
 }
 
 .billing-info .middle-part .formElement.text {
@@ -993,7 +1012,8 @@ input::-ms-input-placeholder {
 }
 
 .billing-info .middle-part .formElement .input-with-image img {
-    margin-left: 20px;
+    width: 100px;
+    margin: 5px 0 0 20px;
 }
 
 .billing-info .middle-part .formElement .double-input {
@@ -1046,6 +1066,340 @@ input::-ms-input-placeholder {
 #modalText p:last-of-type {
     margin-bottom: 0;
 }
+
+/* Membership info */
+
+.membership-info .top-part {
+    flex-direction: column;
+}
+
+.membership-info .top-part .top,
+.membership-info .top-part .middle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.membership-info .top-part .top {
+    margin-bottom: 25px;
+}
+
+.membership-info .top-part .top h3 {
+    margin-bottom: 0;
+}
+
+.membership-info .top-part .top a {
+    color: #12496E;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.membership-info .membership-package {
+    width: 32%;
+    border: 4px solid #3498DB;
+}
+
+.membership-info .membership-package .block-title {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px 20px;
+}
+
+.membership-info .membership-package .block-title h5 {
+    font-size: 34px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.membership-info .membership-package.vip .block-title h5 {
+    color: #3498DB;
+}
+
+.membership-info .membership-package.pro {
+    border-color: #F39C12;
+}
+
+.membership-info .membership-package.pro .block-title h5 {
+    color: #F39C12;
+}
+
+.membership-info .membership-package.elite {
+    border-color: #9B59B6;
+}
+
+.membership-info .membership-package.elite .block-title h5 {
+    color: #9B59B6;
+}
+
+.membership-info .membership-package .block-title .icon-info {
+    right: 20px;
+}
+
+.membership-info .membership-package .block-price {
+    width: 100%;
+}
+
+.membership-info .membership-package .block-price .grey-block {
+    padding: 25px 20px;
+}
+
+.membership-info .membership-package .block-price .grey-block .row {
+    font-size: 15px;
+}
+
+.membership-info .address-radio {
+    margin-bottom: 20px;
+}
+
+.membership-info .address-radio span {
+    margin-right: 30px;
+}
+
+.membership-info .wrap-radio {
+    margin-right: 14px;
+}
+
+.membership-info .address-radio [type="radio"]:checked + label, [type="radio"]:not(:checked) + label {
+    padding-left: 22px;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.modal.modal-with-secure-payment {
+    padding-top: 0;
+}
+
+.modal.modal-with-secure-payment .secure-enrollment {
+    justify-content: flex-end;
+    margin: 20px 0;
+    padding-right: 35px;
+}
+
+.modal.modal-with-secure-payment .secure-enrollment img {
+    width: 13px;
+}
+
+.modal.modal-with-secure-payment .secure-enrollment span {
+    font-size: 13px;
+}
+
+/* Payment info */
+
+.payment-info .top-part .block-description .wrap-lists {
+    display: flex;
+    flex-direction: row;
+}
+
+.payment-info .top-part .block-description ul.list-checkbox {
+    width: 50%;
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.payment-info .top-part .block-description ul.list-checkbox li {
+    margin-top: 25px;
+}
+
+.payment-info .top-part .block-description ul.list-checkbox label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.payment-info .middle-part {
+    margin-top: 30px;
+}
+
+.payment-info .middle-part h5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payment-info .middle-part h5 img {
+    width: 90px;
+}
+
+.payment-info .middle-part .gray-block {
+    margin-top: 30px;
+    padding: 20px 15px 5px;
+    background-color: #fbfbfb;
+}
+
+.payment-info .middle-part .form-part {
+    justify-content: flex-start;
+}
+
+.payment-info .middle-part .formElement {
+    width: 23%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.payment-info .middle-part .wrap-checkbox {
+    margin: 30px 0;
+    padding-left: 15px;
+    color: #484848;
+}
+
+.payment-info .middle-part .choose-card {
+    padding: 20px 25px 5px;
+}
+
+.payment-info .middle-part .choose-card h4 {
+    color: #227093;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.payment-info .middle-part .card-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 14px;
+}
+
+.payment-info .middle-part .card-list > div:not(:last-of-type) {
+    margin-right: 100px;
+}
+
+.payment-info .middle-part .card-list .wrap-checkbox {
+    padding-left: 0;
+}
+
+.payment-info .middle-part .card-list .custom-radio-checkbox_small {
+    margin-right: 10px;
+}
+
+.payment-info .middle-part .card-list a {
+    color: #227093;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Custom radio */
+
+.wrap-custom-radio-checkbox {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 1.1;
+}
+
+.custom-radio-checkbox {
+    display: block;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    margin-right: 18px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.custom-radio-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-radio-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 26px;
+    width: 26px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.custom-radio-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-radio-checkbox input:checked ~ .checkmark:after,
+.custom-radio-checkbox:hover input ~ .checkmark:after {
+    display: block;
+    top: 4px;
+    left: 4px;
+    width: 14px;
+    height: 14px;
+    background: #27AE60;
+    border-radius: 3px;
+}
+
+.custom-radio-checkbox.custom-radio-checkbox_small {
+    width: 20px;
+    height: 20px;
+}
+
+.custom-radio-checkbox.custom-radio-checkbox_small .checkmark {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #ccc;
+}
+
+.custom-radio-checkbox.custom-radio-checkbox_small input:checked ~ .checkmark:after,
+.custom-radio-checkbox.custom-radio-checkbox_small:hover input ~ .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    background-color: #16A085;
+}
+
+/* Payment status modal */
+
+.payment-status {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 640px;
+    width: 100%;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+.payment-status .wrap-img {
+    margin: 45px 0;
+}
+
+.payment-status img {
+    width: 120px;
+    height: auto;
+}
+
+.payment-status h3 {
+    margin-bottom: 12px;
+    font-size: 38px;
+    font-weight: 400;
+}
+
+.payment-status span {
+    color: #868686;
+    font-size: 20px;
+}
+
+.payment-status .wrap-btn {
+    margin: 60px 0;
+}
+
+.payment-status .wrap-btn .btn {
+    min-width: 260px;
+}
+
 
 @media (max-width: 1400px) {
 
@@ -1161,6 +1515,38 @@ input::-ms-input-placeholder {
         padding: 13px 15px;
     }
 
+    /* Billing info */
+
+    .billing-info .top-part {
+        flex-direction: column;
+    }
+
+    .billing-info .top-part .block-description, .billing-info .top-part .block-price {
+        width: 100%;
+    }
+
+    .billing-info .top-part .block-description {
+        margin-bottom: 25px;
+    }
+
+    .billing-info .middle-part .formElement .input-with-image img {
+        width: 72px;
+        margin-left: 10px;
+    }
+
+    .billing-info .bottom-part .second .formElement {
+        flex-direction: column;
+    }
+
+    .billing-info .bottom-part .second .formElement .first,
+    .billing-info .bottom-part .second .formElement .second {
+        width: 100%;
+    }
+
+    .billing-info .bottom-part .second .formElement .first {
+        margin-bottom: 10px;
+    }
+
     /* Upgrade */
 
     .upgrade .title-top {
@@ -1249,6 +1635,105 @@ input::-ms-input-placeholder {
         padding-left: 40px;
     }
 
+    /* Membership info */
+
+    .membership-info .top-part .top h3 {
+        font-size: 35px;
+    }
+
+    .membership-info .top-part .top a {
+        font-size: 12px;
+    }
+
+    .membership-info .membership-package .block-title h5 {
+        font-size: 30px;
+    }
+
+    .membership-info .membership-package .block-price .grey-block,
+    .membership-info .membership-package .block-title {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .membership-info .membership-package .block-title .icon-info {
+        right: 15px;
+    }
+
+    /* Custom radio */
+
+    .custom-radio-checkbox {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    .custom-radio-checkbox .checkmark {
+        height: 24px;
+        width: 24px;
+    }
+
+    .custom-radio-checkbox input:checked ~ .checkmark:after,
+    .custom-radio-checkbox:hover input ~ .checkmark:after {
+        top: 3px;
+        left: 3px;
+        width: 14px;
+        height: 14px;
+    }
+
+    /* Payment status modal */
+
+    .payment-status .wrap-img {
+        margin: 30px 0;
+    }
+
+    .payment-status h3 {
+        margin-bottom: 10px;
+        font-size: 34px;
+    }
+
+    .payment-status span {
+        font-size: 18px;
+    }
+
+    .payment-status .wrap-btn {
+        margin: 40px 0;
+    }
+
+    /* Payment Info */
+
+    .payment-info .middle-part .formElement {
+        width: 48%;
+    }
+
+    .payment-info .middle-part .choose-card {
+        padding-bottom: 20px;
+    }
+
+    .payment-info .middle-part .choose-card h4 {
+        margin-bottom: 25px;
+    }
+
+    .payment-info .middle-part .card-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .payment-info .middle-part .card-list .wrap-checkbox {
+        margin: 0 0 20px;
+    }
+
+    .payment-info .middle-part .card-list > div:not(:last-of-type) {
+        margin-right: 0;
+    }
+
+    .payment-info .middle-part .card-list > div:last-of-type {
+        margin: 10px 0;
+    }
+
+    .payment-info .middle-part .card-list a {
+        margin-left: 30px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -1303,6 +1788,21 @@ input::-ms-input-placeholder {
         margin-left: 0;
     }
 
+    /* Billing info */
+
+    .billing-info .middle-part {
+        flex-direction: column;
+    }
+
+    .billing-info .middle-part .first,
+    .billing-info .middle-part .second {
+        width: 100%;
+    }
+
+    .billing-info .middle-part .first {
+        margin-bottom: 20px;
+    }
+
     /* LC */
 
     .background.white-right:after {
@@ -1349,6 +1849,45 @@ input::-ms-input-placeholder {
     .lc .wrap-btn .btn {
         margin: 0 5px 10px;
     }
+
+    /* Membership info */
+
+    .membership-info .top-part .top,
+    .membership-info .top-part .middle {
+        flex-direction: column;
+    }
+
+    .membership-info .top-part .top h3 {
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .membership-info .membership-package {
+        max-width: 360px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .membership-info .membership-package:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .membership-info .membership-package .block-price .grey-block {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .membership-info .address-radio span {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Payment status modal */
+
+    .payment-status {
+        max-width: 90%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1378,6 +1917,47 @@ input::-ms-input-placeholder {
         margin: 0;
         padding: 8px 15px;
     }
+
+    /* Billing info */
+
+    .billing-info .bottom-part {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .billing-info .bottom-part .first,
+    .billing-info .bottom-part .second {
+        width: 100%;
+    }
+
+    .billing-info .bottom-part .first {
+        margin-bottom: 15px;
+    }
+
+    .billing-info .bottom-part .second .formElement .first {
+        margin-bottom: 25px;
+    }
+
+    /* Payment info */
+
+    .payment-info h3 {
+        font-size: 35px;
+    }
+
+    .payment-info .top-part .block-description ul.list-checkbox {
+        width: auto;
+        margin-right: 25px;
+    }
+
+    .payment-info .top-part .block-description ul.list-checkbox:last-of-type {
+        margin-right: 0;
+    }
+
+    .payment-info .middle-part .wrap-checkbox {
+        padding-left: 0;
+    }
+
+    /* Upgrade */
 
     .upgrade .title-top {
         margin-top: 20px;
@@ -1436,15 +2016,94 @@ input::-ms-input-placeholder {
     .form-block .top-part {
         padding: 20px;
     }
+
+    /* Billing info */
+
+    .billing-info .top-part .block-price .grey-block {
+        padding: 20px;
+    }
+
+    .billing-info .top-part .block-price .grey-block .row {
+        font-size: 18px;
+    }
+
+    .billing-info .middle-part h5 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .billing-info .middle-part .formElement {
+        width: 100%;
+    }
+
+    .billing-info .middle-part .formElement .input-with-image img {
+        width: 100px;
+        margin-left: 20px;
+    }
+
+    .billing-info .middle-part .formElement.text {
+        margin-top: 0;
+    }
+
+    /* Payment info */
+
+    .payment-info .top-part .block-description ul.list-checkbox li {
+        margin-top: 18px;
+    }
+
+    .payment-info .top-part .block-description ul.list-checkbox label {
+        font-size: 16px;
+    }
+
+    .payment-info .middle-part .wrap-btn {
+        text-align: center;
+    }
+
+    /* Payment status modal */
+
+    .modal-body {
+        padding: 20px;
+    }
+
+    .payment-status img {
+        width: 100px;
+    }
+
+    .payment-status h3 {
+        font-size: 30px;
+    }
+
+    .payment-status span {
+        font-size: 15px;
+    }
+
+    .payment-status .wrap-btn {
+        margin-bottom: 25px;
+    }
 }
 
 @media (max-width: 374px) {
+
+    /* Upgrade */
+
     .upgrade .upgrade-block .main-part .bottom .wrap-img {
         padding: 0;
     }
 
     .upgrade .upgrade-block .main-part .bottom .wrap-img img {
         height: 90px;
+    }
+
+    /* Billing info */
+
+    .billing-info .top-part .block-price .grey-block .row {
+        font-size: 16px;
+    }
+
+    /* Payment info */
+
+    .payment-info .middle-part h5 img {
+        width: 80px;
     }
 
     /* LC */

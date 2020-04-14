@@ -5,16 +5,16 @@
 
     <title>Travel Advantage </title>
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&amp;display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="https://marksheet.io/css/reset.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body data-gr-c-s-loaded="true">
 
-<div id="bgDev" class="background">
+<div id="bgDev" class="background modalOpen">
 
 
     <style>
@@ -131,7 +131,8 @@
                                 <img src="img/guarntee.png" alt="">
                                 <div class="wrap-img_text">
                                     <p>
-                                        We will credit you 150% of the difference if you find your hotel booking cheaper online.
+                                        We will credit you 150% of the difference if you find your hotel booking cheaper
+                                        online.
                                     </p>
                                     <small>
                                         Terms and Conditions apply
@@ -156,8 +157,7 @@
                                 </li>
                             </ul>
                             <div class="wrap-btn">
-                                <a class="btn btn-blue btn-small"
-                                   href="./UpgradeTravelAdvantageVIP?incomingUserId=33647">
+                                <a class="btn btn-blue btn-small modalShow" href="modalMembership">
                                     Upgrade
                                 </a>
                             </div>
@@ -212,10 +212,11 @@
                                 <img src="img/loyalty-dollar-100-triple.png" alt="">
                                 <div class="wrap-img_text">
                                     <p>
-                                        Loyalty Points can be redeemed toward Life Experience® and Lifestyle Mall purchases.
+                                        Loyalty Points can be redeemed toward Life Experience® and Lifestyle Mall
+                                        purchases.
                                     </p>
                                     <small>
-                                        One Loyalty Point =  $1.00
+                                        One Loyalty Point = $1.00
                                     </small>
                                 </div>
                             </div>
@@ -237,8 +238,8 @@
                                 </li>
                             </ul>
                             <div class="wrap-btn">
-                                <a class="btn btn-orange btn-small"
-                                   href="./UpgradeTravelAdvantagePRO?incomingUserId=33647">
+                                <a class="btn btn-orange btn-small modalShow"
+                                   href="modalPaymentSuccessful">
                                     Upgrade
                                 </a>
                             </div>
@@ -348,21 +349,717 @@
 
 </div>
 
+<div id="modalMembership" class="modal is-hidden modal-with-secure-payment">
+    <div class="container">
+        <div class="secure-enrollment">
+            <img src="img/lock.svg" alt="">
+            <span>
+            Secure enrollment
+        </span>
+        </div>
+        <div class="modal-body billing-info membership-info">
+            <div class="top-part">
+                <div class="top">
+                    <h3>
+                        Select your membership
+                    </h3>
+                    <a href="#">
+                        Membership details
+                    </a>
+                </div>
+                <div class="middle">
+                    <div class="membership-package vip">
+                        <div class="block-title">
+                            <label class="custom-radio-checkbox">
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <h5>
+                                Vip
+                            </h5>
+                            <i class="icon-info">
+                                <img src="img/icon-info.svg" alt="">
+                            </i>
+                        </div>
+                        <div class="block-price">
+                            <div class="grey-block">
+                                <div class="row">
+                                    <span>
+                                        One-Time Membership:
+                                    </span>
+                                    <b>
+                                        $40.00
+                                    </b>
+                                </div>
+                                <div class="row">
+                                    <span>
+                                        First Month Fee:
+                                    </span>
+                                    <b>
+                                        $39.97
+                                    </b>
+                                </div>
+                                <div class="row">
+                                    <span>
+                                        Total Due Today:
+                                    </span>
+                                    <b>
+                                        $79.97
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="membership-package pro">
+                        <div class="block-title">
+                            <label class="custom-radio-checkbox">
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <h5>
+                                Pro
+                            </h5>
+                            <i class="icon-info">
+                                <img src="img/icon-info.svg" alt="">
+                            </i>
+                        </div>
+                        <div class="block-price">
+                            <div class="grey-block">
+                                <div class="row">
+                                    <span class="line-through">
+                                        One-Time Activation:
+                                    </span>
+                                    <b class="line-through">
+                                        $100.00
+                                    </b>
+                                </div>
+                                <div class="row">
+                                    <span>
+                                        First Month Fee:
+                                    </span>
+                                    <b>
+                                        $99.97
+                                    </b>
+                                </div>
+                                <div class="row">
+                                    <span>
+                                        Total Due Today:
+                                    </span>
+                                    <b>
+                                        $99.97
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="membership-package elite">
+                        <div class="block-title">
+                            <label class="custom-radio-checkbox">
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <h5>
+                                Elite
+                            </h5>
+                            <i class="icon-info">
+                                <img src="img/icon-info.svg" alt="">
+                            </i>
+                        </div>
+                        <div class="block-price">
+                            <div class="grey-block">
+                                <div class="row">
+                                    <span>
+                                        Pro Membership:
+                                    </span>
+                                    <b>
+                                        $99.97
+                                    </b>
+                                </div>
+                                <div class="row">
+                                    <span>
+                                        One-Time Upgrade:
+                                    </span>
+                                    <b>
+                                        $150.00
+                                    </b>
+                                </div>
+                                <div class="row">
+                                    <span>
+                                        Total Due Today:
+                                    </span>
+                                    <b>
+                                        $249.97
+                                    </b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom address-radio">
+                        <span>
+                            Is your member and billing information the same?
+                        </span>
+                    <div class="wrap-radio">
+                        <input id="radio-yes3" checked name="radioSame" type="radio">
+                        <label for="radio-yes3">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="wrap-radio">
+                        <input id="radio-no3" name="radioSame" type="radio">
+                        <label for="radio-no3">
+                            No
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-part">
+                <div class="first">
+                    <h5>
+                        Member Information
+                    </h5>
+                    <form action="" class="form-part">
+                        <div class="formElement">
+                            <label for="firstName">
+                                First Name
+                            </label>
+                            <input id="firstName" type="text" placeholder="Enter your first name">
+                        </div>
+                        <div class="formElement">
+                            <label for="lastName">
+                                Last Name
+                            </label>
+                            <input id="lastName" type="text" placeholder="Enter your last name">
+                        </div>
+                        <div class="formElement">
+                            <label for="email">
+                                Email
+                            </label>
+                            <input id="email" type="email" placeholder="Enter your email">
+                        </div>
+                        <div class="formElement">
+                            <label for="phone">
+                                Phone
+                            </label>
+                            <input id="phone" type="text" placeholder="0123456789">
+                        </div>
+                        <div class="formElement">
+                            <label for="address">
+                                Address
+                            </label>
+                            <input id="address" type="text" placeholder="Enter your full address">
+                        </div>
+                        <div class="formElement">
+                            <label for="city">
+                                City
+                            </label>
+                            <input id="city" type="text" placeholder="City">
+                        </div>
+                        <div class="formElement">
+                            <label for="country">
+                                Country
+                            </label>
+                            <select id="country" class="custom-select" data-placeholder="Select country">
+                                <option value=""></option>
+                                <option value="Canada">Canada</option>
+                                <option value="United States of America">United States of America</option>
+                            </select>
+                        </div>
+                        <div class="formElement">
+                            <label for="zip">
+                                Zip
+                            </label>
+                            <input id="zip" type="text" placeholder="Zip Code">
+                        </div>
+                        <div class="formElement">
+                            <label for="password">
+                                Password
+                            </label>
+                            <input id="password" type="password" placeholder="********">
+                        </div>
+                        <div class="formElement text">
+                        <span>
+                            Optional: Password will be automatically generated if the field is left blank
+                        </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="second">
+                    <h5>
+                        Billing Information
+                    </h5>
+                    <form action="" class="form-part">
+                        <div class="formElement">
+                            <label for="firstName">
+                                First Name
+                            </label>
+                            <input id="firstName" type="text" placeholder="Enter your first name">
+                        </div>
+                        <div class="formElement">
+                            <label for="lastName">
+                                Last Name
+                            </label>
+                            <input id="lastName" type="text" placeholder="Enter your last name">
+                        </div>
+                        <div class="formElement">
+                            <label for="address">
+                                Address
+                            </label>
+                            <input id="address" type="text" placeholder="Enter your full address">
+                        </div>
+                        <div class="formElement">
+                            <label for="city">
+                                City
+                            </label>
+                            <input id="city" type="text" placeholder="City">
+                        </div>
+                        <div class="formElement">
+                            <label for="countryBill">
+                                Country
+                            </label>
+                            <select id="countryBill" class="custom-select" data-placeholder="Select country">
+                                <option value=""></option>
+                                <option value="Canada">Canada</option>
+                                <option value="United States of America">United States of America</option>
+                            </select>
+                        </div>
+                        <div class="formElement">
+                            <label for="zip">
+                                Zip
+                            </label>
+                            <input id="zip" type="text" placeholder="Zip Code">
+                        </div>
+                        <div class="formElement">
+                            <label for="cardType">
+                                Card type
+                            </label>
+                            <select id="cardType" class="custom-select" data-placeholder="Select">
+                                <option value=""></option>
+                                <option value="Visa">Visa</option>
+                                <option value="MasterCard">MasterCard</option>
+                                <option value="AmericanExpress">AmericanExpress</option>
+                            </select>
+                        </div>
+                        <div class="formElement">
+                            <label for="cardNumber">
+                                Card Number
+                            </label>
+                            <input id="cardNumber" type="text" placeholder="Card Number">
+                        </div>
+                        <div class="formElement">
+                            <label for="expiration">
+                                Expiration
+                            </label>
+                            <div class="double-input">
+                                <select name="state" class="custom-select" data-placeholder="Month">
+                                    <option value=""></option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                                <select name="state" class="custom-select" data-placeholder="Year">
+                                    <option value=""></option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="formElement">
+                            <label for="cvv">
+                                CVV
+                            </label>
+                            <div class="input-with-image">
+                                <input id="cvv" type="text" placeholder="CVV">
+                                <img src="img/cards.png" alt="">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="bottom-part">
+                <div class="first">
+                    The amount charged today will be $79.97, with regular monthly payments of $39.97. I understand that
+                    I may cancel my monthly plan at any time.
+                </div>
+                <div class="second">
+                    <div class="form-part">
+                        <div class="formElement action">
+                            <div class="first">
+                                <input class="styled-checkbox" id="styled-checkbox" type="checkbox">
+                                <label for="styled-checkbox">
+                                    By purchasing this plan, I have read and accepted the Plan Terms and Conditions.
+                                </label>
+                            </div>
+                            <div class="second">
+                                <a class="btn btn-green" href="#">
+                                    Sign Up
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-<script type="text/javascript" src="/scripts/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/scripts/jquery.validate.unobtrusive.min.js"></script>
-<script type="text/javascript" src="/scripts/jquery-ui-1.10.3.custom.min.js"></script>
+<div id="modalPaymentSuccessful" class="modal is-hidden modal-with-secure-payment">
+    <div class="container">
+        <div class="secure-enrollment">
+            <img src="img/lock.svg" alt="">
+            <span>
+            Secure enrollment
+        </span>
+        </div>
+        <div class="modal-body payment-status">
+            <div class="wrap-img">
+                <img src="img/payment-successful.svg" alt="">
+            </div>
+            <h3>
+                Payment Successful
+            </h3>
+            <span>
+                Your transaction ID: 123456789012346
+            </span>
+            <div class="wrap-btn">
+                <a href="#" class="btn btn-blue btn-medium">
+                    Return to Travel Advantage™
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalPaymentDeclined" class="modal is-hidden modal-with-secure-payment">
+    <div class="container">
+        <div class="secure-enrollment">
+            <img src="img/lock.svg" alt="">
+            <span>
+            Secure enrollment
+        </span>
+        </div>
+        <div class="modal-body payment-status">
+            <div class="wrap-img">
+                <img src="img/payment-declined.svg" alt="">
+            </div>
+            <h3>
+                Payment Declined
+            </h3>
+            <span>
+                Try another card or contact your bank.
+            </span>
+            <div class="wrap-btn">
+                <a href="#" class="btn btn-blue btn-medium">
+                    Try Again
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalMembership" class="modal modal-with-secure-payment">
+    <div class="container">
+        <div class="secure-enrollment">
+            <img src="img/lock.svg" alt="">
+            <span>
+                Secure enrollment
+            </span>
+        </div>
+        <div class="modal-body billing-info payment-info">
+            <h3>
+                Travel Advantage<sup>TM</sup> Membership
+            </h3>
+            <div class="top-part">
+                <div class="block-description">
+                    <span>
+                        Make the missed payments to unlock your Loyalty Points.
+                    </span>
+                    <div class="wrap-lists">
+                        <ul class="list-checkbox">
+                            <li>
+                                <label class="wrap-custom-radio-checkbox">
+                                <span class="custom-radio-checkbox custom-radio-checkbox_small">
+                                    <input type="checkbox" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                </span>
+                                    January 2020
+                                </label>
+                            </li>
+                            <li>
+                                <label class="wrap-custom-radio-checkbox">
+                                <span class="custom-radio-checkbox custom-radio-checkbox_small">
+                                    <input type="checkbox" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                </span>
+                                    February 2020
+                                </label>
+                            </li>
+                            <li>
+                                <label class="wrap-custom-radio-checkbox">
+                                <span class="custom-radio-checkbox custom-radio-checkbox_small">
+                                    <input type="checkbox" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                </span>
+                                    March 2020
+                                </label>
+                            </li>
+                        </ul>
+                        <ul class="list-checkbox">
+                            <li>
+                                <label class="wrap-custom-radio-checkbox">
+                                <span class="custom-radio-checkbox custom-radio-checkbox_small">
+                                    <input type="checkbox" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                </span>
+                                    April 2020
+                                </label>
+                            </li>
+                            <li>
+                                <label class="wrap-custom-radio-checkbox">
+                                <span class="custom-radio-checkbox custom-radio-checkbox_small">
+                                    <input type="checkbox" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                </span>
+                                    May 2020
+                                </label>
+                            </li>
+                            <li>
+                                <label class="wrap-custom-radio-checkbox">
+                                <span class="custom-radio-checkbox custom-radio-checkbox_small">
+                                    <input type="checkbox" checked="checked" name="radio">
+                                    <span class="checkmark"></span>
+                                </span>
+                                    June 2020
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="block-price">
+                    <div class="grey-block">
+                        <div class="row">
+                            <div>
+                                January 2020
+                            </div>
+                            <div>
+                                $99.97
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                February 2020
+                            </div>
+                            <div>
+                                $99.97
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                March 2020
+                            </div>
+                            <div>
+                                $99.97
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                April 2020
+                            </div>
+                            <div>
+                                $99.97
+                            </div>
+                        </div>
+                        <div class="row row-total">
+                            <div>
+                                Total due today
+                            </div>
+                            <div>
+                                $399.88
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-part">
+                <div class="full-width">
+                    <h5>
+                        Payment Information <img src="img/cards.png" alt="Payment Cards">
+                    </h5>
+                    <form action="">
+                        <div id="choose-card" class="choose-card gray-block" style="display: none;">
+                            <h4>
+                                Select Credit Card
+                            </h4>
+                            <div class="card-list">
+                                <div class="wrap-checkbox">
+                                    <label class="wrap-custom-radio-checkbox">
+                                        <span class="custom-radio-checkbox custom-radio-checkbox_small">
+                                            <input type="checkbox" checked="checked" name="radio">
+                                             <span class="checkmark"></span>
+                                        </span>
+                                        <b>Visa ending in 5555</b>
+                                    </label>
+                                </div>
+                                <div class="wrap-checkbox">
+                                    <input class="styled-checkbox" id="card2" type="checkbox">
+                                    <label for="card2">
+                                        <b>Visa ending in 3333</b>
+                                    </label>
+                                </div>
+                                <div>
+                                    <a href="#" class="add-new-card">
+                                        + Add new card
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="add-new-card-block" class="form-part gray-block">
+                            <div class="formElement">
+                                <label for="firstName">
+                                    First Name
+                                </label>
+                                <input id="firstName" type="text" placeholder="Enter your first name">
+                            </div>
+                            <div class="formElement">
+                                <label for="lastName">
+                                    Last Name
+                                </label>
+                                <input id="lastName" type="text" placeholder="Enter your last name">
+                            </div>
+                            <div class="formElement">
+                                <label for="address">
+                                    Address
+                                </label>
+                                <input id="address" type="text" placeholder="Enter your full address">
+                            </div>
+                            <div class="formElement">
+                                <label for="city">
+                                    City
+                                </label>
+                                <input id="city" type="text" placeholder="City">
+                            </div>
+                            <div class="formElement">
+                                <label for="countryBill">
+                                    Country
+                                </label>
+                                <select id="countryBill" class="custom-select" data-placeholder="Select country">
+                                    <option value=""></option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="United States of America">United States of America</option>
+                                </select>
+                            </div>
+                            <div class="formElement">
+                                <label for="zip">
+                                    Zip
+                                </label>
+                                <input id="zip" type="text" placeholder="Zip Code">
+                            </div>
+                            <div class="formElement">
+                                <label for="cardType">
+                                    Card type
+                                </label>
+                                <select id="cardType" class="custom-select" data-placeholder="Select">
+                                    <option value=""></option>
+                                    <option value="Visa">Visa</option>
+                                    <option value="MasterCard">MasterCard</option>
+                                    <option value="AmericanExpress">AmericanExpress</option>
+                                </select>
+                            </div>
+                            <div class="formElement">
+                                <label for="cardNumber">
+                                    Card Number
+                                </label>
+                                <input id="cardNumber" type="text" placeholder="Card Number">
+                            </div>
+                            <div class="formElement">
+                                <label for="expiration">
+                                    Expiration
+                                </label>
+                                <div class="double-input">
+                                    <select name="state" class="custom-select" data-placeholder="Month">
+                                        <option value=""></option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                    <select name="state" class="custom-select" data-placeholder="Year">
+                                        <option value=""></option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="formElement">
+                                <label for="cvv">
+                                    CVV
+                                </label>
+                                <div class="input-with-image">
+                                    <input id="cvv" type="text" placeholder="CVV">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap-checkbox">
+                            <input class="styled-checkbox" id="accept-payment" type="checkbox">
+                            <label for="accept-payment">
+                                I agree that the selected payment method will be processed for the amount of $399.88 USD.
+                            </label>
+                        </div>
+                        <div class="wrap-btn">
+                            <a class="btn btn-green" href="#">
+                                Proceed
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"
+        integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../scripts/jquery.validate.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.validate.unobtrusive.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery-ui-1.10.3.custom.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
 
 <script>
     $(document).ready(function () {
 
         /* equal height for blocks */
 
-        if($(window).width() > 992) {
-            console.log('a');
+        if ($(window).width() > 992) {
             var maxHeight = 0;
             var listBenefits = $('.list-benefits');
 
@@ -403,7 +1100,7 @@
         });
 
         /* select */
-        $('select').select2({
+        $('.custom-select').select2({
             minimumResultsForSearch: Infinity
         });
 
@@ -420,6 +1117,11 @@
                 error: function (e) {
                 }
             });
+        });
+
+        $('.add-new-card').on('click', function(e) {
+            $('#choose-card').hide();
+            $('#add-new-card-block').show();
         });
 
     });
