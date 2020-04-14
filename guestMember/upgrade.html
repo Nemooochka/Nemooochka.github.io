@@ -341,7 +341,14 @@
             <a href="https://mwrtravels.com/account/user/loginPrivacyPolicy" target="_blank">
                 Privacy Policy
             </a>
-
+            <span class="divider">|</span>
+            <a href="#" target="_blank">
+                Price Guarantee
+            </a>
+            <span class="divider">|</span>
+            <a href="#" target="_blank">
+                Seller of Travel
+            </a>
         </div>
     </footer>
 
@@ -1078,6 +1085,7 @@
             e.preventDefault();
 
             var topPosition = $(document).scrollTop();
+            console.log(topPosition);
             var modalId = $(this).attr('href');
             var modal = '#' + modalId;
             modal = $(modal);
@@ -1085,7 +1093,8 @@
             // Open the modal
             modal.removeClass('is-hidden');
             background.addClass('modalOpen');
-            $(modal).scrollTop(0);
+            $('html, body').scrollTop(topPosition);
+            // $(modal).scrollTop(0);
 
             // When the user clicks anywhere outside of the modal, close it
             $(window).on('click', function (event) {

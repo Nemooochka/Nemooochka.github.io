@@ -31,8 +31,8 @@ body {
 .background.modalOpen {
     position: fixed;
     width: 100%;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+    filter: blur(12px);
+    -webkit-filter: blur(12px);
 }
 
 .background.modalOpenExtra {
