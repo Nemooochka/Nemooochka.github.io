@@ -619,10 +619,10 @@
                             <input id="city" type="text" placeholder="City">
                         </div>
                         <div class="formElement">
-                            <label for="countryBill">
+                            <label for="countryBill1">
                                 Country
                             </label>
-                            <select id="countryBill" class="custom-select" data-placeholder="Select country">
+                            <select id="countryBill1" class="custom-select" data-placeholder="Select country">
                                 <option value=""></option>
                                 <option value="Canada">Canada</option>
                                 <option value="United States of America">United States of America</option>
@@ -635,10 +635,10 @@
                             <input id="zip" type="text" placeholder="Zip Code">
                         </div>
                         <div class="formElement">
-                            <label for="cardType">
+                            <label for="cardType1">
                                 Card type
                             </label>
-                            <select id="cardType" class="custom-select" data-placeholder="Select">
+                            <select id="cardType1" class="custom-select" data-placeholder="Select">
                                 <option value=""></option>
                                 <option value="Visa">Visa</option>
                                 <option value="MasterCard">MasterCard</option>
@@ -1062,6 +1062,16 @@
 <script>
     $(document).ready(function () {
 
+        /* select */
+        $('.custom-select').select2({
+            minimumResultsForSearch: Infinity
+        });
+
+        /* select */
+        $('.custom-select1').select2({
+            minimumResultsForSearch: Infinity
+        });
+
         /* equal height for blocks */
 
         if ($(window).width() > 992) {
@@ -1085,7 +1095,6 @@
             e.preventDefault();
 
             var topPosition = $(document).scrollTop();
-            console.log(topPosition);
             var modalId = $(this).attr('href');
             var modal = '#' + modalId;
             modal = $(modal);
@@ -1093,8 +1102,7 @@
             // Open the modal
             modal.removeClass('is-hidden');
             background.addClass('modalOpen');
-            $('html, body').scrollTop(topPosition);
-            // $(modal).scrollTop(0);
+            $(modal).scrollTop(0);
 
             // When the user clicks anywhere outside of the modal, close it
             $(window).on('click', function (event) {
@@ -1104,11 +1112,6 @@
                     $('html, body').scrollTop(topPosition);
                 }
             });
-        });
-
-        /* select */
-        $('.custom-select').select2({
-            minimumResultsForSearch: Infinity
         });
 
         $("#idLanguageChange").change(function () {
