@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    min-height: 100%;
+    min-height: 100vh;
     color: #303E4B;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
@@ -23,7 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100%;
+    min-height: 100vh;
     background: url(../img/bg.jpg) no-repeat center top;
     background-size: cover;
 }
@@ -2047,6 +2047,12 @@ input::-ms-input-placeholder {
 
     .billing-info .middle-part .formElement.text {
         margin-top: 0;
+    }
+
+    /* LC */
+
+    .lc .wrap-btn .btn {
+        margin: 0 0 10px;
     }
 
     /* Payment info */

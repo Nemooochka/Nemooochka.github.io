@@ -1057,41 +1057,22 @@ footer .top:before {
 footer .top .inner {
     position: relative;
     z-index: 2;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    flex-wrap: wrap;
     padding: 0;
     background: #0f5660;
 }
 
 footer .top .inner article {
+    float: left;
     width: 20%;
     padding: 22px 5px 22px 25px;
 }
 
 footer .top .inner .follow-mwr {
     padding: 20px 15px;
-    text-align: center;
-}
-
-footer .top .inner .follow-mwr .social-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 
 footer .top .inner .office {
     width: 30%;
-}
-
-footer .top .inner .last-block .wrap-img {
-    margin: 25px 0 10px;
-    padding-left: 25px;
-}
-
-footer .top .inner .last-block .wrap-img img {
-    max-width: 105px;
 }
 
 footer .wrap-img {
@@ -1403,9 +1384,6 @@ footer .bottom ul li a.linkedin {
         background: #000;
     }
 
-    footer .top:before {
-        display: none;
-    }
 
     footer .top .inner article {
         padding-left: 15px;
@@ -1415,25 +1393,13 @@ footer .bottom ul li a.linkedin {
         width: 35%;
     }
 
-    footer .top .inner .last-block {
+    footer .top .inner .contact {
         width: 30%;
     }
 
     footer .top .inner .follow-mwr {
-        position: relative;
         width: 100%;
         text-align: center;
-    }
-
-    footer .top .inner .follow-mwr:before {
-        content: '';
-        position: absolute;
-        left: -5%;
-        top: 0;
-        width: 110%;
-        height: 100%;
-        z-index: -1;
-        background-color: #0f4751;
     }
 }
 
@@ -1443,31 +1409,14 @@ footer .bottom ul li a.linkedin {
         padding: 2% 0 0 0;
         font-size: 40px;
     }
-
-    footer .top .inner {
-        flex-direction: column;
-    }
-
-    footer .top .inner .follow-mwr:before {
-        display: none;
-    }
-
     footer .top .inner .office,
-    footer .top .inner .last-block {
+    footer .top .inner .contact {
         width: 100%;
         padding: 15px 15%;
     }
 
     footer .top .inner .office {
         padding-bottom: 0 !important;
-    }
-
-    footer .top .inner .last-block .wrap-img {
-        margin-top: 15px;
-    }
-
-    footer .top .inner .last-block .wrap-img img {
-        max-width: 90px;
     }
 
     footer .bottom {
@@ -1644,8 +1593,7 @@ footer .bottom ul li a.linkedin {
         margin-top: 15px;
     }
 
-    footer .top .inner .office,
-    footer .top .inner .last-block {
+    footer .top .inner .office, footer .top .inner .contact {
         padding: 12px 15px;
     }
 }
@@ -5809,7 +5757,7 @@ p.left-arrow:before {
 }
 
 .services-carte .product-slider .product-slide .top-block ul li:before {
-    content: 'ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬ ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢';
+    content: 'ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢';
     position: absolute;
     top: 0;
     left: 0;
@@ -6696,11 +6644,11 @@ p.left-arrow:before {
 }
 
 .home .travel-membership .elite-card ul li:before {
-    content: " \00BB";
+    content: 'Ã‚Â»';
 }
 
 .home .travel-membership .elite-card ul li:after {
-    content: " \00AB";
+    content: 'Ã‚Â«';
 }
 
 .home .tiles {
@@ -12414,6 +12362,7 @@ p.left-arrow:before {
 }
 
 .follow-mwr ul li {
+    float: left;
     padding: 0 10px 0 0;
 }
 
@@ -14541,7 +14490,6 @@ p.left-arrow:before {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom:20px;
 }
 
 .loyalty-points .top-part .orange-box {
@@ -14902,7 +14850,6 @@ p.left-arrow:before {
 
 .step-completed .content-overlay span {
     font-size: 42px;
-    font-weight:700!important;
 }
 
 .fast-start.one-line {

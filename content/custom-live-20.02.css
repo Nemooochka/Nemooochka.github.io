@@ -1057,22 +1057,41 @@ footer .top:before {
 footer .top .inner {
     position: relative;
     z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
     padding: 0;
     background: #0f5660;
 }
 
 footer .top .inner article {
-    float: left;
     width: 20%;
     padding: 22px 5px 22px 25px;
 }
 
 footer .top .inner .follow-mwr {
     padding: 20px 15px;
+    text-align: center;
+}
+
+footer .top .inner .follow-mwr .social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 footer .top .inner .office {
     width: 30%;
+}
+
+footer .top .inner .last-block .wrap-img {
+    margin: 25px 0 10px;
+    padding-left: 25px;
+}
+
+footer .top .inner .last-block .wrap-img img {
+    max-width: 105px;
 }
 
 footer .wrap-img {
@@ -1384,6 +1403,9 @@ footer .bottom ul li a.linkedin {
         background: #000;
     }
 
+    footer .top:before {
+        display: none;
+    }
 
     footer .top .inner article {
         padding-left: 15px;
@@ -1393,13 +1415,25 @@ footer .bottom ul li a.linkedin {
         width: 35%;
     }
 
-    footer .top .inner .contact {
+    footer .top .inner .last-block {
         width: 30%;
     }
 
     footer .top .inner .follow-mwr {
+        position: relative;
         width: 100%;
         text-align: center;
+    }
+
+    footer .top .inner .follow-mwr:before {
+        content: '';
+        position: absolute;
+        left: -5%;
+        top: 0;
+        width: 110%;
+        height: 100%;
+        z-index: -1;
+        background-color: #0f4751;
     }
 }
 
@@ -1409,14 +1443,31 @@ footer .bottom ul li a.linkedin {
         padding: 2% 0 0 0;
         font-size: 40px;
     }
+
+    footer .top .inner {
+        flex-direction: column;
+    }
+
+    footer .top .inner .follow-mwr:before {
+        display: none;
+    }
+
     footer .top .inner .office,
-    footer .top .inner .contact {
+    footer .top .inner .last-block {
         width: 100%;
         padding: 15px 15%;
     }
 
     footer .top .inner .office {
         padding-bottom: 0 !important;
+    }
+
+    footer .top .inner .last-block .wrap-img {
+        margin-top: 15px;
+    }
+
+    footer .top .inner .last-block .wrap-img img {
+        max-width: 90px;
     }
 
     footer .bottom {
@@ -1593,7 +1644,8 @@ footer .bottom ul li a.linkedin {
         margin-top: 15px;
     }
 
-    footer .top .inner .office, footer .top .inner .contact {
+    footer .top .inner .office,
+    footer .top .inner .last-block {
         padding: 12px 15px;
     }
 }
@@ -5757,7 +5809,7 @@ p.left-arrow:before {
 }
 
 .services-carte .product-slider .product-slide .top-block ul li:before {
-    content: 'ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢';
+    content: 'ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬ ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬ ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬ ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬ ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢';
     position: absolute;
     top: 0;
     left: 0;
@@ -6644,11 +6696,11 @@ p.left-arrow:before {
 }
 
 .home .travel-membership .elite-card ul li:before {
-    content: 'Â»';
+    content: " \00BB";
 }
 
 .home .travel-membership .elite-card ul li:after {
-    content: 'Â«';
+    content: " \00AB";
 }
 
 .home .tiles {
@@ -12362,7 +12414,6 @@ p.left-arrow:before {
 }
 
 .follow-mwr ul li {
-    float: left;
     padding: 0 10px 0 0;
 }
 
@@ -14490,6 +14541,7 @@ p.left-arrow:before {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom:20px;
 }
 
 .loyalty-points .top-part .orange-box {
@@ -14715,6 +14767,7 @@ p.left-arrow:before {
     width: calc(100% / 3 - 17px);
     padding: 15px 20px;
     background: linear-gradient(to bottom, #fff, #F2F2F2);
+    color: #4F5858;
     border: 3px solid #5691A2;
     text-align: center;
 }
@@ -14725,9 +14778,10 @@ p.left-arrow:before {
 
 .fast-start_step h6 {
     margin-top: 0;
-    font-size: 25px;
+    font-size: 22px;
     line-height: 1;
-    font-weight: 400;
+    font-weight: 600;
+    font-style: italic;
     text-transform: uppercase;
 }
 
@@ -14737,48 +14791,12 @@ p.left-arrow:before {
     justify-content: center;
     align-items: center;
     margin: 25px 0 14px;
-    color: #4F5858;
 }
 
 .step-time div {
-    font-size: 32px;
-    line-height: 1;
-}
-
-.step-time .gerakl-countdown-wrap {
-    display: flex;
-    flex-direction: row;
-}
-
-.step-time .geraklcountdown,
-.step-time .style1 .gerakl-countdown-section {
-    width: auto;
-}
-
-.step-time .geraklcountdown {
     margin-left: 10px;
-}
-
-.step-time .style1 .gerakl-countdown-section {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.step-time .style1 .gerakl-countdown-amount span,
-.step-time .style1 .gerakl-abs {
-    margin: 0;
-    padding: 0;
-    background: transparent;
-    color: #4F5858;
     font-size: 32px;
     line-height: 1;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-}
-
-.step-time .style1 .gerakl-countdown-label {
-    display: none;
 }
 
 .step-time div small {
@@ -14879,11 +14897,12 @@ p.left-arrow:before {
 
 .step-completed .content-overlay .fas {
     margin-right: 8px;
-    font-size: 50px;
+    font-size: 44px;
 }
 
 .step-completed .content-overlay span {
-    font-size: 45px;
+    font-size: 42px;
+    font-weight:700!important;
 }
 
 .fast-start.one-line {
@@ -14958,3 +14977,212 @@ p.left-arrow:before {
 }
 
 /* -fast start bonus */
+
+/* august bonus */
+
+.august-bonus {
+    color: #424242;
+    line-height: 1.2;
+    border: 1px solid #CDCDCD;
+}
+
+.august-bonus b {
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.august-bonus .number-with-text {
+    position: relative;
+}
+
+.august-bonus .number-with-text .text {
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.august-bonus .number-with-text .text a {
+    margin-left: 16px;
+    color: #424242;
+    text-decoration: underline;
+}
+
+.august-bonus .top-part,
+.august-bonus .bottom-part {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    text-align: center;
+}
+
+.august-bonus .top-part {
+    align-items: center;
+    background-color: #034A6A;
+}
+
+.august-bonus .block {
+    position: relative;
+    display: block;
+    width: 33.333%;
+}
+
+.august-bonus .block:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -8px;
+    width: 4px;
+    height: 64px;
+    background-color: #336D87;
+    border-radius: 30px;
+}
+
+.august-bonus .block:first-of-type:before {
+    display: none;
+}
+
+.august-bonus .top-part img {
+    max-width: 245px;
+    width: 100%;
+}
+
+.august-bonus .top-part b {
+    color: #fff;
+}
+
+.august-bonus .top-part .price-total:before {
+    display: none;
+}
+
+.august-bonus .top-part .number-with-text b {
+    color: #FFB142;
+}
+
+.august-bonus .top-part .number-with-text .text {
+    color: #fff;
+}
+
+.august-bonus .bottom-part img {
+    height: 32px;
+}
+
+.august-bonus .bottom-part b {
+    margin-left: 20px;
+    color: #474787;
+}
+
+.august-bonus .bottom-part .block:before {
+    top: 0;
+    background-color: #DBDBDB;
+}
+
+.august-bonus .bottom-part .number-with-text .text {
+    position: static;
+    margin-top: 4px;
+}
+
+.august-bonus .bottom-part .block div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.august-bonus .bottom-part .block-winners b {
+    margin-left: 26px;
+}
+
+
+@media (max-width: 767px) {
+
+    .august-bonus .top-part, .august-bonus .bottom-part {
+        padding: 25px 15px;
+    }
+
+    .august-bonus b {
+        font-size: 35px;
+    }
+
+    .august-bonus .number-with-text .text {
+        font-size: 11px;
+    }
+
+    .august-bonus .bottom-part b {
+        margin-left: 15px;
+    }
+
+    .august-bonus .bottom-part .block-winners b {
+        margin-left: 22px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .august-bonus b {
+        font-size: 22px;
+    }
+
+    .august-bonus .number-with-text .text {
+        bottom: -12px;
+    }
+
+    .august-bonus .block:before {
+        height: 50px;
+        width: 3px;
+        top: -6px;
+    }
+
+    .august-bonus .top-part,
+    .august-bonus .bottom-part {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .august-bonus .top-part {
+        flex-wrap: wrap;
+        padding-top: 0;
+    }
+
+    .august-bonus .top-part b {
+        font-size: 30px;
+    }
+
+    .august-bonus .top-part .block {
+        width: 50%;
+    }
+
+    .august-bonus .top-part .wrap-img {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .august-bonus .top-part img {
+        max-height: 70px;
+    }
+
+    .august-bonus .bottom-part {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .august-bonus .bottom-part img {
+        height: 22px;
+    }
+
+    .august-bonus .bottom-part b,
+    .august-bonus .bottom-part .block-winners b {
+        margin-left: 8px;
+    }
+
+    .august-bonus .bottom-part .number-with-text .text {
+        flex-direction: column;
+    }
+
+    .august-bonus .number-with-text .text a {
+        margin-left: 0;
+    }
+}
+
+/* -august bonus */

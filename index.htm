@@ -58,7 +58,7 @@
     <!-- New freshchat widget code -->
     <script src="https://wchat.freshchat.com/js/widget.js"></script>
 
-    <link href="content/custom-live-20.02.css" rel="stylesheet" type="text/css">
+    <link href="content/custom-new.css" rel="stylesheet" type="text/css">
 
 
     <link rel="stylesheet" href="content/prettyPhoto.css" type="text/css" media="screen"
@@ -112,13 +112,13 @@
             right: 20px;
         }
     </style>
-    <link href="https://wchat.freshchat.com/css/widget.css?t=1584515775180" rel="stylesheet">
+    <link href="https://wchat.freshchat.com/css/widget.css?t=1587437674363" rel="stylesheet">
 </head>
 <body style="visibility: visible;" data-gr-c-s-loaded="true">
 <!-- Some java script code has been taken to the head section "inner body tag script" -->
 <!-- Top Social Bar and Login Panel - Start -->
 
-<header class="top-header">
+<header class="top-header" style="margin-bottom: 54px;">
     <div class="top-bar inner clearfix">
 
         <style>
@@ -186,7 +186,7 @@
 </header>
 <!-- Top Social Bar and Login Panel - End -->
 <!-- responsive navigation bar -->
-<nav id="navLayout" class="navbar navbar-right clearfix" style="visibility: visible;">
+<nav id="navLayout" class="navbar navbar-right clearfix fixed" style="visibility: visible;">
     <div class="navbar-inner">
         <div class="container inner">
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">Menu
@@ -224,7 +224,7 @@
 
 
                 </div>
-                <div class="start_now">
+                <div class="start_now" style="display: block;">
                     <a class="btn btn_main" href="#get_started" role="button" data-toggle="modal">Start Now
                     </a>
 
@@ -296,20 +296,20 @@
     </div>
 
     <div class="clearfix">
-        <div class="video-wrap" style="height: 206px;">
+        <div class="video-wrap" style="height: 429px;">
             <video preload="auto" class="videot" id="videot" playsinline="" autoplay="" muted="" loop="">
                 <source src="content/video/HomepageLoop.mp4" type="video/mp4">
-                <source src="content/video01.webm" type="video/webm">
+                <source src="content/video/HomepageLoop.webm" type="video/webm">
                 <source src="content/video01.ogg" type="video/ogg">
-                <object type="application/x-shockwave-flash" data="flash-player.swf?videoUrl=video/video01.mp4"
+                <object type="application/x-shockwave-flash" data="flash-player.swf?videoUrl=video/HomepageLoop.mp4"
                         height="1080">
-                    <param name="movie" value="flash-player.swf?videoUrl=video/video01.mp4">
+                    <param name="movie" value="flash-player.swf?videoUrl=video/HomepageLoop.mp4">
                     <param name="wmode" value="transparent">
                     <param name="allowfullscreen" value="true">
                     <param name="autoplay" value="false">
                     <param name="loop" value="false">
                     <param name="flashvars"
-                           value="controlbar=false&amp;file=flash-player.swf?videoUrl=video/video01.mp4">
+                           value="controlbar=false&amp;file=flash-player.swf?videoUrl=video/HomepageLoop.mp4">
                 </object>
             </video>
             <div class="wrap_slide_text">
@@ -598,7 +598,7 @@
             <article class="follow-mwr">
 
                 <div class="wrap-img">
-                    <img src="/images/logo-dark-footer.png" width="140px" alt="">
+                    <img src="https://www.mwrlife.com/images/logo-dark-footer.png" width="140px" alt="">
                 </div>
 
 
@@ -677,12 +677,15 @@
                 </ul>
             </article>
 
-            <article class="contact">
+            <article class="last-block">
                 <ul>
                     <li class="phone"><a href="tel:+18885361341">(888) 516-2427</a></li>
                     <li class="email"><a href="mailto:support@mwrlife.com">support@mwrlife.com</a></li>
 
                 </ul>
+                <div class="wrap-img">
+                    <img src="images/etoa.png" alt="">
+                </div>
             </article>
         </section>
     </div>
@@ -690,8 +693,8 @@
     <div class="bottom">
         <div id="copyright">©2013-2020 MWR Life. All rights reserved.</div>
         <div><a id="link1KR" href="content/TermsofUse.pdf" target="_blank">Terms of Use</a> | <a id="link2KR"
-                                                                                                 href="content/PrivacyPolicy.pdf "
-                                                                                                 target="_blank">Privacy
+                                                                                                  href="content/PrivacyPolicy.pdf "
+                                                                                                  target="_blank">Privacy
             Policy</a> | <a id="link3KR" href="content/IncomeDisclosure.pdf" target="_blank">Income Disclosure</a>
         </div>
     </div>
@@ -724,546 +727,896 @@
 
         <div class="countryModalClass">
             <ul>
-                <li><a onclick="return SetCountryForEuropeToHdr('AL','Albania','Albania-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('AL','Albania','Albania-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Albania-Flag.png">
-                    <span>Albania</span></a>
+                        <img src="/images/CountryFlags/Albania-Flag.png">
+                        <span>Albania</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('DZ','Algeria','Algeria-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('DZ','Algeria','Algeria-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Algeria-Flag.png">
-                    <span>Algeria</span></a>
+                        <img src="/images/CountryFlags/Algeria-Flag.png">
+                        <span>Algeria</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('AR','Argentina','Argentina-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('AD','Andorra','Andorra-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Argentina-Flag.png">
-                    <span>Argentina</span></a>
+                        <img src="/images/CountryFlags/Andorra-Flag.png">
+                        <span>Andorra</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('AM','Armenia','Armenia-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('AR','Argentina','Argentina-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Armenia-Flag.png">
-                    <span>Armenia</span></a>
+                        <img src="/images/CountryFlags/Argentina-Flag.png">
+                        <span>Argentina</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('AW','Aruba','Aruba-Flag.png')" href="www.mwrlife.com/"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('AM','Armenia','Armenia-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Armenia-Flag.png">
+                        <span>Armenia</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('AW','Aruba','Aruba-Flag.png')" href="www.mwrlife.com/"
                        role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Aruba-Flag.png">
-                    <span>Aruba</span></a>
+                        <img src="/images/CountryFlags/Aruba-Flag.png">
+                        <span>Aruba</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('AU','Australia','Australia-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('AU','Australia','Australia-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Australia-Flag.png">
-                    <span>Australia</span></a>
+                        <img src="/images/CountryFlags/Australia-Flag.png">
+                        <span>Australia</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('AT','Austria','Austria-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('AT','Austria','Austria-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Austria-Flag.png">
-                    <span>Austria</span></a>
+                        <img src="/images/CountryFlags/Austria-Flag.png">
+                        <span>Austria</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('AZ','Azerbaijan','Azerbaijan-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('AZ','Azerbaijan','Azerbaijan-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Azerbaijan-Flag.png">
-                    <span>Azerbaijan</span></a>
+                        <img src="/images/CountryFlags/Azerbaijan-Flag.png">
+                        <span>Azerbaijan</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('BD','Bangladesh','Bangladesh-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('BD','Bangladesh','Bangladesh-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Bangladesh-Flag.png">
-                    <span>Bangladesh</span></a>
+                        <img src="/images/CountryFlags/Bangladesh-Flag.png">
+                        <span>Bangladesh</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('BY','Belarus','Belarus-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('BY','Belarus','Belarus-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Belarus-Flag.png">
-                    <span>Belarus</span></a>
+                        <img src="/images/CountryFlags/Belarus-Flag.png">
+                        <span>Belarus</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('BE','Belgium','Belgium-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('BE','Belgium','Belgium-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Belgium-Flag.png">
-                    <span>Belgium</span></a>
+                        <img src="/images/CountryFlags/Belgium-Flag.png">
+                        <span>Belgium</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('BZ','Belize','Belize-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('BZ','Belize','Belize-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Belize-Flag.png">
-                    <span>Belize</span></a>
+                        <img src="/images/CountryFlags/Belize-Flag.png">
+                        <span>Belize</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('BJ','Benin','Benin-Flag.png')" href="www.mwrlife.com/"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('BJ','Benin','Benin-Flag.png')" href="www.mwrlife.com/"
                        role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Benin-Flag.png">
-                    <span>Benin</span></a>
+                        <img src="/images/CountryFlags/Benin-Flag.png">
+                        <span>Benin</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('BO','Bolivia','Bolivia-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('BO','Bolivia','Bolivia-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Bolivia-Flag.png">
-                    <span>Bolivia</span></a>
+                        <img src="/images/CountryFlags/Bolivia-Flag.png">
+                        <span>Bolivia</span>
+                    </a>
                 </li>
 
                 <li>
                     <a onclick="return SetCountryForEuropeToHdr('BA','Bosnia and Herzegovina','Bosnia-and-Herzegovina-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
                         <img src="/images/CountryFlags/Bosnia-and-Herzegovina-Flag.png">
-                        <span>Bosnia and Herzegovina</span></a>
+                        <span>Bosnia and Herzegovina</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('BR','Brazil','Brazil-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('BR','Brazil','Brazil-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Brazil-Flag.png">
-                    <span>Brazil</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('BG','Bulgaria','Bulgaria-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Bulgaria-Flag.png">
-                    <span>Bulgaria</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('BF','Burkina Faso','BurkinaFaso-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/BurkinaFaso-Flag.png">
-                    <span>Burkina Faso</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('BI','Burundi','Burundi-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Burundi-Flag.png">
-                    <span>Burundi</span></a>
+                        <img src="/images/CountryFlags/Brazil-Flag.png">
+                        <span>Brazil</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('KH','Cambodia','Cambodia-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('BG','Bulgaria','Bulgaria-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Cambodia-Flag.png">
-                    <span>Cambodia</span></a>
+                        <img src="/images/CountryFlags/Bulgaria-Flag.png">
+                        <span>Bulgaria</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('CM','Cameroon','Cameroon-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('BF','Burkina Faso','BurkinaFaso-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Cameroon-Flag.png">
-                    <span>Cameroon</span></a>
+                        <img src="/images/CountryFlags/BurkinaFaso-Flag.png">
+                        <span>Burkina Faso</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('CA','Canada','Canada-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('BI','Burundi','Burundi-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Canada-Flag.png">
-                    <span>Canada</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('CL','Chile','Chile-Flag.png')" href="www.mwrlife.com/"
+                        <img src="/images/CountryFlags/Burundi-Flag.png">
+                        <span>Burundi</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('KH','Cambodia','Cambodia-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Cambodia-Flag.png">
+                        <span>Cambodia</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('CM','Cameroon','Cameroon-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Cameroon-Flag.png">
+                        <span>Cameroon</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('CA','Canada','Canada-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Canada-Flag.png">
+                        <span>Canada</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('CL','Chile','Chile-Flag.png')" href="www.mwrlife.com/"
                        role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Chile-Flag.png">
-                    <span>Chile</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('CO','Colombia','Colombia-Flag.png')"
+                        <img src="/images/CountryFlags/Chile-Flag.png">
+                        <span>Chile</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('CO','Colombia','Colombia-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Colombia-Flag.png">
-                    <span>Colombia</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('CG','Congo Brazzaville','Congo-Brazzaville-Flag.png')"
+                        <img src="/images/CountryFlags/Colombia-Flag.png">
+                        <span>Colombia</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('CG','Congo Brazzaville','Congo-Brazzaville-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Congo-Brazzaville-Flag.png">
-                    <span>Congo Brazzaville</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('CR','Costa Rica','Costa-Rica-Flag.png')"
+                        <img src="/images/CountryFlags/Congo-Brazzaville-Flag.png">
+                        <span>Congo Brazzaville</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('CR','Costa Rica','Costa-Rica-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Costa-Rica-Flag.png">
-                    <span>Costa Rica</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('HR','Croatia','Croatia-Flag.png')"
+                        <img src="/images/CountryFlags/Costa-Rica-Flag.png">
+                        <span>Costa Rica</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('HR','Croatia','Croatia-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Croatia-Flag.png">
-                    <span>Croatia</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('CW','Curacao','Curacao-Flag.png')"
+                        <img src="/images/CountryFlags/Croatia-Flag.png">
+                        <span>Croatia</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('CW','Curacao','Curacao-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Curacao-Flag.png">
-                    <span>Curacao</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('CYP','Cyprus','Cyprus-Flag.png')"
+                        <img src="/images/CountryFlags/Curacao-Flag.png">
+                        <span>Curacao</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('CYP','Cyprus','Cyprus-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Cyprus-Flag.png">
-                    <span>Cyprus</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('CZ','Czech Republic','Czech-Republic-Flag.png')"
+                        <img src="/images/CountryFlags/Cyprus-Flag.png">
+                        <span>Cyprus</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('CZ','Czech Republic','Czech-Republic-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Czech-Republic-Flag.png">
-                    <span>Czech Republic</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('DK','Denmark','Denmark-Flag.png')"
+                        <img src="/images/CountryFlags/Czech-Republic-Flag.png">
+                        <span>Czech Republic</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('DK','Denmark','Denmark-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Denmark-Flag.png">
-                    <span>Denmark</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('DM','Dominica','Dominica-Flag.png')"
+                        <img src="/images/CountryFlags/Denmark-Flag.png">
+                        <span>Denmark</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('DM','Dominica','Dominica-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Dominica-Flag.png">
-                    <span>Dominica</span></a></li>
+                        <img src="/images/CountryFlags/Dominica-Flag.png">
+                        <span>Dominica</span>
+                    </a>
+                </li>
                 <li>
                     <a onclick="return SetCountryForEuropeToHdr('DO','Dominican Republic','Dominican-Republic-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
                         <img src="/images/CountryFlags/Dominican-Republic-Flag.png">
-                        <span>Dominican Republic</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('CD','DR Congo','DR-Congo-Flag.png')"
+                        <span>Dominican Republic</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('CD','DR Congo','DR-Congo-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/DR-Congo-Flag.png">
-                    <span>DR Congo</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('EC','Ecuador','Ecuador-Flag.png')"
+                        <img src="/images/CountryFlags/DR-Congo-Flag.png">
+                        <span>DR Congo</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('EC','Ecuador','Ecuador-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Ecuador-Flag.png">
-                    <span>Ecuador </span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('EG','Egypt','Egypt-Flag.png')" href="www.mwrlife.com/"
+                        <img src="/images/CountryFlags/Ecuador-Flag.png">
+                        <span>Ecuador </span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('EG','Egypt','Egypt-Flag.png')" href="www.mwrlife.com/"
                        role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Egypt-Flag.png">
-                    <span>Egypt </span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('SV','El Salvador','El-Salvador-Flag.png')"
+                        <img src="/images/CountryFlags/Egypt-Flag.png">
+                        <span>Egypt </span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('SV','El Salvador','El-Salvador-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/El-Salvador-Flag.png">
-                    <span>El Salvador</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('EE','Estonia','Estonia-Flag.png')"
+                        <img src="/images/CountryFlags/El-Salvador-Flag.png">
+                        <span>El Salvador</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('EE','Estonia','Estonia-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Estonia-Flag.png">
-                    <span>Estonia</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('FI','Finland','Finland-Flag.png')"
+                        <img src="/images/CountryFlags/Estonia-Flag.png">
+                        <span>Estonia</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('FI','Finland','Finland-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Finland-Flag.png">
-                    <span>Finland</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('FR','France','French-Flag.png')"
+                        <img src="/images/CountryFlags/Finland-Flag.png">
+                        <span>Finland</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('FR','France','French-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/French-Flag.png">
-                    <span>France</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('PF','French Polynesia','FrenchPolynesia-Flag.png')"
+                        <img src="/images/CountryFlags/French-Flag.png">
+                        <span>France</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('PF','French Polynesia','FrenchPolynesia-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/FrenchPolynesia-Flag.png">
-                    <span>French Polynesia</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('GA','Gabon','Gabon-Flag.png')" href="www.mwrlife.com/"
+                        <img src="/images/CountryFlags/FrenchPolynesia-Flag.png">
+                        <span>French Polynesia</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('GA','Gabon','Gabon-Flag.png')" href="www.mwrlife.com/"
                        role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Gabon-Flag.png">
-                    <span>Gabon</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('GE','Georgia','Georgia-Flag.png')"
+                        <img src="/images/CountryFlags/Gabon-Flag.png">
+                        <span>Gabon</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('GE','Georgia','Georgia-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Georgia-Flag.png">
-                    <span>Georgia</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('DE','Germany','Germany-Flag.png')"
+                        <img src="/images/CountryFlags/Georgia-Flag.png">
+                        <span>Georgia</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('DE','Germany','Germany-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Germany-Flag.png">
-                    <span>Germany</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('HG','Ghana','Ghana-Flag.png')" href="www.mwrlife.com/"
+                        <img src="/images/CountryFlags/Germany-Flag.png">
+                        <span>Germany</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('HG','Ghana','Ghana-Flag.png')" href="www.mwrlife.com/"
                        role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Ghana-Flag.png">
-                    <span>Ghana</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('GR','Greece','Greece-Flag.png')"
+                        <img src="/images/CountryFlags/Ghana-Flag.png">
+                        <span>Ghana</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('GR','Greece','Greece-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Greece-Flag.png">
-                    <span>Greece</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('GT','Guatemala','Guatemala-Flag.png')"
+                        <img src="/images/CountryFlags/Greece-Flag.png">
+                        <span>Greece</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('GT','Guatemala','Guatemala-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Guatemala-Flag.png">
-                    <span>Guatemala</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('GW','Guinea-Bissau','Guinea-Bissau-Flag.png')"
+                        <img src="/images/CountryFlags/Guatemala-Flag.png">
+                        <span>Guatemala</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('GW','Guinea-Bissau','Guinea-Bissau-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Guinea-Bissau-Flag.png">
-                    <span>Guinea-Bissau</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('HT','Haiti','Haiti-Flag.png')" href="www.mwrlife.com/"
+                        <img src="/images/CountryFlags/Guinea-Bissau-Flag.png">
+                        <span>Guinea-Bissau</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('HT','Haiti','Haiti-Flag.png')" href="www.mwrlife.com/"
                        role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Haiti-Flag.png">
-                    <span>Haiti</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('HN','Honduras','Honduras-Flag.png')"
+                        <img src="/images/CountryFlags/Haiti-Flag.png">
+                        <span>Haiti</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('HN','Honduras','Honduras-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Honduras-Flag.png">
-                    <span>Honduras</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('HK','Hong Kong','Hong-Kong-Flag.png')"
+                        <img src="/images/CountryFlags/Honduras-Flag.png">
+                        <span>Honduras</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('HK','Hong Kong','Hong-Kong-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Hong-Kong-Flag.png">
-                    <span>Hong Kong</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('HU','Hungary','Hungary-Flag.png')"
+                        <img src="/images/CountryFlags/Hong-Kong-Flag.png">
+                        <span>Hong Kong</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('HU','Hungary','Hungary-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Hungary-Flag.png">
-                    <span>Hungary</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('IS','Iceland','Iceland-Flag.png')"
+                        <img src="/images/CountryFlags/Hungary-Flag.png">
+                        <span>Hungary</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('IS','Iceland','Iceland-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Iceland-Flag.png">
-                    <span>Iceland</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('IN','India','India-Flag.png')" href="www.mwrlife.com/"
+                        <img src="/images/CountryFlags/Iceland-Flag.png">
+                        <span>Iceland</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('IN','India','India-Flag.png')" href="www.mwrlife.com/"
                        role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/India-Flag.png">
-                    <span>India</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('ID','Indonesia','Indonesia-Flag.png')"
+                        <img src="/images/CountryFlags/India-Flag.png">
+                        <span>India</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('ID','Indonesia','Indonesia-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Indonesia-Flag.png">
-                    <span>Indonesia</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('IE','Ireland','Ireland-Flag.png')"
+                        <img src="/images/CountryFlags/Indonesia-Flag.png">
+                        <span>Indonesia</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('IE','Ireland','Ireland-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Ireland-Flag.png">
-                    <span>Ireland</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('IL','Israel','Israel-Flag.png')"
+                        <img src="/images/CountryFlags/Ireland-Flag.png">
+                        <span>Ireland</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('IL','Israel','Israel-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Israel-Flag.png">
-                    <span>Israel</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('IT','Italy','Italy-Flag.png')" href="www.mwrlife.com/"
+                        <img src="/images/CountryFlags/Israel-Flag.png">
+                        <span>Israel</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('IT','Italy','Italy-Flag.png')" href="www.mwrlife.com/"
                        role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Italy-Flag.png">
-                    <span>Italy</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('CI','Ivory Coast','IvoryCoast-Flag.png')"
+                        <img src="/images/CountryFlags/Italy-Flag.png">
+                        <span>Italy</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('CI','Ivory Coast','IvoryCoast-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/IvoryCoast-Flag.png">
-                    <span>Ivory Coast</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('JM','Jamaica','Jamaica-Flag.png')"
+                        <img src="/images/CountryFlags/IvoryCoast-Flag.png">
+                        <span>Ivory Coast</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('JM','Jamaica','Jamaica-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Jamaica-Flag.png">
-                    <span>Jamaica</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('JP','Japan','Japan-Flag.png')" href="www.mwrlife.com/"
+                        <img src="/images/CountryFlags/Jamaica-Flag.png">
+                        <span>Jamaica</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('JP','Japan','Japan-Flag.png')" href="www.mwrlife.com/"
                        role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Japan-Flag.png">
-                    <span>Japan</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('KZ','Kazakhstan','Kazakhstan-Flag.png')"
+                        <img src="/images/CountryFlags/Japan-Flag.png">
+                        <span>Japan</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('KZ','Kazakhstan','Kazakhstan-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Kazakhstan-Flag.png">
-                    <span>Kazakhstan</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('KE','Kenya','Kenya-Flag.png')" href="www.mwrlife.com/"
+                        <img src="/images/CountryFlags/Kazakhstan-Flag.png">
+                        <span>Kazakhstan</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('KE','Kenya','Kenya-Flag.png')" href="www.mwrlife.com/"
                        role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Kenya-Flag.png">
-                    <span>Kenya</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('KV','Kosovo','Kosovo-Flag.png')"
+                        <img src="/images/CountryFlags/Kenya-Flag.png">
+                        <span>Kenya</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('KV','Kosovo','Kosovo-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Kosovo-Flag.png">
-                    <span>Kosovo</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('KW','Kuwait','Kuwait-Flag.png')"
+                        <img src="/images/CountryFlags/Kosovo-Flag.png">
+                        <span>Kosovo</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('KW','Kuwait','Kuwait-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Kuwait-Flag.png">
-                    <span>Kuwait</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('KG','Kyrgyzstan','Kyrgyzstan-Flag.png')"
+                        <img src="/images/CountryFlags/Kuwait-Flag.png">
+                        <span>Kuwait</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('KG','Kyrgyzstan','Kyrgyzstan-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Kyrgyzstan-Flag.png">
-                    <span>Kyrgyzstan</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('LV','Latvia','Latvia-Flag.png')"
+                        <img src="/images/CountryFlags/Kyrgyzstan-Flag.png">
+                        <span>Kyrgyzstan</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('LV','Latvia','Latvia-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Latvia-Flag.png">
-                    <span>Latvia</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('LB','Lebanon','Lebanon-Flag.png')"
+                        <img src="/images/CountryFlags/Latvia-Flag.png">
+                        <span>Latvia</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('LB','Lebanon','Lebanon-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Lebanon-Flag.png">
-                    <span>Lebanon</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('LT','Lithuania','Lithuania-Flag.png')"
+                        <img src="/images/CountryFlags/Lebanon-Flag.png">
+                        <span>Lebanon</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('LT','Lithuania','Lithuania-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Lithuania-Flag.png">
-                    <span>Lithuania</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('LU','Luxembourg','Luxembourg-Flag.png')"
+                        <img src="/images/CountryFlags/Lithuania-Flag.png">
+                        <span>Lithuania</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('LU','Luxembourg','Luxembourg-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Luxembourg-Flag.png">
-                    <span>Luxembourg</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('MK','Macedonia','Macedonia-Flag.png')"
+                        <img src="/images/CountryFlags/Luxembourg-Flag.png">
+                        <span>Luxembourg</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('MK','Macedonia','Macedonia-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Macedonia-Flag.png">
-                    <span>Macedonia</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('MG','Madagascar','Madagascar-Flag.png')"
+                        <img src="/images/CountryFlags/Macedonia-Flag.png">
+                        <span>Macedonia</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('MG','Madagascar','Madagascar-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Madagascar-Flag.png">
-                    <span>Madagascar</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('MY','Malaysia','Malaysia-Flag.png')"
+                        <img src="/images/CountryFlags/Madagascar-Flag.png">
+                        <span>Madagascar</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('MY','Malaysia','Malaysia-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Malaysia-Flag.png">
-                    <span>Malaysia</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('ML','Mali','Mali-Flag.png')" href="www.mwrlife.com/"
+                        <img src="/images/CountryFlags/Malaysia-Flag.png">
+                        <span>Malaysia</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('ML','Mali','Mali-Flag.png')" href="www.mwrlife.com/"
                        role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Mali-Flag.png">
-                    <span>Mali</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('MLT','Malta','Malta-Flag.png')" href="www.mwrlife.com/"
+                        <img src="/images/CountryFlags/Mali-Flag.png">
+                        <span>Mali</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('MLT','Malta','Malta-Flag.png')" href="www.mwrlife.com/"
                        role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Malta-Flag.png">
-                    <span>Malta</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('MU','Mauritius','Mauritius-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Mauritius-Flag.png">
-                    <span>Mauritius</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('MX','Mexico','Mexico-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Mexico-Flag.png">
-                    <span>Mexico</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('MD','Moldova','Moldova-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Moldova-Flag.png">
-                    <span>Moldova</span></a>
+                        <img src="/images/CountryFlags/Malta-Flag.png">
+                        <span>Malta</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('MN','Mongolia','Mongolia-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('MU','Mauritius','Mauritius-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Mongolia-Flag.png">
-                    <span>Mongolia</span></a>
+                        <img src="/images/CountryFlags/Mauritius-Flag.png">
+                        <span>Mauritius</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('MA','Morocco','Morocco-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('MX','Mexico','Mexico-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Morocco-Flag.png">
-                    <span>Morocco</span></a>
+                        <img src="/images/CountryFlags/Mexico-Flag.png">
+                        <span>Mexico</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('NA','Namibia','Namibia-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('MD','Moldova','Moldova-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Namibia-Flag.png">
-                    <span>Namibia</span></a>
+                        <img src="/images/CountryFlags/Moldova-Flag.png">
+                        <span>Moldova</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('NL','Netherlands','Netherlands-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('MN','Mongolia','Mongolia-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Netherlands-Flag.png">
-                    <span>Netherlands</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('NC','New Caledonia','New-Caledonia-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/New-Caledonia-Flag.png">
-                    <span>New Caledonia</span></a>
+                        <img src="/images/CountryFlags/Mongolia-Flag.png">
+                        <span>Mongolia</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('NZ','New Zealand','New-Zealand-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('MA','Morocco','Morocco-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/New-Zealand-Flag.png">
-                    <span>New Zealand</span></a>
+                        <img src="/images/CountryFlags/Morocco-Flag.png">
+                        <span>Morocco</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('NG','Nigeria','Nigeria-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('NA','Namibia','Namibia-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Nigeria-Flag.png">
-                    <span>Nigeria</span></a>
+                        <img src="/images/CountryFlags/Namibia-Flag.png">
+                        <span>Namibia</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('NO','Norway','Norway-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('NL','Netherlands','Netherlands-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Norway-Flag.png">
-                    <span>Norway</span></a>
+                        <img src="/images/CountryFlags/Netherlands-Flag.png">
+                        <span>Netherlands</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('PK','Pakistan','Pakistan-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('NC','New Caledonia','New-Caledonia-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Pakistan-Flag.png">
-                    <span>Pakistan</span></a>
+                        <img src="/images/CountryFlags/New-Caledonia-Flag.png">
+                        <span>New Caledonia</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('PA','Panama','Panama-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('NZ','New Zealand','New-Zealand-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Panama-Flag.png">
-                    <span>Panama</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('PY','Paraguay','Paraguay-Flag.png')"
+                        <img src="/images/CountryFlags/New-Zealand-Flag.png">
+                        <span>New Zealand</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('NI','Nicaragua','Nicaragua-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Paraguay-Flag.png">
-                    <span>Paraguay</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('PE','Peru','Peru-Flag.png')" href="www.mwrlife.com/"
+                        <img src="/images/CountryFlags/Nicaragua-Flag.png">
+                        <span>Nicaragua</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('NG','Nigeria','Nigeria-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Nigeria-Flag.png">
+                        <span>Nigeria</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('NO','Norway','Norway-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Norway-Flag.png">
+                        <span>Norway</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('PK','Pakistan','Pakistan-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Pakistan-Flag.png">
+                        <span>Pakistan</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('PA','Panama','Panama-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Panama-Flag.png">
+                        <span>Panama</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('PY','Paraguay','Paraguay-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Paraguay-Flag.png">
+                        <span>Paraguay</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('PE','Peru','Peru-Flag.png')" href="www.mwrlife.com/"
                        role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Peru-Flag.png">
-                    <span>Peru</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('PH','Philippines','Philippines-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Philippines-Flag.png">
-                    <span>Philippines</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('PL','Poland','Poland-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Poland-Flag.png">
-                    <span>Poland</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('PT','Portugal','Portugal-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Portugal-Flag.png">
-                    <span>Portugal</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('RO','Romania','Romania-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Romania-Flag.png">
-                    <span>Romania</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('RU','Russia','Russia-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Russia-Flag.png">
-                    <span>Russia</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('RE','Rwanda','Rwanda-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Rwanda-Flag.png">
-                    <span>Rwanda</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('LC','Saint Lucia','Saint-Lucia-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Saint-Lucia-Flag.png">
-                    <span>Saint Lucia</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('SA','Saudi Arabia','Saudi-Arabia-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Saudi-Arabia-Flag.png">
-                    <span>Saudi Arabia</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('SN','Senegal','Senegal-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Senegal-Flag.png">
-                    <span>Senegal</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('RS','Serbia','Serbia-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Serbia-Flag.png">
-                    <span>Serbia</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('SG','Singapore','Singapore-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Singapore-Flag.png">
-                    <span>Singapore</span></a>
+                        <img src="/images/CountryFlags/Peru-Flag.png">
+                        <span>Peru</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('SI','Slovenia','Slovenia-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('PH','Philippines','Philippines-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Slovenia-Flag.png">
-                    <span>Slovenia</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('SK','Slovakia','Slovakia-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Slovakia-Flag.png">
-                    <span>Slovakia</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('ZA','South Africa','South-Africa-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/South-Africa-Flag.png">
-                    <span>South Africa</span></a>
+                        <img src="/images/CountryFlags/Philippines-Flag.png">
+                        <span>Philippines</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('KR','South Korea','South-Korea-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('PL','Poland','Poland-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/South-Korea-Flag.png">
-                    <span>South Korea</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('ES','Spain','Spain-Flag.png')" href="www.mwrlife.com/"
+                        <img src="/images/CountryFlags/Poland-Flag.png">
+                        <span>Poland</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('PT','Portugal','Portugal-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Portugal-Flag.png">
+                        <span>Portugal</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('RO','Romania','Romania-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Romania-Flag.png">
+                        <span>Romania</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('RU','Russia','Russia-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Russia-Flag.png">
+                        <span>Russia</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('RE','Rwanda','Rwanda-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Rwanda-Flag.png">
+                        <span>Rwanda</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('LC','Saint Lucia','Saint-Lucia-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Saint-Lucia-Flag.png">
+                        <span>Saint Lucia</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('SA','Saudi Arabia','Saudi-Arabia-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Saudi-Arabia-Flag.png">
+                        <span>Saudi Arabia</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('SN','Senegal','Senegal-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Senegal-Flag.png">
+                        <span>Senegal</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('RS','Serbia','Serbia-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Serbia-Flag.png">
+                        <span>Serbia</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('SG','Singapore','Singapore-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Singapore-Flag.png">
+                        <span>Singapore</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('SI','Slovenia','Slovenia-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Slovenia-Flag.png">
+                        <span>Slovenia</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('SK','Slovakia','Slovakia-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Slovakia-Flag.png">
+                        <span>Slovakia</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('ZA','South Africa','South-Africa-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/South-Africa-Flag.png">
+                        <span>South Africa</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('KR','South Korea','South-Korea-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/South-Korea-Flag.png">
+                        <span>South Korea</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('ES','Spain','Spain-Flag.png')" href="www.mwrlife.com/"
                        role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Spain-Flag.png">
-                    <span>Spain</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('LK','Sri Lanka','SriLanka-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/SriLanka-Flag.png">
-                    <span>Sri Lanka</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('SR','Suriname','Suriname-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Suriname-Flag.png">
-                    <span>Suriname</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('SE','Sweden','Sweden-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Sweden-Flag.png">
-                    <span>Sweden</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('CHE','Switzerland','Switzerland-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Switzerland-Flag.png">
-                    <span>Switzerland</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('TW','Taiwan','Taiwan-Flag.png')"
-                       href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Taiwan-Flag.png">
-                    <span>Taiwan</span></a>
+                        <img src="/images/CountryFlags/Spain-Flag.png">
+                        <span>Spain</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('TJ','Tajikistan','Tajikistan-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('LK','Sri Lanka','SriLanka-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Tajikistan-Flag.png">
-                    <span>Tajikistan</span></a>
+                        <img src="/images/CountryFlags/SriLanka-Flag.png">
+                        <span>Sri Lanka</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('TH','Thailand','Thailand-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('SR','Suriname','Suriname-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Thailand-Flag.png">
-                    <span>Thailand</span></a>
+                        <img src="/images/CountryFlags/Suriname-Flag.png">
+                        <span>Suriname</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('TG','Togo','Togo-Flag.png')" href="www.mwrlife.com/"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('SE','Sweden','Sweden-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Sweden-Flag.png">
+                        <span>Sweden</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('CHE','Switzerland','Switzerland-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Switzerland-Flag.png">
+                        <span>Switzerland</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('TW','Taiwan','Taiwan-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Taiwan-Flag.png">
+                        <span>Taiwan</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('TJ','Tajikistan','Tajikistan-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Tajikistan-Flag.png">
+                        <span>Tajikistan</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('TH','Thailand','Thailand-Flag.png')"
+                       href="www.mwrlife.com/" role="button" data-toggle="modal">
+                        <img src="/images/CountryFlags/Thailand-Flag.png">
+                        <span>Thailand</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('TG','Togo','Togo-Flag.png')" href="www.mwrlife.com/"
                        role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Togo-Flag.png">
-                    <span>Togo</span></a>
+                        <img src="/images/CountryFlags/Togo-Flag.png">
+                        <span>Togo</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('TN','Tunisia','Tunisia-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('TN','Tunisia','Tunisia-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Tunisia-Flag.png">
-                    <span>Tunisia</span></a>
+                        <img src="/images/CountryFlags/Tunisia-Flag.png">
+                        <span>Tunisia</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('TR','Turkey','Turkey-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('TR','Turkey','Turkey-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Turkey-Flag.png">
-                    <span>Turkey</span></a>
+                        <img src="/images/CountryFlags/Turkey-Flag.png">
+                        <span>Turkey</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('TM','Turkmenistan','Turkmenistan-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('TM','Turkmenistan','Turkmenistan-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Turkmenistan-Flag.png">
-                    <span>Turkmenistan</span></a>
+                        <img src="/images/CountryFlags/Turkmenistan-Flag.png">
+                        <span>Turkmenistan</span>
+                    </a>
                 </li>
-                <li><a onclick="return SetCountryForEuropeToHdr('UG','Uganda','Uganda-Flag.png')"
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('UG','Uganda','Uganda-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Uganda-Flag.png">
-                    <span>Uganda</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('UA','Ukraine','Ukraine-Flag.png')"
+                        <img src="/images/CountryFlags/Uganda-Flag.png">
+                        <span>Uganda</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('UA','Ukraine','Ukraine-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Ukraine-Flag.png">
-                    <span>Ukraine</span></a></li>
+                        <img src="/images/CountryFlags/Ukraine-Flag.png">
+                        <span>Ukraine</span>
+                    </a>
+                </li>
                 <li>
                     <a onclick="return SetCountryForEuropeToHdr('AE','United Arab Emirates','United-Arab-Emirates-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
                         <img src="/images/CountryFlags/United-Arab-Emirates-Flag.png">
-                        <span>United Arab Emirates</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('GB','United Kingdom','United-Kingdom-Flag.png')"
+                        <span>United Arab Emirates</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('GB','United Kingdom','United-Kingdom-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/United-Kingdom-Flag.png">
-                    <span>United Kingdom</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('USA','United States','United-States-Flag.png')"
+                        <img src="/images/CountryFlags/United-Kingdom-Flag.png">
+                        <span>United Kingdom</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('USA','United States','United-States-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/United-States-Flag.png">
-                    <span>United States</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('UZ','Uzbekistan','Uzbekistan-Flag.png')"
+                        <img src="/images/CountryFlags/United-States-Flag.png">
+                        <span>United States</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('UZ','Uzbekistan','Uzbekistan-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Uzbekistan-Flag.png">
-                    <span>Uzbekistan</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('VU','Vanuatu','Vanuatu-Flag.png')"
+                        <img src="/images/CountryFlags/Uzbekistan-Flag.png">
+                        <span>Uzbekistan</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('VU','Vanuatu','Vanuatu-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Vanuatu-Flag.png">
-                    <span>Vanuatu</span></a></li>
-                <li><a onclick="return SetCountryForEuropeToHdr('ZM','Zambia','Zambia-Flag.png')"
+                        <img src="/images/CountryFlags/Vanuatu-Flag.png">
+                        <span>Vanuatu</span>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="return SetCountryForEuropeToHdr('ZM','Zambia','Zambia-Flag.png')"
                        href="www.mwrlife.com/" role="button" data-toggle="modal">
-                    <img src="/images/CountryFlags/Zambia-Flag.png">
-                    <span>Zambia</span></a></li>
+                        <img src="/images/CountryFlags/Zambia-Flag.png">
+                        <span>Zambia</span>
+                    </a>
+                </li>
 
 
             </ul>
@@ -1291,7 +1644,7 @@
     $(document).ready(function () {
 
         if ('System.Web.HttpSessionStateWrapper' != null) {
-            if ('1' != "1") {
+            if ('' != "1") {
                 //localStorage['SelectedEuropeCountryName'] = "";
                 if ('Indonesia' != "OutOfCountryList") {
                     localStorage['SelectedEuropeCountryName'] = 'Indonesia';
@@ -1886,7 +2239,7 @@
     //        url: "/Home/SetCountry?countryName=" + countryName,
     //        type: 'GET',
     //        contentType: 'application/json',
-    //        success: function (result) {
+    //        success: function (result) {                    
     //           // location.reload();
     //          //  $('#countryselect').modal('hide');
     //        },
@@ -1905,7 +2258,7 @@
             // french
             setlanguageByCountry("French", Country_Name, Country_ShortName, true);
 
-        } else if (Country_Name == "Spain" || Country_Name == "Colombia" || Country_Name == "Bolivia" || Country_Name == "Mexico" || Country_Name == "Panama" || Country_Name == "Dominican Republic" || Country_Name == "Brazil" || Country_Name == "Puerto Rico" || Country_Name == "Ecuador" || Country_Name == "Peru" || Country_Name == "Guatemala" || Country_Name == "Costa Rica" || Country_Name == "Argentina" || Country_Name == "Chile" || Country_Name == "El Salvador" || Country_Name == "Honduras") {
+        } else if (Country_Name == "Spain" || Country_Name == "Colombia" || Country_Name == "Bolivia" || Country_Name == "Mexico" || Country_Name == "Panama" || Country_Name == "Dominican Republic" || Country_Name == "Brazil" || Country_Name == "Puerto Rico" || Country_Name == "Ecuador" || Country_Name == "Peru" || Country_Name == "Guatemala" || Country_Name == "Costa Rica" || Country_Name == "Argentina" || Country_Name == "Chile" || Country_Name == "El Salvador" || Country_Name == "Honduras" || Country_Name == "Andorra" || Country_Name == "Nicaragua") {
             // spanish
             setlanguageByCountry("Spanish", Country_Name, Country_ShortName, true);
         } else if (Country_Name == "Portugal" || Country_Name == "Guinea-Bissau") {
