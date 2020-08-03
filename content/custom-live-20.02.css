@@ -12545,7 +12545,7 @@ p.left-arrow:before {
 }
 
 #promo-barcelona {
-    background-image: url("../images/promo-barcelona-march.jpg");
+    background-image: url("../images/promo-barcelona-2021.jpg");
 }
 
 .promo-modal .modal-header .close {
@@ -12652,29 +12652,36 @@ p.left-arrow:before {
 }
 
 #promo-barcelona.promo-modal .modal-body {
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 #promo-barcelona.promo-modal .promo-images {
-    width: 80%;
-}
-
-#promo-barcelona.promo-modal .promo-images img {
-    margin-left: 20px;
+    width: 85%;
 }
 
 #promo-barcelona.promo-modal h1 {
+    margin-bottom: 0;
     color: #fff;
     line-height: 1;
     text-transform: uppercase;
 }
 
 #promo-barcelona.promo-modal h1 span {
-    color: #F7AE31;
+    color: #F7D131;
     font-size: 1.3em;
 }
 
+#promo-barcelona.promo-modal .location {
+    position: relative;
+    top: -2px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
 #promo-barcelona.promo-modal .action .btn {
+    margin-top: 30px;
     padding: 12px 35px;
     border-radius: 8px;
 }
@@ -12747,35 +12754,32 @@ p.left-arrow:before {
         width: 55%;
     }
 
-    #promo-barcelona.promo-modal .promo-images img {
-        margin-left: 15px;
+    #promo-barcelona.promo-modal h1 {
+        font-size: 30px;
     }
 
-    #promo-barcelona.promo-modal h1 {
-        font-size: 22px;
+    #promo-barcelona.promo-modal .location {
+        font-size: 11px;
     }
 
     #promo-barcelona.promo-modal .promo-images h2 {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     #promo-barcelona.promo-modal .action .btn {
-        margin-top: 5px;
+        margin-top: 15px;
         font-size: 18px;
     }
 
     #promo-barcelona.promo-modal .action .close-modal {
-        margin-top: 15px;
+        margin-top: 10px;
+        margin-bottom: 0;
     }
 }
 
 @media (max-width: 767px) {
     .modal {
         height: auto;
-    }
-
-    #promo-barcelona.promo-modal .promo-images {
-        width: 85%;
     }
 
     .follow-mwr {
@@ -12812,81 +12816,77 @@ p.left-arrow:before {
     #imgcurrentlevel.img-star {
         margin: 0;
     }
-
-    @media (max-width: 450px) {
-        .promo-modal .modal-body {
-            margin-top: 130px;
-        }
-
-        .promo-modal .stripe h3 {
-            font-size: 20px;
-            padding: 0 10px;
-        }
-
-        .promo-modal .promo-text h1 {
-            font-size: 52px;
-        }
-
-        #promo-eu.promo-modal .promo-text h1 {
-            font-size: 38px;
-        }
-
-        .promo-modal .promo-text h2 {
-            font-size: 17px;
-        }
-
-        .promo-modal .promo-images {
-            width: 95%;
-        }
-
-        .promo-modal .action .btn {
-            padding: 10px 15px;
-            font-size: 18px;
-        }
-
-        .promo-modal .action .close-modal a {
-            font-size: 12px;
-        }
-
-        #promo-barcelona.promo-modal .modal-body {
-            margin-top: 60px;
-        }
-
-        #promo-barcelona.promo-modal .promo-images {
-            width: 90%;
-        }
-
-        #promo-barcelona.promo-modal h1 {
-            font-size: 35px;
-        }
-
-        #imgcurrentlevel {
-            max-width: 180px;
-        }
+}
+@media (max-width: 450px) {
+    .promo-modal .modal-body {
+        margin-top: 130px;
     }
 
-    @media (max-width: 375px) {
-        #promo-barcelona.promo-modal .promo-images {
-            width: 95%;
-        }
-
-        #promo-barcelona.promo-modal .promo-images img {
-            margin-left: 12px;
-        }
-
-        #promo-barcelona.promo-modal h1 {
-            font-size: 30px;
-        }
+    .promo-modal .stripe h3 {
+        font-size: 20px;
+        padding: 0 10px;
     }
 
-    @media (max-width: 340px) {
-        #promo-eu.promo-modal .promo-text h1 {
-            font-size: 34px;
-        }
+    .promo-modal .promo-text h1 {
+        font-size: 52px;
+    }
 
-        .promo-modal .promo-text h2 {
-            font-size: 16px;
-        }
+    #promo-eu.promo-modal .promo-text h1 {
+        font-size: 38px;
+    }
+
+    .promo-modal .promo-text h2 {
+        font-size: 17px;
+    }
+
+    .promo-modal .promo-images {
+        width: 95%;
+    }
+
+    .promo-modal .action .btn {
+        padding: 10px 15px;
+        font-size: 18px;
+    }
+
+    .promo-modal .action .close-modal a {
+        font-size: 12px;
+    }
+
+    #promo-barcelona.promo-modal .modal-body {
+        margin-top: 45px;
+    }
+
+    #promo-barcelona.promo-modal .promo-images {
+        width: 100%;
+    }
+
+    #promo-barcelona.promo-modal h1 {
+        font-size: 35px;
+    }
+
+    #promo-barcelona.promo-modal .location {
+        font-size: 11px;
+    }
+
+    #imgcurrentlevel {
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    #promo-barcelona.promo-modal h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 340px) {
+    #promo-eu.promo-modal .promo-text h1 {
+        font-size: 34px;
+    }
+
+    .promo-modal .promo-text h2 {
+        font-size: 16px;
     }
 }
 /*.promo-modal.fade.in {
