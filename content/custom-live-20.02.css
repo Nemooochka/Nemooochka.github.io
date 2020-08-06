@@ -15018,7 +15018,9 @@ p.left-arrow:before {
 
 .august-bonus .top-part {
     align-items: center;
-    background-color: #034A6A;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: linear-gradient(4deg, #55117F 2%, #D70A84);
 }
 
 .august-bonus .block {
@@ -15034,7 +15036,7 @@ p.left-arrow:before {
     top: -8px;
     width: 4px;
     height: 64px;
-    background-color: #336D87;
+    background-color: rgba(256,256,256, .2);
     border-radius: 30px;
 }
 
@@ -15043,7 +15045,6 @@ p.left-arrow:before {
 }
 
 .august-bonus .top-part img {
-    max-width: 245px;
     width: 100%;
 }
 
@@ -15154,7 +15155,7 @@ p.left-arrow:before {
 
     .august-bonus .top-part .wrap-img {
         width: 100%;
-        margin-bottom: 12px;
+        margin-bottom: 15px;
     }
 
     .august-bonus .top-part img {
