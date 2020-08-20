@@ -275,7 +275,7 @@
                             <span id="role">Lifestyle Consultant</span>
                         </div>
 
-                        <div class="arrow"></div>
+                        <div class="profile-band_arrow"></div>
                         <div class="additional-info">
                             <div>
                                 <img src="images/profile/compressed/179030_637328628447178509.jpg" alt="Your Photo">
@@ -1820,8 +1820,16 @@
         }
     });
 
-    $(profileBand).on('touchstart', function () {
-        $(this).addClass('active');
+    $(profileBand).on('touchstart', function (e) {
+        var a= $(e.target.closest('#profile-band.active'));
+        var b = $(e.target.closest('#profile-band.active')).find('.profile-band_arrow').length;
+        if ($(e.target.closest('#profile-band.active')).find('.profile-band_arrow').length == 1) {
+            console.log('a');
+            $(this).removeClass('active');
+        } else {
+            console.log('b');
+            $(this).addClass('active');
+        }
     });
 
     var packagesTable = $('.packages-table');

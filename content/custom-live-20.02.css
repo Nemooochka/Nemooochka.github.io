@@ -3243,7 +3243,7 @@ select#CreditCardMonth, select#CreditCardYear {
     border-right: 1px solid #ededed;
 }
 
-#profile-band .arrow {
+#profile-band .profile-band_arrow {
     height: 33px;
     background-image: url("../images/arrow-bottom.png");
     background-repeat: no-repeat;
@@ -3262,30 +3262,19 @@ select#CreditCardMonth, select#CreditCardYear {
     border-radius: 0 0 5px 5px;
 }
 
-#profile-band.active {
+#profile-band.active,
+#profile-band:hover {
     border-radius: 5px 5px 0 0;
 }
 
-#profile-band.active .additional-info {
+#profile-band.active .additional-info,
+#profile-band:hover .additional-info {
     display: block;
 }
 
-#profile-band.active .arrow {
+#profile-band.active .profile-band_arrow,
+#profile-band:hover .profile-band_arrow {
     background-image: url("../images/arrow-top.png");
-}
-
-@media all and (min-width: 767px) {
-    #profile-band:hover {
-        border-radius: 5px 5px 0 0;
-    }
-
-    #profile-band:hover .additional-info {
-        display: block;
-    }
-
-    #profile-band:hover .arrow {
-        background-image: url("../images/arrow-top.png");
-    }
 }
 
 #profile-band .additional-info div {
