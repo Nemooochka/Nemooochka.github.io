@@ -3210,7 +3210,6 @@ select#CreditCardMonth, select#CreditCardYear {
     margin-left: 0;
     width: auto;
     padding: 0;
-    /* width: 100%; */
 }
 
 #profile-band {
