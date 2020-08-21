@@ -3213,10 +3213,6 @@ select#CreditCardMonth, select#CreditCardYear {
     /* width: 100%; */
 }
 
-.white_nav.navbar .brand {
-    /*padding-top: 10px;*/
-}
-
 #profile-band {
     float: left;
     position: absolute;
