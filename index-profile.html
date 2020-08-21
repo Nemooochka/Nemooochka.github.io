@@ -1822,7 +1822,7 @@
 
     $(profileBand).on('touchstart', function (e) {
         $(this).addClass('touched');
-        if ($(e.target.closest('#profile-band.active')).find('.profile-band_arrow').length == 1) {
+        if ($(e.target).closest('.profile-band_arrow').length == 1 && $(this).hasClass('active')) {
             $(this).removeClass('active');
         } else {
             $(this).addClass('active');
