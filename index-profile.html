@@ -1821,13 +1821,10 @@
     });
 
     $(profileBand).on('touchstart', function (e) {
-        var a= $(e.target.closest('#profile-band.active'));
-        var b = $(e.target.closest('#profile-band.active')).find('.profile-band_arrow').length;
+        $(this).addClass('touched');
         if ($(e.target.closest('#profile-band.active')).find('.profile-band_arrow').length == 1) {
-            console.log('a');
             $(this).removeClass('active');
         } else {
-            console.log('b');
             $(this).addClass('active');
         }
     });

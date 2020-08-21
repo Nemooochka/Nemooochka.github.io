@@ -3263,17 +3263,17 @@ select#CreditCardMonth, select#CreditCardYear {
 }
 
 #profile-band.active,
-#profile-band:hover {
+#profile-band:not(.touched):hover {
     border-radius: 5px 5px 0 0;
 }
 
 #profile-band.active .additional-info,
-#profile-band:hover .additional-info {
+#profile-band:not(.touched):hover .additional-info {
     display: block;
 }
 
 #profile-band.active .profile-band_arrow,
-#profile-band:hover .profile-band_arrow {
+#profile-band:not(.touched):hover .profile-band_arrow {
     background-image: url("../images/arrow-top.png");
 }
 
