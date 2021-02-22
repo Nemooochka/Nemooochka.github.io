@@ -398,11 +398,11 @@ input::-ms-input-placeholder {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-right: 40px;
     color: #fff;
 }
 
 .secure-enrollment span {
-    padding-right: 40px;
     font-size: 14px;
 }
 
@@ -1989,8 +1989,16 @@ input::-ms-input-placeholder {
 
 @media (max-width: 600px) {
 
+    header {
+        padding: 20px 0;
+    }
+
     .btn {
         min-width: 140px;
+    }
+
+    .secure-enrollment {
+        padding-right: 20px;
     }
 
     .form-block .top-part .wrap-action label {

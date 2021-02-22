@@ -1010,10 +1010,6 @@ color: #fff;
 
 @media (max-width: 600px) {
 
-    .container {
-        padding-bottom: 50px;
-    }
-
     .btn {
         min-width: 140px;
     }
