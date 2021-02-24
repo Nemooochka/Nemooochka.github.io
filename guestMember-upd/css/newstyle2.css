@@ -1071,6 +1071,10 @@ input::-ms-input-placeholder {
 
 /* Membership info */
 
+.wrap-loading.hidden-deskt {
+    visibility: hidden;
+}
+
 .membership-info.billing-info {
     padding-top: 20px;
 }
@@ -1161,7 +1165,7 @@ input::-ms-input-placeholder {
 }
 
 .membership-package .column {
-    width: 25%;
+    width: 26%;
     padding-top: 4px;
     padding-bottom: 4px;
     text-align: center;
@@ -1169,7 +1173,7 @@ input::-ms-input-placeholder {
 
 .membership-package .column.column-first {
     flex: 1 1;
-    width: 50%;
+    width: 48%;
     padding-left: 12px;
     text-align: left;
 }
@@ -1221,8 +1225,28 @@ input::-ms-input-placeholder {
 .membership-package_duration b {
     margin-bottom: 12px;
     color: #303E4B;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1;
+}
+
+.membership-package_duration b.smaller-font {
+    font-size: 10px;
+}
+
+.fs-7 {
+    font-size: 7px !important;
+}
+
+.fs-8 {
+    font-size: 8px !important;
+}
+
+.fs-9 {
+    font-size: 9px !important;
+}
+
+.fs-10 {
+    font-size: 10px !important;
 }
 
 .membership-package_save {
@@ -1230,17 +1254,17 @@ input::-ms-input-placeholder {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     height: 27px;
     padding: 4px 2px;
     background-color: transparent;
     color: #fff;
 }
 
-.membership-package_save b {
-    margin-left: 5px;
-    font-size: 9px;
-    line-height: 1;
-    text-align: left;
+.membership-package_save span {
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.1;
     text-transform: uppercase;
 }
 
@@ -1632,6 +1656,10 @@ input::-ms-input-placeholder {
     }
 
     /* Membership */
+
+    .wrap-loading.hidden-deskt {
+        visibility: visible;
+    }
 
     .membership-info .top-part .middle  {
         flex-direction: column;
@@ -2089,6 +2117,12 @@ input::-ms-input-placeholder {
 
     .lc h2 b {
         font-size: 34px;
+    }
+
+    /* Membership */
+
+    .membership-package {
+        font-size: 12px;
     }
 }
 
