@@ -888,7 +888,7 @@
 <script>
     $(document).ready(function () {
 
-        /* Font scaling based on parent width in row-info rows */
+        /* Font scaling based on parent width in package_duration */
 
         var membershipPackageDuration = $('.membership-package_duration');
         var membershipPackageDurationArrayWidth = membershipPackageDuration.map(function(index,elem) {
@@ -911,7 +911,7 @@
             membershipPackageDurationText.map(function(index, elem) {
                 if(childBlockMaxWidth - parentBlockMaxWidth > 15) {
                     $(elem).addClass('fs-8');
-                } else if(childBlockMaxWidth - parentBlockMaxWidth > 10) {
+                } else if(childBlockMaxWidth - parentBlockMaxWidth > 8) {
                     $(elem).addClass('fs-9');
                 } else {
                     $(elem).addClass('fs-10');
