@@ -2222,6 +2222,10 @@ input::-ms-input-placeholder {
 
     /* Membership */
 
+    .membership-package_duration b {
+        margin-bottom: 10px;
+    }
+
     .membership-package .column.column-first {
         padding-left: 10px;
     }
