@@ -9673,11 +9673,13 @@ p.left-arrow:before {
 }
 
 .reseller-type__block .wrap-img {
+    width: 120px;
     margin-top: 8px;
+    text-align: center;
 }
 
-.reseller-type__block .wrap-mobile_img {
-    padding-right: 15px;
+.reseller-type__block .wrap-mobile_img img {
+    width: 50px;
 }
 
 .reseller-type__block .points-part ul {
@@ -9743,6 +9745,7 @@ p.left-arrow:before {
     }
 
     .reseller-type__block .wrap-img {
+        width: auto;
         margin: 0 0 15px;
         text-align: center;
     }
