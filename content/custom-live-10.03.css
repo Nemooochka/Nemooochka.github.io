@@ -9776,6 +9776,10 @@ p.left-arrow:before {
     #checkoutPage .promo-text {
         font-size: 22px;
     }
+
+    .reseller-type__block .name-part {
+        margin-bottom: 3px;
+    }
 }
 
 @media all and (max-width: 374px) {
