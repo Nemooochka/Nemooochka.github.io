@@ -128,9 +128,6 @@ input[disabled="disabled"] {
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
@@ -1037,7 +1034,7 @@ ul.checkedSpecial li {
 
 /*------------------------------- Footer Styles -------------------------------*/
 footer {
-    margin: auto 0 0;
+    margin: 0;
     background-color: #155660;
     position: relative;
 }
@@ -1803,7 +1800,7 @@ div.legend {
 
 /* Top  Bar */
 
-.top-header {
+header.top-header {
     position: relative;
     background: #0d525d;
     width: 100%;
@@ -9445,11 +9442,6 @@ p.left-arrow:before {
     padding-right: 0;
 }
 
-.container #checkoutPage {
-    max-width: 940px;
-    width: auto;
-}
-
 .formRow .first {
     float: left;
     width: 46%;
@@ -9475,7 +9467,7 @@ p.left-arrow:before {
     min-height: 1px;
 }
 
-#checkoutPage .formRow div label {
+#checkoutPage .step-second .formRow div label {
     width: 125px;
     text-align: right;
     margin-right: 10px;
@@ -9486,16 +9478,16 @@ p.left-arrow:before {
     height: auto;
 }
 
-#checkoutPage .formRow div label + div {
+#checkoutPage .step-second .formRow div label + div {
     display: inline-block;
     vertical-align: middle;
 }
 
-#checkoutPage .formRow div input, #checkoutPage .formRow div select {
+#checkoutPage .step-second .formRow div input:not([type="radio"]), #checkoutPage .step-second .formRow div select {
     width: calc(100% - 140px);
 }
 
-#checkoutPage .formRow.one-column div input[type='submit'] {
+#checkoutPage .step-second .formRow.one-column div input[type='submit'] {
     width: auto;
     margin-top: 10px;
 }
@@ -9636,49 +9628,104 @@ p.left-arrow:before {
     left: 4px;
 }
 
+.reseller-type {
+    position: relative;
+    background-color: #fff;
+}
+
+.reseller-type__block {
+    margin-bottom: 30px;
+}
+
+.reseller-type__block .top-part {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.reseller-type__block .name-part {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.reseller-type__block .type-name {
+    height: auto !important;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2 !important;
+    text-align: left;
+}
+
+.reseller-type__block .type-name span {
+    text-transform: uppercase;
+}
+
+.reseller-type__block .wrap-text {
+    flex: 1 1;
+    padding-right: 20px;
+}
+
+.reseller-type__block .wrap-text p {
+    margin-bottom: 0;
+    padding-left: 22px;
+}
+
+.reseller-type__block .wrap-img {
+    margin-top: 8px;
+}
+
+.reseller-type__block .wrap-mobile_img {
+    padding-right: 15px;
+}
+
+.reseller-type__block .points-part ul {
+    margin-left: 40px;
+}
+
+.reseller-type__block .check-part {
+    padding-left: 30px;
+}
+
+.footnote {
+    margin: -5px 0 10px;
+    text-align: right;
+    font-style: italic;
+}
+
+.text-red {
+    color: #c40f0f !important;
+}
+
+.list-check {
+    margin-left: 6px;
+    list-style: none;
+}
+
+.list-check li {
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.list-check li:before {
+    content: '✓';
+    display: inline;
+    margin-right: 4px;
+}
+
 #checkoutPage .formRow#divEnrollment {
     margin-bottom: -10px;
 }
 
 #checkoutPage .formRow#divPromoterText {
-    padding-top: 5px;
+    padding-top: 0;
 }
 
-#checkoutPage .formRow#divPromoterText > div > div {
-    float: left;
-    width: 50%;
-}
-
-#checkoutPage .formRow#divPromoterText > div > div:first-of-type {
-    position: relative;
-}
-
-#checkoutPage .formRow#divPromoterText > div > div.right_image img {
-    display: none;
-}
-
-#checkoutPage .formRow#divPromoterText > div > div.right_image:after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    right: 0;
-    top: 0;
-}
-
-#checkoutPage .formRow#divPromoterText > div#ResellerType3 > div.right_image:after {
-    background: url("../images/platinum-thumbnail.png") no-repeat center;
-    background-size: contain;
-}
-
-#checkoutPage .formRow#divPromoterText > div#ResellerType2 > div.right_image:after {
-    /*background: url("../images/gold-thumbnail.png") no-repeat center;*/
-    background-size: contain;
-}
-
-#checkoutPage .formRow#divPromoterText > div#ResellerType2Fr > div.right_image:after {
-    background: url("../images/gold-thumbnail.png") no-repeat center;
-    background-size: contain;
+#checkoutPage .promo-text {
+    margin: 0 0 25px;
+    text-align: center;
+    line-height: 1.5;
 }
 
 #checkoutPage .mobile-promotion {
@@ -9686,17 +9733,30 @@ p.left-arrow:before {
 }
 
 @media all and (max-width: 768px) {
-    #checkoutPage .formRow#divPromoterText > div > div {
-        width: 100%;
+    .reseller-type__block .top-part {
+        flex-direction: column-reverse;
+        align-items: stretch;
     }
 
-    #checkoutPage .formRow#divPromoterText > div > div.right_image:after {
-        display: none;
+    .reseller-type__block .wrap-text {
+        padding-right: 0;
     }
 
-    #checkoutPage .formRow#divPromoterText > div > div.right_image img {
-        display: block;
-        margin: 5px 0 0;
+    .reseller-type__block .wrap-img {
+        margin: 0 0 15px;
+        text-align: center;
+    }
+
+    .reseller-type__block .wrap-img img {
+        width: 180px;
+    }
+
+    .reseller-type__block .wrap-mobile_img img {
+        width: 70px;
+    }
+
+    .reseller-type__block .wrap-elevation_img img  {
+        width: 240px;
     }
 
     #checkoutPage .formRow#divEnrollment {
@@ -9711,6 +9771,19 @@ p.left-arrow:before {
         display: block;
     }
 }
+
+@media all and (max-width: 500px) {
+    #checkoutPage .promo-text {
+        font-size: 22px;
+    }
+}
+
+@media all and (max-width: 374px) {
+    #checkoutPage .promo-text {
+        font-size: 20px;
+    }
+}
+
 
 #divServices > p:last-of-type {
     margin-bottom: 0;
