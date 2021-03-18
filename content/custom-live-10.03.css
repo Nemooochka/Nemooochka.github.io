@@ -9650,6 +9650,10 @@ p.left-arrow:before {
     margin-bottom: 8px;
 }
 
+.reseller-type__block .check-fixed {
+    pointer-events: none;
+}
+
 .reseller-type__block .type-name {
     height: auto !important;
     font-size: 16px;
