@@ -140,11 +140,9 @@ p.enroll {
 }
 
 .service-agreement p {
-    font-size: 15px;
-    letter-spacing: 0;
     color: #676f7a;
+    font-size: 15px;
     line-height: 22px;
-    font-family: 'Open Sans', sans-serif;
     text-align: justify;
 }
 
