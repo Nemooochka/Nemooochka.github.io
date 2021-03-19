@@ -194,6 +194,7 @@ body {
 
 /*------------------------------- Menu Styles -------------------------------*/
 
+
 .navnotgray {
     background-color: transparent !important;
     background: #fff !important;
@@ -205,10 +206,6 @@ body {
 
 .mt_20 {
     margin-top: 20px !important;
-}
-
-.mt_30 {
-    margin-top: 30px !important;
 }
 
 .mb_5 {
@@ -246,6 +243,10 @@ body {
         width: 100% !important;
         padding: 0 15px !important;
     }
+
+    #navLayout.navbar {
+        background-color:#000 !important;
+    }
 }
 
 #logoImage {
@@ -262,11 +263,14 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.navbar.active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 .white_nav.navbar {
 
     background: #fff !important;
 }
-
 .navbar .nav > li > a {
     display: inline-block;
     float: none;
@@ -283,9 +287,9 @@ body {
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
-    -webkit-transition: border 150ms ease-out;
-    -moz-transition: border 150ms ease-out;
-    -o-transition: border 150ms ease-out;
+    -webkit-transition : border 150ms ease-out;
+    -moz-transition : border 150ms ease-out;
+    -o-transition : border 150ms ease-out;
     transition: border 150ms ease-out;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -323,6 +327,7 @@ body {
 .navbar .btn-navbar[disabled] {
     color: #000;
 }
+
 
 .start_now {
     display: none;
@@ -400,6 +405,10 @@ body {
     border-bottom-color: #155660;
 }
 
+
+
+
+
 .white_nav.navbar .nav > li > a {
     color: #423e3e;
 }
@@ -419,6 +428,12 @@ body {
     outline: none;
 
 }
+
+
+
+
+
+
 
 .navbar .nav > li > a:hover,
 .navbar .nav > li.active > a {
@@ -441,6 +456,7 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
@@ -1058,7 +1074,7 @@ ul.checkedSpecial li {
 }
 
 /*------------------------------- Footer Styles -------------------------------*/
-footer {
+/*footer {
     margin: 0;
     padding: 1% 0 1% 0;
     background-color: #155660;
@@ -1230,7 +1246,7 @@ footer.bottom ul li a.twitter {
 
 footer.bottom ul li a.linkedin {
     background: transparent url(../images/ico_linkedIn.png) no-repeat 0px 0px;
-}
+}*/
 
 /*------------------------------- Back to top Style -------------------------------*/
 .back-to-top {
@@ -1260,6 +1276,10 @@ footer.bottom ul li a.linkedin {
 /*------------------------------- Media Queries -------------------------------*/
 
 @media (max-width: 979px) {
+
+    #navLayout.navbar {
+        background-color:#000;
+    }
     .inner {
         margin: 0 auto;
         padding: 0 3%;
@@ -1271,14 +1291,15 @@ footer.bottom ul li a.linkedin {
         margin-left: 5%;
     }
 
-    /*.navbar .nav > .active > a,*/
-    /*.navbar .nav > .active > a:hover,*/
-    /*.navbar .nav > .active > a:focus,*/
-    /*.navbar .nav > .active > a:active {*/
-    /*background-color: #155660;*/
-    /*color: #ffffff;*/
-    /*border-bottom: 0px solid #155660;*/
-    /*}*/
+    .navbar .nav > .active > a,
+    .navbar .nav > .active > a:hover,
+    .navbar .nav > .active > a:focus,
+    .navbar .nav > .active > a:active {
+        background-color: #155660;
+        color: #ffffff;
+        border-bottom: 0px solid #155660;
+    }
+
     .dropdown-menu > li > a {
         padding-left: 5% !important;
         text-align: left;
@@ -1353,10 +1374,6 @@ footer.bottom ul li a.linkedin {
 
     .nav-collapse li {
         opacity: 0;
-    }
-
-    #navLayout.navbar {
-        background: #000;
     }
 }
 
@@ -1477,7 +1494,7 @@ footer.bottom ul li a.linkedin {
     }
 
     #homeSlider .carousel-caption h3 {
-        padding: 0 0 0 0;
+        padding: 0 0 0 0
         font-size: 25px;
     }
 
@@ -1650,7 +1667,6 @@ div.legend {
 }
 
 /* Latest Design Updates - OA */
-
 .navbar .nav > li {
     position: relative;
     margin: 0 10px;
@@ -1671,6 +1687,7 @@ header.top-header {
     position: relative;
     background: #0d525d;
     width: 100%;
+    z-index: 1;
 }
 
 .top-bar {
@@ -1876,7 +1893,7 @@ font-weight: bold;
     display: inline-block;
     min-width: 100px;
     color: #505050;
-    font-size: 9px;
+    font-size: 10px;
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -2970,7 +2987,7 @@ select#CreditCardMonth, select#CreditCardYear {
     position: absolute;
     right: 0;
     top: 0;
-    width: 170px;
+    width:170px;
     background: #fff;
     border-radius: 5px;
     margin: 10px 0 0 0;
@@ -2999,11 +3016,12 @@ select#CreditCardMonth, select#CreditCardYear {
     cursor: pointer;
 }
 
+
 #profile-band .additional-info {
     display: none;
     position: absolute;
     right: 0;
-    top: 32px;
+    top:32px;
     width: 100%;
     padding: 10px;
     background: #fcfcfc;
@@ -3091,7 +3109,7 @@ select#CreditCardMonth, select#CreditCardYear {
 
 @media all and (max-width: 979px) {
     #profile-band {
-        margin: 7px 80px 0 0;
+        margin-right: 80px;
     }
 
     #logoImage {
@@ -3117,6 +3135,11 @@ select#CreditCardMonth, select#CreditCardYear {
         height: 0;
         clear: both;
         visibility: hidden;
+    }
+
+    .navbar {
+        margin-bottom: 54px;
+        background-color: rgba(0, 0, 0, 0.1);
     }
 
     #profile-band {
@@ -5452,7 +5475,7 @@ p.left-arrow:before {
 }
 
 .services-carte .product-slider .product-slide .top-block ul li:before {
-    content: 'ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢';
+    content: 'Ã¢â‚¬Â¢';
     position: absolute;
     top: 0;
     left: 0;
@@ -6103,8 +6126,7 @@ p.left-arrow:before {
 .mwr-cares,
 .home,
 .membership,
-.opportunity,
-.ess-app {
+.opportunity {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -6134,8 +6156,7 @@ p.left-arrow:before {
 .mwr_cares h2,
 .home h2,
 .membership h2,
-.opportunity h2,
-.ess-app h2 {
+.opportunity h2 {
     margin-top: 0;
     font-size: 24px;
     line-height: 1.2;
@@ -6157,13 +6178,11 @@ p.left-arrow:before {
 .management h2 b,
 .mwr_cares h2 b,
 .membership h2 b,
-.opportunity h2 b,
-.ess-app h2 b {
+.opportunity h2 b {
     font-weight: 600;
 }
 
-.membership .short-description,
-.ess-app .short-description {
+.membership .short-description {
     font-size: 18px;
     font-weight: 300;
 }
@@ -6299,8 +6318,7 @@ p.left-arrow:before {
 .helping-kids .btn_main,
 .home .btn_main,
 .membership .btn_main,
-.opportunity .btn_main,
-.ess-app .btn_main {
+.opportunity .btn_main {
     padding: 8px 25px;
     background: #ffc600;
     color: #fff;
@@ -6317,33 +6335,15 @@ p.left-arrow:before {
     font-size: 12px;
 }
 
-.membership .btn_main.btn_green,
-.ess-app .btn_main.btn_green {
+.membership .btn_main.btn_green {
     margin-top: 10px;
     padding: 6px 20px;
     background: #6bc04b;
     font-size: 12px;
 }
 
-.membership .btn_main.btn_green span,
-.ess-app .btn_main.btn_green span {
+.membership .btn_main.btn_green span {
     text-transform: none;
-}
-
-.ess-app .btn_main.btn_green.big_btn {
-    font-size: 24px;
-    padding: 20px 25px;
-    border-radius: 7px;
-    margin-top: 40px;
-}
-
-.btn_main.btn_green.big_btn span {
-    text-transform: uppercase;
-    font-size: 0.6em;
-}
-
-.btn_main.btn_green.big_btn sup {
-    font-size: 0.6em;
 }
 
 .opportunity .btn_main.btn_green {
@@ -6392,6 +6392,7 @@ p.left-arrow:before {
     background-image: url("../images/company-slider3.jpg");
 }
 
+
 .cares-slider .slick-slide:first-of-type {
     background-image: url("../images/cares-slider1.jpg");
 }
@@ -6416,6 +6417,7 @@ p.left-arrow:before {
     background-image: url("../images/home-slider5.jpg");
 }
 
+
 .membership-slider .slick-slide:first-of-type {
     background-image: url("../images/membership-slider1.jpg");
 }
@@ -6438,18 +6440,6 @@ p.left-arrow:before {
 
 .opportunity-slider .slick-slide:nth-of-type(3) {
     background-image: url("../images/opportunity-slider3.jpg");
-}
-
-.ess-slider .slick-slide:first-of-type {
-    background-image: url("../images/ess-slider1.jpg");
-}
-
-.ess-slider .slick-slide:nth-of-type(2) {
-    background-image: url("../images/ess-slider2.jpg");
-}
-
-.ess-slider .slick-slide:nth-of-type(3) {
-    background-image: url("../images/ess-slider3.jpg");
 }
 
 .wrap_slide_text {
@@ -6522,7 +6512,7 @@ p.left-arrow:before {
 }
 
 .lifestyle-consultant {
-    margin-top: -55px;
+    margin-top: -54px;
     padding: 35px 0;
     background: #f2f2f2;
 }
@@ -6719,41 +6709,34 @@ p.left-arrow:before {
     bottom: 0;
 }
 
-.grey-block {
+.privileges-title {
+    margin-top: -54px;
     padding: 25px 0;
     background: #f2f2f2;
     text-align: center;
 }
 
-.grey-block.top {
-    margin-top: -55px;
-}
-
-.grey-block.bottom {
-    padding: 50px 0;
-}
-
-.grey-block h2 {
+.privileges-title h2 {
     margin-bottom: 0;
 }
 
-.grey-block .short-description {
+.privileges-title .short-description {
     text-transform: uppercase;
 }
 
-.top-promotion {
+.travel-adv-pro {
     text-align: center;
 }
 
-.top-promotion .span7 {
+.travel-adv-pro .span7 {
     padding: 15px 50px;
 }
 
-.top-promotion .span5 {
+.travel-adv-pro .span5 {
     text-align: center;
 }
 
-.top-promotion h4 {
+.travel-adv-pro h4 {
     margin-top: 15px;
     font-size: 18px;
     font-weight: 400;
@@ -6941,7 +6924,7 @@ p.left-arrow:before {
 }
 
 .more-privileges {
-    padding: 40px 0 20px;
+    padding: 40px 0;
     background: #f2f2f2;
 }
 
@@ -6999,7 +6982,7 @@ p.left-arrow:before {
 }
 
 .packages {
-    padding: 40px 0 20px;
+    padding: 20px 0;
     background: #f2f2f2;
 }
 
@@ -7008,7 +6991,6 @@ p.left-arrow:before {
 }
 
 .packages-table table {
-    margin-bottom: 0;
     box-shadow: 0 2px 26px 1px rgba(0, 0, 0, 0.11);
 }
 
@@ -7020,7 +7002,6 @@ p.left-arrow:before {
 }
 
 .packages-table thead th {
-    padding: 14px 8px;
     vertical-align: middle;
     font-size: 14px;
     font-weight: 700;
@@ -7046,44 +7027,27 @@ p.left-arrow:before {
 
 .packages-table td:nth-of-type(2) {
     background: #ebebeb;
-    box-shadow: -7px 0 20px 0 rgba(0, 0, 0, 0.05);
-}
-
-.packages-table td:last-of-type {
-    font-size: 15px;
-    font-weight: 600;
+    box-shadow: 0 0 110px -9px rgba(0, 0, 0, 0.11);
 }
 
 .packages-table thead tr:last-of-type td {
     background: transparent;
 }
 
-.packages-table tr:last-of-type td:last-of-type {
-    position: relative;
-}
-
 .table-buttons div {
     float: left;
     min-height: 1px;
-    padding: 15px 0;
     text-align: center;
 }
 
-.table-buttons div:first-of-type {
-    padding: 15px 0;
-    font-size: 8px;
-    line-height: 1.2;
-    font-weight: 300;
-    text-transform: uppercase;
-    text-align: left;
+.table-buttons div .btn_main.btn_green {
+    padding: 8px 25px;
+    font-size: 20px;
 }
 
-.table-buttons div:nth-of-type(3) {
-    background: #fff;
-    font-size: 15px;
-    font-weight: 600;
-    border-top: 1px solid #ddd;
-    box-shadow: 0 2px 26px 1px rgba(0, 0, 0, 0.11);
+.table-buttons div .btn_main.btn_green span,
+.table-buttons div .btn_main.btn_green sup {
+    font-size: 12px;
 }
 
 .grey-title {
@@ -7097,7 +7061,7 @@ p.left-arrow:before {
 }
 
 .opportunity .grey-title {
-    margin-top: -55px;
+    margin-top: -54px;
 }
 
 .opportunity .grey-title h2 {
@@ -7213,185 +7177,6 @@ p.left-arrow:before {
     color: #444;
     font-size: 12px;
     text-transform: uppercase;
-}
-
-.ess-app-benefits {
-    padding: 40px 0 0;
-    background: #f6f6f6;
-}
-
-.ess-app-benefits h2 {
-    margin-bottom: 20px;
-    font-weight: 600;
-}
-
-.ess-app-benefits h2 + .orange-line {
-    width: 70%;
-}
-
-.ess-app-benefits .type {
-    padding: 30px 0;
-    overflow: hidden;
-}
-
-.ess-app-benefits .type.white {
-    background: #fff;
-}
-
-.ess-app-benefits .type:not(.white) .type-content {
-    float: right;
-}
-
-.ess-app-benefits .type:not(.white) .type-image img {
-    left: 0;
-}
-
-.ess-app-benefits .type .inner > div {
-    float: left;
-}
-
-.ess-app-benefits .type-content {
-    width: 55%;
-    margin-right: 10%;
-}
-
-.ess-app-benefits .type-content .orange-line {
-    margin-bottom: 30px;
-}
-
-.orange-arrow-list {
-    margin: 0;
-    list-style: none;
-}
-
-.ess-app-benefits .orange-arrow-list {
-    float: left;
-    width: 50%;
-    margin: 30px 0;
-}
-
-.orange-arrow-list li {
-    position: relative;
-    margin-bottom: 5px;
-    padding: 0 40px 0 25px;
-    font-size: 12px;
-    line-height: 1.4;
-}
-
-.orange-arrow-list li:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 6px;
-    width: 5px;
-    height: 6px;
-    background: url("../images/orange-arrow.png") no-repeat center;
-}
-
-.ess-app-benefits p {
-    margin-bottom: 6px;
-    font-size: 14px;
-    line-height: 1.3;
-    font-weight: 300;
-    text-align: justify;
-}
-
-.ess-app-benefits .type-image {
-    position: relative;
-    width: 35%;
-}
-
-.ess-app-benefits .type-image img {
-    position: absolute;
-    top: 0;
-    width: 66%;
-    left: 17%
-}
-
-.ess-app-benefits h3 {
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-#liMembership:hover ul {
-    display: block;
-}
-
-#membership-dropdown {
-    display: none;
-    position: absolute;
-    width: 190px;
-    top: 90%;
-    left: -30%;
-    margin: 0;
-    background: #fff;
-    border-radius: 4px;
-    list-style: none;
-}
-
-#membership-dropdown:before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: 50%;
-    width: 0;
-    height: 0;
-    transform: translateX(-50%);
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 5px solid #fff;
-}
-
-#membership-dropdown li a {
-    display: block;
-    padding: 10px 10px 10px 15px;
-    color: #505050;
-    font-size: 11px;
-    border-radius: 0 0 4px 4px;
-}
-
-#membership-dropdown li:first-of-type a {
-    border-radius: 4px 4px 0 0;
-}
-
-#membership-dropdown li a:hover,
-#membership-dropdown li a.active {
-    background: #ffc600;
-    color: #fff;
-    text-decoration: none;
-}
-
-#membership-dropdown li:first-of-type {
-    border-bottom: 1px solid #f4f4f4;
-}
-
-#membership-dropdown li a:before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    width: 15px;
-    height: 14px;
-    margin-right: 8px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("../images/adv-vip-icon.png");
-}
-
-#membership-dropdown li a:hover:before,
-#membership-dropdown li a.active:before {
-    background-image: url("../images/adv-vip-white-icon.png");
-}
-
-#membership-dropdown li:last-of-type a:before {
-    height: 19px;
-    background-image: url("../images/essentials-app-icon.png");
-}
-
-#membership-dropdown li:last-of-type a:hover:before,
-#membership-dropdown li:last-of-type a.active:before {
-    background-image: url("../images/ess-app-hover-icon.png");
 }
 
 @media all and (max-width: 1170px) {
@@ -7530,10 +7315,6 @@ p.left-arrow:before {
         font-size: 35px;
     }
 
-    .lifestyle-consultant {
-        margin-top: 0;
-    }
-
     .lifestyle-consultant .inner .span4 {
         width: 70%;
         margin: 0 15% 40px;
@@ -7562,8 +7343,8 @@ p.left-arrow:before {
     .more-privileges .row-fluid .vip-package-block,
     .more-privileges .row-fluid .vip-package-block + div,
     .free-program .row-fluid .span6,
-    .top-promotion .row-fluid .span7,
-    .top-promotion .row-fluid .span5,
+    .travel-adv-pro .row-fluid .span7,
+    .travel-adv-pro .row-fluid .span5,
     .reward-credits .row-fluid .span6 {
         width: 70%;
         margin: 15px 15%;
@@ -7597,36 +7378,6 @@ p.left-arrow:before {
     .do-3-things .row-fluid .span6:last-of-type img,
     .how-it-works .block .span6 img {
         width: 100%;
-    }
-
-    #slider {
-        top: 0;
-    }
-
-    #liMembership:hover ul {
-        display: none;
-    }
-
-    #membership-dropdown {
-        position: static;
-        width: 190px;
-        margin-top: 15px;
-        margin-left: 65px;
-        background: #fff;
-    }
-
-    #membership-dropdown:before {
-        display: none;
-    }
-
-    .opportunity .grey-title,
-    .grey-block.top {
-        margin-top: 0;
-    }
-
-    .about-mwr,
-    .we-care {
-        margin-top: 20px;
     }
 }
 
@@ -7897,8 +7648,6 @@ p.left-arrow:before {
 
     #testimonials-slider .user-info img {
         display: inline-block;
-        width: 150px;
-        height: 150px;
     }
 
     #testimonials-slider .user-info + div {
@@ -7941,30 +7690,11 @@ p.left-arrow:before {
     .more-privileges .row-fluid .vip-package-block,
     .more-privileges .row-fluid .vip-package-block + div,
     .free-program .row-fluid .span6,
-    .top-promotion .row-fluid .span7,
-    .top-promotion .row-fluid .span5,
+    .travel-adv-pro .row-fluid .span7,
+    .travel-adv-pro .row-fluid .span5,
     .reward-credits .row-fluid .span6 {
         width: 90%;
         margin: 15px 5%;
-    }
-
-    .ess-app-benefits .type .inner > div {
-        width: 100%;
-        margin: 0 0 10px;
-    }
-
-    .ess-app-benefits .type-image {
-        height: 250px;
-        text-align: center;
-    }
-
-    .ess-app-benefits .type-image img {
-        position: static;
-        width: 150px;
-    }
-
-    .orange-arrow-list li {
-        padding: 0 25px;
     }
 
     .additional-benefits .row-fluid .span3 {
@@ -7979,14 +7709,6 @@ p.left-arrow:before {
     .how-it-works .block .span6 {
         width: 90%;
         margin: 10px 5%;
-    }
-
-    .packages-table th, .packages-table td {
-        font-size: 12px;
-    }
-
-    .table-buttons div:last-of-type {
-        font-size: 14px;
     }
 
 }
@@ -10893,6 +10615,7 @@ p.left-arrow:before {
     }
 }
 
+
 /*03-05-2017  add css for Country flags*/
 @media all and (max-width: 1200px) {
     .countryModalClass ul li {
@@ -10918,136 +10641,4 @@ p.left-arrow:before {
         width: 100%;
         padding-left: 10%;
     }
-}
-
-/* login/reset pass pages */
-
-.login-block {
-    margin-top: -55px;
-    padding: 150px 0;
-    font-family: 'Montserrat', sans-serif;
-    background: url("../images/login-bg.jpg") no-repeat center;
-    background-size: cover;
-    text-align: center;
-}
-
-.center-block {
-    display: inline-block;
-    width: 380px;
-    max-width: 100%;
-    padding: 35px 18px 15px;
-    background: #fbfbfb;
-    border-radius: 10px;
-}
-
-.center-block h2 {
-    margin-top: 20px;
-    font-size: 26px;
-    line-height: 1.2;
-    font-weight: 400;
-    text-transform: inherit;
-}
-
-.center-block h2 + span {
-    font-size: 14px;
-    font-weight: 300;
-}
-
-.center-block form {
-    margin: 25px 0 0;
-}
-
-.center-block form input:not([type='checkbox']) {
-    width: 100%;
-    height: 50px;
-    padding-left: 60px;
-    background: #f6f6f6;
-    font-family: 'Montserrat', sans-serif;
-    color: #7b7b7b;
-    font-weight: 300;
-    border: 1px solid #EAEAEA;
-    border-radius: 10px;
-}
-
-.center-block form .input-field {
-    position: relative;
-    margin: 20px 0 0;
-}
-
-.center-block form .input-field:before {
-    content: '';
-    position: absolute;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.center-block form .email-field:before {
-    width: 22px;
-    height: 22px;
-    background: url("../images/email.png") no-repeat center;
-}
-
-.center-block form .pass-field:before {
-    width: 18px;
-    height: 27px;
-    background: url("../images/password.png") no-repeat center;
-}
-
-.center-block .checkbox {
-    margin: 12px 0;
-    padding-left: 22px;
-    text-align: left;
-}
-
-.center-block .checkbox label {
-    display: inline-block;
-    margin-bottom: 0;
-    padding-left: 30px;
-    color: #7b7b7b;
-    font-weight: 300;
-}
-
-.center-block .checkbox input {
-    margin-top: 3px;
-    margin-left: -30px;
-    font-size: 20px;
-}
-
-.center-block .btn.btn_orange {
-    width: 100%;
-    padding: 12px 20px;
-    background: linear-gradient(to bottom, #ffc600, #ffbd00);
-    color: #fff;
-    font-size: 18px;
-    border: none;
-    text-shadow: none;
-    border-radius: 10px;
-    text-transform: inherit;
-}
-
-.center-block .btn.btn_orange:before {
-    content: '';
-    display: inline-block;
-    width: 17px;
-    height: 17px;
-    vertical-align: middle;
-    margin-right: 2px;
-    background: url("../images/sign-in.png") no-repeat center;
-}
-
-.center-block .btn.btn_orange span {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.center-block .wrap-btn {
-    margin-bottom: 20px;
-}
-
-.center-block form > a {
-    color: #082e51;
-    font-size: 12px;
-    font-weight: 300;
-    text-decoration: underline;
 }

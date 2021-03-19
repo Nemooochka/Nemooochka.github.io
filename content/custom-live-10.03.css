@@ -9623,6 +9623,17 @@ p.left-arrow:before {
     padding-left: 54px;
 }
 
+#checkoutPage .proceed-link {
+    margin: 25px 0;
+    text-align: center;
+}
+
+#checkoutPage .proceed-link a {
+    color: #005580;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 #ResellerType {
     position: relative;
     left: 4px;
@@ -9702,6 +9713,10 @@ p.left-arrow:before {
 
 .text-red {
     color: #c40f0f !important;
+}
+
+.text-red_bright {
+    color: #ff0104 !important;
 }
 
 .list-check {

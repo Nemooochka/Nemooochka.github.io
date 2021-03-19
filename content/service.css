@@ -1,7 +1,11 @@
 /* Service Calculator */
 
-section.service-agreement .clearfix {
+section.service-agreement {
+    padding-bottom: 25px;
     background-color: #f6f9f8;
+}
+
+section.service-agreement .clearfix {
     padding: 0 15px;
 }
 
@@ -11,7 +15,7 @@ section.service-agreement .clearfix > div:first-of-type {
 
 section.service-agreement .clearfix > div:nth-of-type(2) {
     padding: 15px 15px 15px 0;
-    margin-top: 35px;
+    margin-top: 53px;
     margin-bottom: 20px;
 }
 
@@ -136,12 +140,43 @@ p.enroll {
 }
 
 .service-agreement p {
-    font-size: 16px;
-    letter-spacing: 0px;
+    font-size: 15px;
+    letter-spacing: 0;
     color: #676f7a;
-    line-height: 24px;
+    line-height: 22px;
     font-family: 'Open Sans', sans-serif;
-    text-align: left;
+    text-align: justify;
+}
+
+.service-agreement p a {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.checkbox-block {
+    padding: 0 30px;
+}
+
+.wrap-checkbox {
+    position: relative;
+}
+
+.checkbox-block .checkbox-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    margin: 3px 0 0;
+}
+
+#checkoutPage .service-agreement .checkbox-block label {
+    float: none;
+    height: auto;
+    padding-left: 25px;
+    color: #676f7a;
+    font-size: 14px;
+    line-height: 1.4;
 }
 
 .service-agreement table {
