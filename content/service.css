@@ -112,7 +112,7 @@ section.service-agreement .adh-text {
 .rate-btn {
     background-color: #d59c2b;
     display: inline-block;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -122,10 +122,8 @@ section.service-agreement .adh-text {
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
     border-radius: 6px;
-    outline: 0px;
+    outline: 0;
     border: none;
-    text-align: center;
-
 }
 
 p.enroll {
