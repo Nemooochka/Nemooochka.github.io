@@ -7172,7 +7172,6 @@ p.left-arrow:before {
 
 .membership .btn_main.btn_green,
 .ess-app .btn_main.btn_green {
-    margin-top: 10px;
     padding: 6px 20px;
     background: #6bc04b;
     font-size: 12px;
@@ -8002,15 +8001,23 @@ p.left-arrow:before {
 
 .packages-table th,
 .packages-table td {
+    min-width: 110px;
     text-align: center;
     vertical-align: middle !important;
     text-transform: uppercase;
 }
 
+.packages-table th:first-of-type,
+.packages-table td:first-of-type {
+    width: 400px;
+}
+
 .packages-table th {
     padding: 14px 8px;
+    color: #fff;
     font-size: 14px;
     font-weight: 700;
+    border-bottom: none;
 }
 
 .packages-table th:first-of-type {
@@ -8019,42 +8026,74 @@ p.left-arrow:before {
 }
 
 .packages-table th:nth-of-type(2) {
-    background: #008b8a;
+    background: #00b050;
     color: #fff;
 }
 
 .packages-table th:nth-of-type(3) {
-    background: #024f5b;
+    background: #6cceee;
     color: #fff;
 }
 
+.packages-table th:nth-of-type(4) {
+    background: #f2b23d;
+    color: #fff;
+}
 
 .packages-table th:last-of-type {
-    background: #ffc600;
+    background: #9053a1;
 }
 
 .packages-table td {
     background: #fff;
 }
 
-.packages-table td:nth-of-type(3) {
-    background: #ebebeb;
-}
 .packages-table td:nth-of-type(2) {
-    background: lightblue;
+    background: #def9de;
+}
+
+.packages-table td:nth-of-type(3) {
+    background: #d9eef5;
+}
+
+.packages-table td:nth-of-type(4) {
+    background: #f6e8cf;
 }
 
 .packages-table td:last-of-type {
-    font-size: 15px;
-    font-weight: 600;
+    background-color: #e1d3e6;
 }
 
-.packages-table thead tr:last-of-type td {
-    background: transparent;
+.packages-table tbody tr:first-of-type  td {
+    border-top: none;
 }
 
-.packages-table tr:last-of-type td:last-of-type {
-    position: relative;
+.packages-table tbody tr:last-of-type td {
+    padding: 14px 20px;
+}
+
+.packages-table tbody tr:last-of-type td:first-of-type {
+    background-color: #f2f2f2;
+    font-size: 14px;
+    text-transform: none;
+    text-decoration: underline;
+}
+
+.packages-table .btn_main.btn_green {
+    width: 100%;
+    padding: 6px 2px;
+}
+
+.packages-table .check:before {
+    content: '\2714';
+    color: #050505;
+    font-size: 22px;
+}
+
+.packages-table .line:before {
+    content: '-';
+    color: #050505;
+    font-size: 30px;
 }
 
 .table-buttons div {
@@ -8738,6 +8777,10 @@ p.left-arrow:before {
     .service_extra_info .service_extra_info-block .main_service_text .w50_inl:first-of-type p {
         padding-right: 0;
     }
+
+    .packages-table tbody tr:last-of-type td  {
+        padding: 14px 10px;
+    }
 }
 
 @media all and (max-width: 900px) and (min-width: 768px) {
@@ -9272,20 +9315,41 @@ p.left-arrow:before {
 
     .packages-table td,
     .packages-table th {
+        width: 60px;
+        max-width: 60px;
+        min-width: auto;
         padding: 8px 5px;
     }
 
-    .packages-table td:nth-of-type(2),
-    .packages-table td:nth-of-type(3),
-    .packages-table td:last-of-type {
-        max-width: 82px;
-        width: 82px;
+    .packages-table th:first-of-type,
+    .packages-table td:first-of-type {
+        width: auto;
     }
 
-    .packages-table .table td .btn {
-        width: 100%;
+    .packages-table tbody tr:last-of-type td {
+        padding: 12px 5px;
+    }
+
+    .packages-table tbody tr:last-of-type td:first-of-type {
+        font-size: 12px;
+    }
+
+    .packages-table .btn_main.btn_green {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 40px;
         padding: 6px 0;
-        line-height: 1.4;
+        line-height: 1.2;
+    }
+
+    .packages-table .check:before {
+        font-size: 18px;
+    }
+
+    .packages-table .line:before {
+        font-size: 24px;
     }
 }
 
@@ -9338,6 +9402,17 @@ p.left-arrow:before {
 
     .table-buttons div .btn_main.btn_green sup {
         top: -0.3em;
+    }
+}
+
+@media all and (max-width: 340px) {
+    .packages-table td, .packages-table th {
+        width: 52px;
+        max-width: 52px;
+    }
+
+    .packages-table tbody tr:last-of-type td {
+        padding: 12px 3px;
     }
 }
 
