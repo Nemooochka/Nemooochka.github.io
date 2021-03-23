@@ -9818,10 +9818,48 @@ p.left-arrow:before {
     padding-top: 0;
 }
 
-#checkoutPage .promo-text {
-    margin: 0 0 25px;
-    text-align: center;
-    line-height: 1.5;
+#checkoutPage .promo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -8px;
+    margin-bottom: 12px;
+    padding: 10px 30px;
+    background-color: #f1f2f6;
+    border: 1px solid #c5cdd6;
+}
+
+#checkoutPage .promo-title h3 {
+    margin: 0 0 3px;
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+#checkoutPage .promo-title b {
+    color: #8a919e;
+    font-size: 16px;
+}
+
+#checkoutPage .promo-counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 24px;
+    background-color: #fff;
+    color: #747d8c;
+    border-radius: 7px;
+}
+
+#checkoutPage .promo-counter .counter-spots {
+    font-size: 38px;
+    line-height: 1;
+}
+
+#checkoutPage .promo-counter .counter-text {
+    text-transform: uppercase;
 }
 
 #checkoutPage .mobile-promotion {
@@ -9870,8 +9908,17 @@ p.left-arrow:before {
 }
 
 @media all and (max-width: 500px) {
-    #checkoutPage .promo-text {
-        font-size: 22px;
+
+    #checkoutPage .promo {
+        flex-direction: column;
+        padding: 15px;
+        border-right: none;
+        border-left: none;
+    }
+
+    #checkoutPage .promo-title {
+        margin-bottom: 20px;
+        text-align: center;
     }
 
     .reseller-type__block .name-part {
@@ -9880,11 +9927,10 @@ p.left-arrow:before {
 }
 
 @media all and (max-width: 374px) {
-    #checkoutPage .promo-text {
-        font-size: 20px;
+    #checkoutPage .promo-title h3 {
+        font-size: 31px;
     }
 }
-
 
 #divServices > p:last-of-type {
     margin-bottom: 0;

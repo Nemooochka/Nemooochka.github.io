@@ -6735,17 +6735,22 @@
                     <div class="legend" id="step1">Step 1: Enrollment</div>
 
 
-                    <div class="formRow row-fluid" id="divPromoterText">
-
-                        <h3 id="PromoterTextEng" class="promo-text">
-                            <span class="text-red">
+                    <div class="promo" id="PromoterTextEng">
+                        <div class="promo-title">
+                            <h3 class="text-red">
                                 Special Promotion!
-                            </span>
-                            <br>
-                            <span>
+                            </h3>
+                            <b>
                                 March 27, 2021 - April 10, 2021
-                            </span>
-                        </h3>
+                            </b>
+                        </div>
+                        <div class="promo-counter">
+                            <b class="counter-spots">4953</b>
+                            <span class="counter-text">Spots left</span>
+                        </div>
+                    </div>
+
+                    <div class="formRow row-fluid" id="divPromoterText">
 
 
                         <input data-val="true" data-val-number="The field ResellerSignupAmount must be a number."
@@ -6953,13 +6958,11 @@
                                 *A $99 renewal will be applied annually.
                             </div>
                         </div>
-
                     </div>
 
-
-                    <div id="divProceedEnrollmentLink"
-                         style="display: block; margin-top: 25px; margin-bottom: 25px; text-align: center;">
-                        <a id="ProceedEnrollmentLink" style="font-weight: bold; color: #005580; cursor: pointer;">CLICK
+                    <div id="divProceedEnrollmentLink" class="proceed-link"
+                         style="display: block;">
+                        <a id="ProceedEnrollmentLink">CLICK
                             HERE TO CONTINUE YOUR ENROLLMENT</a>
                     </div>
                 </div>
