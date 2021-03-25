@@ -1123,12 +1123,12 @@ input::-ms-input-placeholder {
 .membership-info .top-part .middle {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
 .membership-info .top-part .top {
+    align-items: center;
     margin-bottom: 20px;
 }
 
@@ -1243,7 +1243,6 @@ input::-ms-input-placeholder {
     color: #3498DB;
     font-size: 38px;
     font-weight: 800;
-    text-transform: uppercase;
 }
 
 .membership-package_type path {
@@ -1291,7 +1290,7 @@ input::-ms-input-placeholder {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    height: 27px;
+    height: 28px;
     padding: 4px 2px;
     background-color: transparent;
     color: #fff;
@@ -1330,6 +1329,10 @@ input::-ms-input-placeholder {
     border-color: #9B59B6;
 }
 
+.elite .row-info {
+    margin-bottom: 7px;
+}
+
 .elite .membership-package_type h4 {
     color: #9B59B6;
 }
@@ -1340,6 +1343,31 @@ input::-ms-input-placeholder {
 
 .elite .column.active {
     border-color: #9B59B6;
+}
+
+.elite .row:last-of-type {
+    position: relative;
+}
+
+.elite .row:last-of-type:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -7px;
+    width: 26%;
+    height: 25px;
+    border: 1px solid #9B59B6;
+    border-radius: 0 0 7px 7px;
+    z-index: 1;
+}
+
+.elite .row-info .row:last-of-type .column {
+    padding-bottom: 5px;
+}
+
+.elite .row:last-of-type .active {
+    background-color: #fff;
+    z-index: 2;
 }
 
 
@@ -1699,6 +1727,7 @@ input::-ms-input-placeholder {
 
     .membership-info .top-part .middle  {
         flex-direction: column;
+        align-items: center;
     }
 
     .membership-package {
