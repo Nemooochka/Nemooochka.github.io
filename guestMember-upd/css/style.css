@@ -1046,6 +1046,10 @@ input::-ms-input-placeholder {
     width: 46% !important;
 }
 
+.billing-info .middle-part .three-col .formElement {
+    width: 32%;
+}
+
 .field-validation-error {
     padding-left: 2px;
     color: red !important;
@@ -2084,6 +2088,12 @@ input::-ms-input-placeholder {
         margin-bottom: 10px;
     }
 
+    /* Billing info */
+
+    .billing-info .middle-part .three-col .formElement {
+        width: 47%;
+    }
+
     /* Payment status modal */
 
     .payment-status {
@@ -2239,7 +2249,8 @@ input::-ms-input-placeholder {
         padding-right: 20px;
     }
 
-    .billing-info .middle-part .formElement {
+    .billing-info .middle-part .formElement,
+    .billing-info .middle-part .three-col .formElement {
         width: 100%;
     }
 
