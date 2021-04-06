@@ -9665,7 +9665,7 @@ p.left-arrow:before {
 }
 
 #checkoutPage .agree {
-    margin: 10px 0 10px 5px;
+    margin: 10px 0 0 5px;
 }
 
 #checkoutPage .agree input {
@@ -9673,7 +9673,7 @@ p.left-arrow:before {
 }
 
 #promoterAgreeTerms, #salesRepAgreeTerms {
-    padding: 0 5px;
+    padding: 0 10px 10px;
 }
 
 #checkoutPage .row_checkbox .first, #checkoutPage .row_checkbox .second {
@@ -9716,11 +9716,40 @@ p.left-arrow:before {
 
 .reseller-type {
     position: relative;
-    background-color: #fff;
+    padding: 5px;
+}
+
+.reseller-type.active {
+    background-color: #f7f8f5;
 }
 
 .reseller-type__block {
     margin-bottom: 30px;
+    padding: 5px;
+}
+
+.reseller-type__checkbox {
+    position: relative;
+}
+
+.reseller-type__checkbox.active {
+    background-color: #fff;
+}
+
+.reseller-type__checkbox#TravelAdvantageDiv:before,
+.reseller-type__checkbox#EliteTravelAdvantageProDiv:before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: -15px;
+    width: calc(100% + 10px);
+    height: 1px;
+    background-color: #c5cdd6;
+}
+
+.reseller-type__checkbox#EliteTravelAdvantageProDiv:before {
+    top: auto;
+    bottom: -15px;
 }
 
 .reseller-type__block .top-part {
@@ -9752,6 +9781,10 @@ p.left-arrow:before {
     text-transform: uppercase;
 }
 
+.reseller-type__block .type-name i {
+    font-weight: 400;
+}
+
 .reseller-type__block .wrap-text {
     flex: 1 1;
     padding-right: 20px;
@@ -9781,7 +9814,8 @@ p.left-arrow:before {
 }
 
 .footnote {
-    margin: -5px 0 10px;
+    margin: -5px 0 15px;
+    padding: 0 5px;
     text-align: right;
     font-style: italic;
 }
@@ -9792,6 +9826,10 @@ p.left-arrow:before {
 
 .text-red_bright {
     color: #ff0104 !important;
+}
+
+.text-black {
+    color: #606060;
 }
 
 .list-check {
@@ -9815,7 +9853,8 @@ p.left-arrow:before {
 }
 
 #checkoutPage .formRow#divPromoterText {
-    padding-top: 0;
+    margin-top: 30px;
+    padding: 0;
 }
 
 #checkoutPage .promo {
@@ -9830,10 +9869,14 @@ p.left-arrow:before {
     border: 1px solid #c5cdd6;
 }
 
+#checkoutPage .promo-title  {
+    padding-right: 15px;
+}
+
 #checkoutPage .promo-title h3 {
     margin: 0 0 3px;
-    font-size: 35px;
-    font-weight: 800;
+    font-size: 25px;
+    font-weight: 600;
     letter-spacing: -1px;
 }
 
@@ -9860,6 +9903,7 @@ p.left-arrow:before {
 
 #checkoutPage .promo-counter .counter-text {
     text-transform: uppercase;
+    text-align: center;
 }
 
 #checkoutPage .mobile-promotion {
@@ -10214,6 +10258,7 @@ p.left-arrow:before {
         margin: 3px 0;
     }
 
+    #checkoutPage .step-second .formRow div label,
     #checkoutPage .formRow div div label,
     #checkoutPage .TabContainer .formRow div label {
         width: auto;
@@ -10240,6 +10285,7 @@ p.left-arrow:before {
         margin: 10px 0 0 5px;
     }
 
+    #checkoutPage .step-second .formRow div input:not([type="radio"]), #checkoutPage .step-second .formRow div select,
     #checkoutPage .formRow div div input, #checkoutPage .formRow div div select {
         width: 100%;
     }
