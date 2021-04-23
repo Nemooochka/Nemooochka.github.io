@@ -10868,6 +10868,11 @@ p.left-arrow:before {
     font-weight: bold;
 }
 
+.my-info p span a {
+    color: #0060CB;
+    text-decoration: underline;
+}
+
 .my-info p:first-of-type span:last-of-type {
     /*color: #1f4e5d;*/
     color: #0a7b9f;
@@ -12477,11 +12482,48 @@ p.left-arrow:before {
 #CurrentEarning {
     display: inline-block;
     margin-top: 11px;
-    color: #046d3d;
+    color: #0A7B9F;
     font-size: 35px;
     font-weight: bold;
 }
 
+/* dual team */
+
+.tiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 16px;
+    line-height: 1.2;
+}
+
+.tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 49%;
+    margin-bottom: 6px;
+    padding: 24px 0;
+    border: 2px solid #0A7B9F;
+}
+
+.tile.tile-orange {
+    width: 100%;
+    border-color: #ED9A08;
+}
+
+.tile-amount {
+    margin-top: 2px;
+    color: #0A7B9F;
+    font-size: 40px;
+}
+
+.tile.tile-orange .tile-amount {
+    color: #ED9A08;
+    font-size: 50px;
+}
 
 /* promo */
 
