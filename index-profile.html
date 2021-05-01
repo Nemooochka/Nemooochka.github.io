@@ -1813,32 +1813,27 @@
         else if (titleLength > 13) title.css('font-size', '11px');
     });
 
-    var profileBand = "#profile-band";
-    $('body').on('touchstart', function (e) {
-        if ($(e.target).closest(profileBand).length == 0) {
-            $(profileBand).removeClass('active');
-        }
+    $(document).ready(function () {
+        $('body').on('touchstart', function (e) {
+            console.log('1', e.target,e.target.className === 'profile-band_arrow', $(e.target));
+            if ($(e.target).closest("#profile-band").length == 0) {
+                console.log('b1');
+                $("#profile-band").removeClass('active');
+            }
+        });
+
+        $('#profile-band').on('touchstart', function (e) {
+            $(this).addClass('touched');
+            console.log('2', e.target,e.target.className === 'profile-band_arrow', $(e.target));
+            if (e.target.className === 'profile-band_arrow' && $(this).hasClass('active')) {
+                $(this).removeClass('active');
+                console.log('d1');
+            } else {
+                $(this).addClass('active');
+                console.log('e1');
+            }
+        });
     });
-
-    $(profileBand).on('touchstart', function (e) {
-        $(this).addClass('touched');
-        if ($(e.target).closest('.profile-band_arrow').length == 1 && $(this).hasClass('active')) {
-            $(this).removeClass('active');
-        } else {
-            $(this).addClass('active');
-        }
-    });
-
-    var packagesTable = $('.packages-table');
-    var td1 = packagesTable.find('td').eq(0).outerWidth();
-    var td2 = packagesTable.find('td').eq(1).outerWidth();
-    var td3 = packagesTable.find('td').eq(2).outerWidth();
-
-    var tableButtons = $('.table-buttons');
-    tableButtons.find('div').eq(0).width(td1);
-    tableButtons.find('div').eq(1).width(td2);
-    tableButtons.find('div').eq(2).width(td3);
-
 
     $(document).ready(function () {
         try {

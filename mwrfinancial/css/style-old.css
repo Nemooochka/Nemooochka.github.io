@@ -3323,8 +3323,17 @@ footer.bottom div a {
 }
 
 .membership-widget .second-block {
-    background: url("../images/moneymax.jpg") no-repeat center right;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+}
+
+.membership-widget .taxReduction .second-block {
+    background-image: url("../images/moneymax.jpg");
+}
+
+.membership-widget .billNegotiation .second-block {
+    background-image: url("../images/BillNegotiation.jpg");
 }
 
 .membership-widget .second-block img {

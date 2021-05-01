@@ -11,7 +11,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1140px;
+    max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -43,11 +43,25 @@ body {
 }
 
 header {
+    padding: 20px 0;
+    z-index: 4;
+}
+
+header .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+}
+
+header .container .wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .secure-enrollment {
+    margin-top: 3px;
 }
 
 footer {
@@ -164,7 +178,8 @@ b {
 }
 
 select, input, textarea {
-    font: 100% 'Montserrat', sans-serif;;
+    font: 100% 'Montserrat', sans-serif;
+;
 }
 
 input:focus {
@@ -261,7 +276,7 @@ input::-ms-input-placeholder {
     position: absolute;
     top: 50%;
     left: 0;
-    margin-top: -10px;
+    margin-top: -9px;
     width: 18px;
     height: 18px;
     background: white;
@@ -300,12 +315,7 @@ input::-ms-input-placeholder {
     background: white;
     width: 2px;
     height: 2px;
-    box-shadow: 2px 0 0 white,
-    4px 0 0 white,
-    4px -2px 0 white,
-    4px -4px 0 white,
-    4px -6px 0 white,
-    4px -8px 0 white;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
     transform: rotate(45deg);
 }
 
@@ -314,15 +324,16 @@ input::-ms-input-placeholder {
     position: absolute;
     left: -9999px;
 }
+
 [type="radio"]:checked + label,
-[type="radio"]:not(:checked) + label
-{
+[type="radio"]:not(:checked) + label {
     position: relative;
     padding-left: 20px;
     cursor: pointer;
     display: inline-block;
     color: #666;
 }
+
 [type="radio"]:checked + label:before,
 [type="radio"]:not(:checked) + label:before {
     content: '';
@@ -335,6 +346,7 @@ input::-ms-input-placeholder {
     border-radius: 4px;
     background: #fff;
 }
+
 [type="radio"]:checked + label:after,
 [type="radio"]:not(:checked) + label:after {
     content: '';
@@ -348,11 +360,13 @@ input::-ms-input-placeholder {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
+
 [type="radio"]:not(:checked) + label:after {
     opacity: 0;
     -webkit-transform: scale(0);
     transform: scale(0);
 }
+
 [type="radio"]:checked + label:after {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -395,6 +409,7 @@ input::-ms-input-placeholder {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-right: 40px;
     color: #fff;
 }
 
@@ -587,8 +602,7 @@ input::-ms-input-placeholder {
 
 /* Upgrade */
 
-.upgrade .upgrade-block .title-part .icon-info,
-.membership-info .membership-package .block-title .icon-info {
+.upgrade .upgrade-block .title-part .icon-info {
     position: absolute;
     right: 10px;
     top: 50%;
@@ -791,6 +805,10 @@ input::-ms-input-placeholder {
     z-index: 0;
 }
 
+.white-right .secure-enrollment {
+    color: #333;
+}
+
 .lc {
     display: flex;
     flex-direction: row;
@@ -877,7 +895,7 @@ input::-ms-input-placeholder {
 
 /* Billing */
 
-.modal-body {
+.billing-info {
     padding: 30px 30px;
     background-color: #fff;
     border-radius: 10px;
@@ -1016,34 +1034,54 @@ input::-ms-input-placeholder {
     margin: 5px 0 0 20px;
 }
 
-.billing-info .middle-part .formElement .double-input {
+.billing-info .middle-part .formElement .double-input,
+.validate_row-double {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.billing-info .middle-part .formElement .double-input .select2 {
+.billing-info .middle-part .formElement .double-input .select2,
+.validate_row-double .field-validation-error {
     width: 46% !important;
+}
+
+.field-validation-error {
+    padding-left: 2px;
+    color: red !important;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .billing-info .bottom-part {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     justify-content: space-between;
-    margin-top: 30px;
-}
-
-.billing-info .bottom-part .first,
-.billing-info .bottom-part .second {
-    width: 49%;
+    margin-top: 10px;
 }
 
 .billing-info .bottom-part .first {
-    font-size: 13px;
+    display: flex;
+    align-items: center;
+    width: 70%;
+    font-size: 12px;
     line-height: 1.4;
 }
 
-.billing-info .bottom-part .second .formElement {
+.billing-info .bottom-part .second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    padding-left: 30px;
+}
+
+.billing-info .bottom-part .second .wrap-checkbox {
+    margin-bottom: 10px;
+}
+
+.billing-info .bottom-part .second {
     margin-bottom: 0;
 }
 
@@ -1069,6 +1107,14 @@ input::-ms-input-placeholder {
 
 /* Membership info */
 
+.wrap-loading.hidden-deskt {
+    visibility: hidden;
+}
+
+.membership-info.billing-info {
+    padding-top: 20px;
+}
+
 .membership-info .top-part {
     flex-direction: column;
 }
@@ -1083,11 +1129,12 @@ input::-ms-input-placeholder {
 }
 
 .membership-info .top-part .top {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .membership-info .top-part .top h3 {
     margin-bottom: 0;
+    letter-spacing: -2px;
 }
 
 .membership-info .top-part .top a {
@@ -1096,60 +1143,205 @@ input::-ms-input-placeholder {
     font-weight: 500;
 }
 
-.membership-info .membership-package {
-    width: 32%;
-    border: 4px solid #3498DB;
+
+.membership-package {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+    padding: 10px 12px;
+    background-color: #EAF5FC;
+    font-size: 13px;
+    border: 1px solid #3498DB;
 }
 
-.membership-info .membership-package .block-title {
-    position: relative;
+.membership-package .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.membership-package .row-title .column {
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+.membership-package .row-info {
+    background-color: #fff;
+}
+
+.membership-package .row-info .row:first-of-type .column {
+    padding-top: 8px;
+}
+
+.membership-package .row-info .row:last-of-type .column {
+    padding-bottom: 8px;
+}
+
+.membership-package .row-info .column {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.membership-package .row-info .column-first {
+    justify-content: flex-start;
+}
+
+.membership-package .row-info b {
+    color: #27AE60;
+}
+
+.membership-package .row-line_through {
+    text-decoration: line-through;
+}
+
+.membership-package .row-save {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.membership-package .column {
+    width: 26%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+}
+
+.membership-package .column.column-first {
+    flex: 1 1;
+    width: 48%;
+    padding-left: 12px;
+    text-align: left;
+}
+
+.membership-package .column.active {
+    border: 1px solid #33D879;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    overflow: hidden;
+}
+
+.membership-package .column.active-top {
+    padding-top: 9px;
+    border-top-width: 1px;
+    border-radius: 7px 7px 0 0;
+}
+
+.membership-package .column.active-bottom {
+    border-bottom-width: 1px;
+    border-radius: 0 0 7px 7px;
+}
+
+.membership-package_type .wrap {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 7px 20px;
 }
 
-.membership-info .membership-package .block-title h5 {
-    font-size: 34px;
+.membership-package_type h4 {
+    margin-right: 14px;
+    color: #3498DB;
+    font-size: 38px;
     font-weight: 800;
     text-transform: uppercase;
 }
 
-.membership-info .membership-package.vip .block-title h5 {
-    color: #3498DB;
+.membership-package_type path {
+    fill: #ABD4F1;
 }
 
-.membership-info .membership-package.pro {
+.membership-package_duration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8px;
+}
+
+.membership-package_duration b {
+    margin-bottom: 12px;
+    color: #303E4B;
+    font-size: 11px;
+    line-height: 1;
+}
+
+.membership-package_duration b.smaller-font {
+    font-size: 10px;
+}
+
+.fs-7 {
+    font-size: 7px !important;
+}
+
+.fs-8 {
+    font-size: 8px !important;
+}
+
+.fs-9 {
+    font-size: 9px !important;
+}
+
+.fs-10 {
+    font-size: 10px !important;
+}
+
+.membership-package_save {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 27px;
+    padding: 4px 2px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.membership-package_save span {
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.vip .membership-package_save {
+    background-color: #33D879;
+}
+
+.pro {
+    background-color: #FEF4E5;
     border-color: #F39C12;
 }
 
-.membership-info .membership-package.pro .block-title h5 {
+.pro .membership-package_type h4 {
     color: #F39C12;
 }
 
-.membership-info .membership-package.elite {
+.pro .membership-package_type path {
+    fill: #FAD59A;
+}
+
+.pro .column.active {
+    border-color: #F39C12;
+}
+
+.elite {
+    background-color: #F2E9F6;
     border-color: #9B59B6;
 }
 
-.membership-info .membership-package.elite .block-title h5 {
+.elite .membership-package_type h4 {
     color: #9B59B6;
 }
 
-.membership-info .membership-package .block-title .icon-info {
-    right: 20px;
+.elite .membership-package_type path {
+    fill: #D3B6DF;
 }
 
-.membership-info .membership-package .block-price {
-    width: 100%;
+.elite .column.active {
+    border-color: #9B59B6;
 }
 
-.membership-info .membership-package .block-price .grey-block {
-    padding: 25px 20px;
-}
-
-.membership-info .membership-package .block-price .grey-block .row {
-    font-size: 15px;
-}
 
 .membership-info .address-radio {
     margin-bottom: 20px;
@@ -1300,9 +1492,8 @@ input::-ms-input-placeholder {
 .custom-radio-checkbox {
     display: block;
     position: relative;
-    width: 26px;
-    height: 26px;
-    margin-right: 18px;
+    width: 17px;
+    height: 17px;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -1320,9 +1511,10 @@ input::-ms-input-placeholder {
     position: absolute;
     top: 0;
     left: 0;
-    height: 26px;
-    width: 26px;
-    border: 2px solid #ccc;
+    height: 17px;
+    width: 17px;
+    background-color: #fff;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
@@ -1335,10 +1527,10 @@ input::-ms-input-placeholder {
 .custom-radio-checkbox input:checked ~ .checkmark:after,
 .custom-radio-checkbox:hover input ~ .checkmark:after {
     display: block;
-    top: 4px;
-    left: 4px;
-    width: 14px;
-    height: 14px;
+    top: 3px;
+    left: 3px;
+    width: 9px;
+    height: 9px;
     background: #27AE60;
     border-radius: 3px;
 }
@@ -1498,6 +1690,22 @@ input::-ms-input-placeholder {
     .lc .list-benefits li {
         font-size: 17px;
     }
+
+    /* Membership */
+
+    .wrap-loading.hidden-deskt {
+        visibility: visible;
+    }
+
+    .membership-info .top-part .middle {
+        flex-direction: column;
+    }
+
+    .membership-package {
+        max-width: 400px;
+        width: 100%;
+        margin-bottom: 12px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -1538,17 +1746,19 @@ input::-ms-input-placeholder {
         margin-left: 10px;
     }
 
-    .billing-info .bottom-part .second .formElement {
+    .billing-info .bottom-part {
         flex-direction: column;
+        align-items: center;
     }
 
-    .billing-info .bottom-part .second .formElement .first,
-    .billing-info .bottom-part .second .formElement .second {
+    .billing-info .bottom-part .first {
         width: 100%;
+        margin-bottom: 20px;
     }
 
-    .billing-info .bottom-part .second .formElement .first {
-        margin-bottom: 10px;
+    .billing-info .bottom-part .second {
+        padding-left: 0;
+        min-width: auto;
     }
 
     /* Upgrade */
@@ -1649,41 +1859,6 @@ input::-ms-input-placeholder {
         font-size: 12px;
     }
 
-    .membership-info .membership-package .block-title h5 {
-        font-size: 30px;
-    }
-
-    .membership-info .membership-package .block-price .grey-block,
-    .membership-info .membership-package .block-title {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .membership-info .membership-package .block-title .icon-info {
-        right: 15px;
-    }
-
-    /* Custom radio */
-
-    .custom-radio-checkbox {
-        width: 24px;
-        height: 24px;
-        margin-right: 10px;
-    }
-
-    .custom-radio-checkbox .checkmark {
-        height: 24px;
-        width: 24px;
-    }
-
-    .custom-radio-checkbox input:checked ~ .checkmark:after,
-    .custom-radio-checkbox:hover input ~ .checkmark:after {
-        top: 3px;
-        left: 3px;
-        width: 14px;
-        height: 14px;
-    }
-
     /* Payment status modal */
 
     .payment-status .wrap-img {
@@ -1737,7 +1912,6 @@ input::-ms-input-placeholder {
     .payment-info .middle-part .card-list a {
         margin-left: 30px;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -1752,6 +1926,10 @@ input::-ms-input-placeholder {
 
     .btn {
         min-width: 150px;
+    }
+
+    .secure-enrollment {
+        padding-right: 20px;
     }
 
     .video-block {
@@ -1813,8 +1991,13 @@ input::-ms-input-placeholder {
         display: none;
     }
 
+    .white-right .secure-enrollment {
+        color: #fff;
+    }
+
     .lc {
         flex-direction: column;
+        margin: 0;
     }
 
     .lc .left,
@@ -1866,21 +2049,6 @@ input::-ms-input-placeholder {
         text-align: center;
     }
 
-    .membership-info .membership-package {
-        max-width: 360px;
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    .membership-info .membership-package:last-of-type {
-        margin-bottom: 0;
-    }
-
-    .membership-info .membership-package .block-price .grey-block {
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
     .membership-info .address-radio span {
         display: inline-block;
         width: 100%;
@@ -1898,6 +2066,18 @@ input::-ms-input-placeholder {
 
     .btn {
         min-width: 140px;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    header .container .wrap {
+        margin-top: 12px;
+    }
+
+    header .secure-enrollment {
+        margin-top: 5px;
     }
 
     .form-block .top-part .wrap-action label {
@@ -1920,26 +2100,6 @@ input::-ms-input-placeholder {
         min-width: auto;
         margin: 0;
         padding: 8px 15px;
-    }
-
-    /* Billing info */
-
-    .billing-info .bottom-part {
-        flex-direction: column;
-        margin-top: 20px;
-    }
-
-    .billing-info .bottom-part .first,
-    .billing-info .bottom-part .second {
-        width: 100%;
-    }
-
-    .billing-info .bottom-part .first {
-        margin-bottom: 15px;
-    }
-
-    .billing-info .bottom-part .second .formElement .first {
-        margin-bottom: 25px;
     }
 
     /* Payment info */
@@ -1989,6 +2149,12 @@ input::-ms-input-placeholder {
     .lc h2 b {
         font-size: 34px;
     }
+
+    /* Membership */
+
+    .membership-package {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 450px) {
@@ -2023,6 +2189,14 @@ input::-ms-input-placeholder {
 
     /* Billing info */
 
+    .billing-info {
+        padding: 25px 15px;
+    }
+
+    .billing-info .top-part .block-description {
+        font-size: 15px;
+    }
+
     .billing-info .top-part .block-price .grey-block {
         padding: 20px;
     }
@@ -2047,12 +2221,6 @@ input::-ms-input-placeholder {
 
     .billing-info .middle-part .formElement.text {
         margin-top: 0;
-    }
-
-    /* LC */
-
-    .lc .wrap-btn .btn {
-        margin: 0 0 10px;
     }
 
     /* Payment info */
@@ -2089,6 +2257,26 @@ input::-ms-input-placeholder {
 
     .payment-status .wrap-btn {
         margin-bottom: 25px;
+    }
+
+    /* Membership */
+
+    .membership-package_duration b {
+        margin-bottom: 10px;
+    }
+
+    .membership-package .column.column-first {
+        padding-left: 10px;
+    }
+
+    .membership-package_type h4 {
+        margin-right: 10px;
+        font-size: 36px;
+    }
+
+    .membership-package_type svg {
+        width: 14px;
+        height: 14px;
     }
 }
 

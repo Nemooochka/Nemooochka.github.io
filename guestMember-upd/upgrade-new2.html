@@ -6,10 +6,10 @@
     <title>Travel Advantage Upgrade </title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="https://marksheet.io/css/reset.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
 
 
     <style>
@@ -23,7 +23,7 @@
             font-size: 13px;
         }
     </style>
-    <link rel="stylesheet" href="css/newstyle2.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-new-gr-c-s-check-loaded="14.996.0" data-gr-ext-installed="">
 
@@ -50,11 +50,31 @@
 
     <header>
         <div class="container">
-            <div class="secure-enrollment">
-                <img src="img/lock.svg" alt="">
-                <span>
+            <a class="logo" href="#">
+                <img src="img/logo.png" alt="">
+            </a>
+
+            <div>
+                <div class="secure-enrollment">
+                    <img src="img/lock.svg" alt="">
+                    <span>
                     Secure enrollment
                 </span>
+                </div>
+                <div class="language">
+                    <div class="changeLangDiv">
+                        <select id="idLanguageChange" data-select2-id="idLanguageChange" tabindex="-1"
+                                class="select2-hidden-accessible" aria-hidden="true">
+                            <option value="English" data-select2-id="2">English</option>
+                            <option value="Spanish">Español</option>
+                            <option value="French">Français</option>
+                            <option value="German">Deutsch</option>
+                            <option value="Italian">Italiano</option>
+                            <option value="Portuguese">Português</option>
+                            <option value="Russian">Русский</option>
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -109,7 +129,8 @@
                                                 Planejamento
                                             </b>
                                             <label class="custom-radio-checkbox">
-                                                <input id="rVip2" value="vip" type="radio" checked="checked" name="radio">
+                                                <input id="rVip2" value="vip" type="radio" checked="checked"
+                                                       name="radio">
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
@@ -303,7 +324,8 @@
                                     <div class="form-part">
                                         <!-- this are hidden values used to move data around -->
                                         <input data-val="true" data-val-number="The field UserId must be a number."
-                                               data-val-required="The UserId field is required." id="UserId" name="UserId"
+                                               data-val-required="The UserId field is required." id="UserId"
+                                               name="UserId"
                                                type="hidden" value="206708">
                                         <input id="IsBillingSameAsContactInfo" name="IsBillingSameAsContactInfo"
                                                type="hidden"
@@ -314,7 +336,8 @@
                                         <input data-val="true" data-val-required="The Agrement field is required."
                                                id="Agrement"
                                                name="Agrement" type="hidden" value="False">
-                                        <input id="NewTravelCustomerService" name="NewTravelCustomerService" type="hidden"
+                                        <input id="NewTravelCustomerService" name="NewTravelCustomerService"
+                                               type="hidden"
                                                value="pro">
                                         <div class="formElement">
                                             <label for="firstName">
@@ -349,7 +372,8 @@
                                             <label for="address">
                                                 Address
                                             </label>
-                                            <input data-val="true" data-val-required="Required" id="Address" name="Address"
+                                            <input data-val="true" data-val-required="Required" id="Address"
+                                                   name="Address"
                                                    placeholder="Enter your full address" type="text" value="test">
                                             <div class="validate_row clearfix" style="margin-bottom: 0px;">
                                                 <div>
@@ -509,7 +533,8 @@
                                                 <option value="UA">Ukraine</option>
                                                 <option value="AE">United Arab Emirates</option>
                                                 <option value="GB">United Kingdom</option>
-                                                <option selected="selected" value="USA" data-select2-id="4">United States
+                                                <option selected="selected" value="USA" data-select2-id="4">United
+                                                    States
                                                 </option>
                                                 <option value="UZ">Uzbekistan</option>
                                                 <option value="VU">Vanuatu</option>
@@ -522,7 +547,8 @@
                                             </label>
                                             <input class="st-forminput tips-right" data-val="true"
                                                    data-val-required="Required"
-                                                   id="Zip" name="Zip" placeholder="Zip Code" type="text" value="243343">
+                                                   id="Zip" name="Zip" placeholder="Zip Code" type="text"
+                                                   value="243343">
                                             <div class="validate_row clearfix">
                                                 <div style="margin-bottom: 0px;">
                                                 <span class="field-validation-valid" data-valmsg-for="Zip"
@@ -536,7 +562,8 @@
                                             <label for="password">
                                                 Password
                                             </label>
-                                            <input id="Password" name="Password" placeholder="********" readonly="readonly"
+                                            <input id="Password" name="Password" placeholder="********"
+                                                   readonly="readonly"
                                                    type="text" value="123456">
                                         </div>
                                         <div class="formElement text">
@@ -715,7 +742,8 @@
                                                 <option value="UA">Ukraine</option>
                                                 <option value="AE">United Arab Emirates</option>
                                                 <option value="GB">United Kingdom</option>
-                                                <option selected="selected" value="USA" data-select2-id="6">United States
+                                                <option selected="selected" value="USA" data-select2-id="6">United
+                                                    States
                                                 </option>
                                                 <option value="UZ">Uzbekistan</option>
                                                 <option value="VU">Vanuatu</option>
@@ -753,7 +781,8 @@
                                                 Card Number
                                             </label>
                                             <input data-val="true" data-val-required="Required" id="CreditCardNumber"
-                                                   name="CreditCardNumber" placeholder="Card Number" type="text" value="">
+                                                   name="CreditCardNumber" placeholder="Card Number" type="text"
+                                                   value="">
                                             <div class="validate_row clearfix" style="margin-bottom: 0px;">
                                                 <div id="CCnumValidationDiv">
                                                 <span class="field-validation-valid" data-valmsg-for="CreditCardNumber"
@@ -891,27 +920,27 @@
         /* Font scaling based on parent width in package_duration */
 
         var membershipPackageDuration = $('.membership-package_duration');
-        var membershipPackageDurationArrayWidth = membershipPackageDuration.map(function(index,elem) {
+        var membershipPackageDurationArrayWidth = membershipPackageDuration.map(function (index, elem) {
             return $(elem).outerWidth();
         });
         var membershipPackageDurationText = membershipPackageDuration.find('.package-duration');
-        var membershipPackageDurationTextArrayWidth = membershipPackageDurationText.map(function(index,elem) {
+        var membershipPackageDurationTextArrayWidth = membershipPackageDurationText.map(function (index, elem) {
             return $(elem).width();
         });
-        var largestNumberInArray = function(array) {
-            var sortedArr = array.sort(function(a, b) {
-                return a-b;
+        var largestNumberInArray = function (array) {
+            var sortedArr = array.sort(function (a, b) {
+                return a - b;
             });
             return sortedArr[sortedArr.length - 1];
         };
         var parentBlockMaxWidth = largestNumberInArray(membershipPackageDurationArrayWidth);
         var childBlockMaxWidth = largestNumberInArray(membershipPackageDurationTextArrayWidth);
 
-        if(childBlockMaxWidth - parentBlockMaxWidth > -8) {
-            membershipPackageDurationText.map(function(index, elem) {
-                if(childBlockMaxWidth - parentBlockMaxWidth > 15) {
+        if (childBlockMaxWidth - parentBlockMaxWidth > -8) {
+            membershipPackageDurationText.map(function (index, elem) {
+                if (childBlockMaxWidth - parentBlockMaxWidth > 15) {
                     $(elem).addClass('fs-8');
-                } else if(childBlockMaxWidth - parentBlockMaxWidth > 2) {
+                } else if (childBlockMaxWidth - parentBlockMaxWidth > 2) {
                     $(elem).addClass('fs-9');
                 } else {
                     $(elem).addClass('fs-10');
@@ -927,19 +956,18 @@
         var saveCellText = $(saveCell).find('.save_text');
         var saveCellTextWidth = $(saveCellText).width();
 
-        if(saveCellTextWidth - saveCellWidth > 12) {
+        if (saveCellTextWidth - saveCellWidth > 12) {
             saveCellText.addClass('fs-7');
-        } else if(saveCellTextWidth - saveCellWidth > 8)  {
+        } else if (saveCellTextWidth - saveCellWidth > 8) {
             saveCellText.addClass('fs-8');
-        } else if(saveCellTextWidth - saveCellWidth >= 0)  {
+        } else if (saveCellTextWidth - saveCellWidth >= 0) {
             saveCellText.addClass('fs-9');
         }
 
 
-
         /* Adjust row-info height */
 
-        if($(window).width() > 1140) {
+        if ($(window).width() > 1140) {
 
             var rowInfoBlock = $('.row-info');
 
@@ -950,8 +978,8 @@
             var rowInfoBlockThird = rowInfoBlock[2];
             var rowInfoBlockThirdRows = $(rowInfoBlockThird).children();
 
-            for(var i = 0;  i < rowInfoBlockFirstRows.length; i++) {
-                if($(rowInfoBlockFirstRows[i]).height() > $(rowInfoBlockSecondRows[i]).height()) {
+            for (var i = 0; i < rowInfoBlockFirstRows.length; i++) {
+                if ($(rowInfoBlockFirstRows[i]).height() > $(rowInfoBlockSecondRows[i]).height()) {
                     var height = $(rowInfoBlockFirstRows[i]).height();
                     $(rowInfoBlockSecondRows[i]).height(height);
                     $(rowInfoBlockThirdRows[i]).height(height);
@@ -960,7 +988,6 @@
 
             $('.wrap-loading').removeClass('hidden-deskt');
         }
-
 
 
         /* modal */

@@ -11006,6 +11006,60 @@ p.left-arrow:before {
     margin-left: 13px;
 }
 
+.rank-block {
+    padding: 0 16px;
+}
+
+.rank-block__info h4 {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.rank-block__info span {
+    color: #097A9F;
+}
+
+.rank-block__info b {
+    color: #0B799F;
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    width: 38px;
+}
+
+.bar-value {
+    position: relative;
+    padding: 4px 0;
+    border: 1px solid #D5D6D7;
+    border-radius: 6px;
+    text-align: center;
+    z-index: 2;
+}
+
+.bar-value:after {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    width: 12px;
+    height: 12px;
+    left: 50%;
+    margin-left: -6px;
+    border-bottom: 1px solid #D5D6D7;
+    border-right: 1px solid #D5D6D7;
+    transform: rotate(45deg);
+    background-color: #fff;
+    z-index: -1;
+}
+
+.bar-body {
+    height: 100px;
+    margin-top: 20px;
+    background-color: #D3D3D3;
+    color: #fff;
+}
+
 @media (max-width: 767px) {
     .container-fluid [class*="col"] {
         width: 100%;
