@@ -6986,25 +6986,25 @@
                         </div>
                         <div class="rank-block__chart">
                             <div class="bar-section">
-                                <div class="bar">
+                                <div class="bar" id="silver">
                                     <div class="bar-value bar-value__checked">
-                                        <img src="../images/icon-check-yellow.svg" alt="">
+                                        <img src="../images/icon-check-green.svg" alt="">
                                     </div>
                                     <div class="bar-body" style="height: 123px;">
                                         <span>Silver</span>
                                     </div>
                                 </div>
-                                <div class="bar">
+                                <div class="bar" id="gold">
                                     <div class="bar-value bar-value__checked">
-                                        <img src="../images/icon-check-yellow.svg" alt="">
+                                        <img src="../images/icon-check-green.svg" alt="">
                                     </div>
                                     <div class="bar-body" style="height: 131px;">
                                         <span>Gold</span>
                                     </div>
                                 </div>
-                                <div class="bar">
+                                <div class="bar" id="platinum">
                                     <div class="bar-value bar-value__checked">
-                                        <img src="../images/icon-check-yellow.svg" alt="">
+                                        <img src="../images/icon-check-green.svg" alt="">
                                     </div>
                                     <div class="bar-body" style="height: 138px;">
                                         <span>Platinum</span>
@@ -7012,15 +7012,15 @@
                                 </div>
                             </div>
                             <div class="bar-section bar-section__green">
-                                <div class="bar">
+                                <div class="bar" id="jade">
                                     <div class="bar-value bar-value__checked">
-                                        <img src="../images/icon-check-yellow.svg" alt="">
+                                        <img src="../images/icon-check-green.svg" alt="">
                                     </div>
                                     <div class="bar-body" style="height: 146px;">
                                         <span>Jade</span>
                                     </div>
                                 </div>
-                                <div class="bar active">
+                                <div class="bar active" id="pearl">
                                     <div class="bar-value">
                                         $750
                                     </div>
@@ -7028,7 +7028,7 @@
                                         <span>Pearl</span>
                                     </div>
                                 </div>
-                                <div class="bar">
+                                <div class="bar" id="emerald">
                                     <div class="bar-value">
                                         $1.5k
                                     </div>
@@ -7036,7 +7036,7 @@
                                         <span>Emerald</span>
                                     </div>
                                 </div>
-                                <div class="bar">
+                                <div class="bar" id="ruby">
                                     <div class="bar-value">
                                         $3k
                                     </div>
@@ -7044,7 +7044,7 @@
                                         <span>Ruby</span>
                                     </div>
                                 </div>
-                                <div class="bar">
+                                <div class="bar" id="sapphire">
                                     <div class="bar-value">
                                         $5k
                                     </div>
@@ -7058,7 +7058,7 @@
                                 </div>
                             </div>
                             <div class="bar-section bar-section__blue">
-                                <div class="bar">
+                                <div class="bar" id="diamond">
                                     <div class="bar-value">
                                         $7.5k
                                     </div>
@@ -7066,7 +7066,7 @@
                                         <span>Diamond</span>
                                     </div>
                                 </div>
-                                <div class="bar">
+                                <div class="bar" id="diamond-2x">
                                     <div class="bar-value">
                                         $10k
                                     </div>
@@ -7074,7 +7074,7 @@
                                         <span>Double Diamond</span>
                                     </div>
                                 </div>
-                                <div class="bar">
+                                <div class="bar" id="diamond-3x">
                                     <div class="bar-value">
                                         $15k
                                     </div>
@@ -7082,7 +7082,7 @@
                                         <span>Triple Diamond</span>
                                     </div>
                                 </div>
-                                <div class="bar">
+                                <div class="bar" id="diamond-blue">
                                     <div class="bar-value">
                                         $30k
                                     </div>
@@ -7090,7 +7090,7 @@
                                         <span>Blue Diamond</span>
                                     </div>
                                 </div>
-                                <div class="bar">
+                                <div class="bar" id="diamond-black">
                                     <div class="bar-value">
                                         $60k
                                     </div>
@@ -7104,7 +7104,7 @@
                                 </div>
                             </div>
                             <div class="bar-section bar-section__purple">
-                                <div class="bar">
+                                <div class="bar" id="royal">
                                     <div class="bar-value">
                                         $100k
                                     </div>
@@ -7112,7 +7112,7 @@
                                         <span>Royal</span>
                                     </div>
                                 </div>
-                                <div class="bar">
+                                <div class="bar" id="royal-2x">
                                     <div class="bar-value">
                                         $150k
                                     </div>
@@ -7120,7 +7120,7 @@
                                         <span>Double Royal</span>
                                     </div>
                                 </div>
-                                <div class="bar">
+                                <div class="bar" id="royal-3x">
                                     <div class="bar-value">
                                         $200k
                                     </div>
@@ -7128,7 +7128,7 @@
                                         <span>Triple Royal</span>
                                     </div>
                                 </div>
-                                <div class="bar">
+                                <div class="bar" id="royal-blue">
                                     <div class="bar-value">
                                         $300k
                                     </div>
@@ -7136,7 +7136,7 @@
                                         <span>Blue Royal</span>
                                     </div>
                                 </div>
-                                <div class="bar">
+                                <div class="bar" id="royal-black">
                                     <div class="bar-value">
                                         $500k
                                     </div>
@@ -7151,13 +7151,14 @@
                             </div>
                         </div>
                         <div class="rank-block__info">
-                            <p>
+                            <p class="info-text">
                                 Achieve 750 Dual Team Points with at least half on each team for 14 days.
                             </p>
                             <p>
                                 One half of the point requirement must be Enrollment Team points with no single leg contributing more than 50%.
                             </p>
-                            <a href="#" data-toggle="modal" data-target="#rankModal">Download your certificates</a>
+                            <a href="#">See Compensation plan for complete details</a>
+                            <a href="#" data-toggle="modal" data-target="#rankModal" style="display: none;">Download your certificates</a>
                         </div>
                     </div>
                 </div>
@@ -8475,6 +8476,35 @@
     });
 
     $(document).ready(function () {
+
+        var rankTexts = {
+            'silver': 'Build your business and achieve 36 Enrollment Team Points with at least half on each team.',
+            'gold': 'Build your business and achieve 120 Enrollment Team Points with at least half on each team.',
+            'platinum': 'Maintain 350 Dual Team Points with at least half on each team for 7 days.',
+            'jade': 'Maintain 750 Dual Team Points with at least half on each team for 14 days.',
+            'pearl': 'Maintain 1,500 Dual Team Points with at least half on each team for 14 days.',
+            'emerald': 'Maintain 3,000 Dual Team Points with at least half on each team for 14 days.',
+            'ruby': 'Maintain 5,000 Dual Team Points with at least half on each team for 14 days.',
+            'sapphire': 'Maintain 7,500 Dual Team Points with at least half on each team for 21 days.',
+            'diamond': 'Maintain 10,000 Dual Team Points with at least half on each team for 28 days.',
+            'diamond-2x': 'Maintain 15,000 Dual Team Points with at least half on each team for 35 days.',
+            'diamond-3x': 'Maintain 30,000 Dual Team Points with at least half on each team for 42 days.',
+            'diamond-blue': 'Maintain 60,000 Dual Team Points with at least half on each team for 42 days.',
+            'diamond-black': 'Maintain 100,000 Dual Team Points with at least half on each team for 56 days.',
+            'royal': 'Maintain 150,000 Dual Team Points with at least half on each team for 63 days.',
+            'royal-2x': 'Maintain 200,000 Dual Team Points with at least half on each team for 70 days.',
+            'royal-3x': 'Maintain 250,000 Dual Team Points with at least half on each team for 84 days.',
+            'royal-blue': 'Maintain 350,000 Dual Team Points with at least half on each team for 84 days.',
+            'royal-black': 'Congratulations! You have achieved the highest rank.'
+        };
+
+        $('.rank-block__chart .bar').mouseenter( function(e) {
+            var infoTextElement = $('.rank-block__info .info-text');
+
+            if(infoTextElement.text() !== rankTexts[this.id]) {
+                $('.rank-block__info .info-text').text(rankTexts[this.id]);
+            }
+        });
 
 
         $("#contactpopup").popover({
