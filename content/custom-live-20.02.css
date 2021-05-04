@@ -11225,7 +11225,7 @@ p.left-arrow:before {
     line-height: 1.2;
 }
 
-.rank-block__info p:last-of-type {
+.rank-block__info .info-text__extra {
     font-size: 11px;
 }
 
