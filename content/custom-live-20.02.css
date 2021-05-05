@@ -11009,10 +11009,18 @@ p.left-arrow:before {
 }
 
 .rank-block {
+    position: relative;
     padding: 0 16px;
 }
 
+.rank-block__title {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
 .rank-block__title h4 {
+    margin-top: 0;
     font-size: 26px;
     font-weight: 400;
 }
@@ -11030,7 +11038,6 @@ p.left-arrow:before {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: -50px;
     overflow: auto;
 }
 
@@ -11256,8 +11263,8 @@ p.left-arrow:before {
         height: 180px;
     }
 
-    .rank-block__chart {
-        margin-top: 0;
+    .rank-block__title {
+        position: static;
     }
 }
 
