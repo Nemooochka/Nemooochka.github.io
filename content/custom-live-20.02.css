@@ -9538,7 +9538,7 @@ p.left-arrow:before {
     min-height: 1px;
 }
 
-#checkoutPage .formRow div label,
+#checkoutPage div:not(.step-first) .formRow div label,
 #checkoutPage .step-second .formRow div label {
     width: 125px;
     text-align: right;
@@ -9550,18 +9550,18 @@ p.left-arrow:before {
     height: auto;
 }
 
-#checkoutPage .formRow div label + div,
+#checkoutPage div:not(.step-first) .formRow div label + div,
 #checkoutPage .step-second .formRow div label + div  {
     display: inline-block;
     vertical-align: middle;
 }
 
-#checkoutPage .formRow div input, #checkoutPage .formRow div select,
+#checkoutPage div:not(.step-first) .formRow div input, #checkoutPage div:not(.step-first) .formRow div select,
 #checkoutPage .step-second .formRow div input:not([type="radio"]), #checkoutPage .step-second .formRow div select {
     width: calc(100% - 140px);
 }
 
-#checkoutPage .formRow.one-column div input[type='submit'],
+#checkoutPage div:not(.step-first) .formRow.one-column div input[type='submit'],
 #checkoutPage .step-second .formRow.one-column div input[type='submit']{
     width: auto;
     margin-top: 10px;
@@ -9966,7 +9966,7 @@ p.left-arrow:before {
     }
 
     .reseller-type__block .name-part {
-        margin-bottom: 3px;
+        margin-bottom: 6px;
     }
 }
 
@@ -10259,7 +10259,7 @@ p.left-arrow:before {
     }
 
     #checkoutPage .step-second .formRow div label,
-    #checkoutPage .formRow div div label,
+    #checkoutPage div:not(.step-first) .formRow div div label,
     #checkoutPage .TabContainer .formRow div label {
         width: auto;
         margin: 0 0 4px;
