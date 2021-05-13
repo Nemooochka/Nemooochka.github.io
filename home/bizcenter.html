@@ -6926,25 +6926,19 @@
                         <div class="rank-block__chart">
                             <div class="bar-section">
                                 <div class="bar" id="silver">
-                                    <div class="bar-value bar-value__checked">
-                                        <img src="../images/icon-check-green.svg" alt="">
-                                    </div>
+                                    <div class="bar-value bar-value__checked"></div>
                                     <div class="bar-body" style="height: 123px;">
                                         <span>Silver</span>
                                     </div>
                                 </div>
                                 <div class="bar" id="gold">
-                                    <div class="bar-value bar-value__checked">
-                                        <img src="../images/icon-check-green.svg" alt="">
-                                    </div>
+                                    <div class="bar-value bar-value__checked"></div>
                                     <div class="bar-body" style="height: 131px;">
                                         <span>Gold</span>
                                     </div>
                                 </div>
                                 <div class="bar" id="platinum">
-                                    <div class="bar-value bar-value__checked">
-                                        <img src="../images/icon-check-green.svg" alt="">
-                                    </div>
+                                    <div class="bar-value bar-value__checked"></div>
                                     <div class="bar-body" style="height: 138px;">
                                         <span>Platinum</span>
                                     </div>
@@ -6952,22 +6946,20 @@
                             </div>
                             <div class="bar-section bar-section__green">
                                 <div class="bar" id="jade">
-                                    <div class="bar-value bar-value__checked">
-                                        <img src="../images/icon-check-green.svg" alt="">
-                                    </div>
+                                    <div class="bar-value bar-value__checked"></div>
                                     <div class="bar-body" style="height: 146px;">
                                         <span>Jade</span>
                                     </div>
                                 </div>
-                                <div class="bar active" id="pearl">
+                                <div class="bar" id="pearl">
                                     <div class="bar-value">
                                         $750
                                     </div>
-                                    <div class="bar-body" style="height: 189px;">
+                                    <div class="bar-body" style="height: 153px;">
                                         <span>Pearl</span>
                                     </div>
                                 </div>
-                                <div class="bar" id="emerald">
+                                <div class="bar active" id="emerald">
                                     <div class="bar-value">
                                         $1.5k
                                     </div>
@@ -6998,9 +6990,7 @@
                             </div>
                             <div class="bar-section bar-section__blue">
                                 <div class="bar" id="diamond">
-                                    <div class="bar-value">
-                                        $7.5k
-                                    </div>
+                                    <div class="bar-value bar-value__checked"></div>
                                     <div class="bar-body" style="height: 184px;">
                                         <span>Diamond</span>
                                     </div>
@@ -7044,9 +7034,7 @@
                             </div>
                             <div class="bar-section bar-section__purple">
                                 <div class="bar" id="royal">
-                                    <div class="bar-value">
-                                        $100k
-                                    </div>
+                                    <div class="bar-value bar-value__checked"></div>
                                     <div class="bar-body" style="height: 222px;">
                                         <span>Royal</span>
                                     </div>
@@ -7094,7 +7082,7 @@
                                 Achieve 750 Dual Team Points with at least half on each team for 14 days.
                             </p>
                             <p class="info-text__extra">
-                                One half of the point requirement must be Enrollment Team points with no single leg contributing more than 50%.
+                                Half of the point requirements must be from your Enrollment Team, where each leg may count for up to 50%.
                             </p>
                             <a href="#">See Compensation plan for complete details</a>
                             <a href="#" data-toggle="modal" data-target="#rankModal" style="display: none;">Download your certificates</a>
@@ -8437,11 +8425,10 @@
             'royal-black': 'Maintain 350,000 Dual Team Points with at least half on each team for 84 days.'
         };
 
-        var rankTextsWithoutSecondLine = ['silver', 'gold', 'platinum', 'jade'];
+        var rankBlockChart = $('.rank-block__chart');
 
-        $('.rank-block__chart .bar').mouseenter( function(e) {
+        rankBlockChart.find('.bar').mouseenter( function(e) {
             var infoTextElement = $('.rank-block__info .info-text');
-
             var hoveredElement = this.id;
             var infoBlockExtra = $('.info-text__extra');
 
@@ -8449,12 +8436,18 @@
                 $('.rank-block__info .info-text').text(rankTexts[hoveredElement]);
             }
 
-            if(rankTextsWithoutSecondLine.includes(hoveredElement)) {
-                infoBlockExtra.hide();
+            if(hoveredElement === 'silver') {
+                infoBlockExtra.text('Each Enrollment Team leg may count for up to 67%.');
             } else {
-                infoBlockExtra.show();
+                infoBlockExtra.text('Half of the point requirements must be from your Enrollment Team, where each leg may count for up to 50%.');
             }
         });
+
+        var activeBarBody = rankBlockChart.find('.bar.active .bar-body');
+        var activeBarBodyHeight = activeBarBody.height();
+        activeBarBodyHeight += 30;
+        activeBarBody.height(activeBarBodyHeight);
+        rankBlockChart.css('opacity', '1');
 
 
         $("#contactpopup").popover({
