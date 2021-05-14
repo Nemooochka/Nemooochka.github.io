@@ -11754,6 +11754,16 @@ p.left-arrow:before {
     padding: 0;
 }
 
+.my-info p span a {
+    color: #0060CB;
+    text-decoration: underline;
+}
+
+.my-info p:first-of-type span:last-of-type {
+    /*color: #1f4e5d;*/
+    color: #0a7b9f;
+}
+
 .active-service .service-join .goodman {
     padding: 7px 0 0 10px;
     text-align: left;
