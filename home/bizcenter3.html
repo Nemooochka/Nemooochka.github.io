@@ -7101,8 +7101,7 @@
                                 Achieve 750 Dual Team Points with at least half on each team for 14 days.
                             </p>
                             <p class="info-text__extra">
-                                One half of the point requirement must be Enrollment Team points with no single leg
-                                contributing more than 50%.
+                                One half of the point requirement must be Enrollment Team points with no single leg contributing more than 50%.
                             </p>
                             <a href="#">See Compensation plan for complete details</a>
                             <a href="#" data-toggle="modal" data-target="#rankModal" style="display: none;">Download
@@ -8675,10 +8674,13 @@
             'royal-black': 'Maintain 350,000 Dual Team Points with at least half on each team for 84 days.'
         };
 
+        var rankTextsWithoutSecondLine = ['silver', 'gold', 'platinum'];
+
         var rankBlockChart = $('.rank-block__chart');
 
         rankBlockChart.find('.bar').mouseenter( function(e) {
             var infoTextElement = $('.rank-block__info .info-text');
+
             var hoveredElement = this.id;
             var infoBlockExtra = $('.info-text__extra');
 
@@ -8686,10 +8688,10 @@
                 $('.rank-block__info .info-text').text(rankTexts[hoveredElement]);
             }
 
-            if(hoveredElement === 'silver') {
-                infoBlockExtra.text('Each Enrollment Team leg may count for up to 67%.');
+            if(rankTextsWithoutSecondLine.includes(hoveredElement)) {
+                infoBlockExtra.hide();
             } else {
-                infoBlockExtra.text('Half of the point requirements must be from your Enrollment Team, where each leg may count for up to 50%.');
+                infoBlockExtra.show();
             }
         });
 
