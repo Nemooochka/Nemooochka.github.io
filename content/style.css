@@ -2273,8 +2273,8 @@ a.feed span {
 }
 
 @media all and (max-width: 600px) {
-    #checkoutPage .formRow div .double_select select:first-of-type {
-        margin-bottom: 14px;
+    #checkoutPage .formRow div .double_select select {
+        width: calc(50% - 2px);
     }
 }
 
